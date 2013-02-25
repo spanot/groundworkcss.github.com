@@ -8,15 +8,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>Groundwork CSS &hearts; Say Hello to Responsive Design Made Easy</title>
-  <meta name="description" content="Groundwork is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design." />
+  <title>GroundworkCSS &hearts; Say Hello to Responsive Design Made Easy</title>
+  <meta name="description" content="GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design." />
   <meta name="keywords" content="groundwork, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass, groundworkcss, groundwork css, @groundworkcss" />
   <!-- Modernizr -->
   <script src="./js/libs/modernizr-2.6.2.min.js"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">window.jQuery || document.write('<script src="./js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- Groundwork CSS -->
+  <!-- GroundworkCSS -->
   <link type="text/css" rel="stylesheet" href="./css/groundwork.css">
   <!-- Groundy theme files -->
   <link type="text/css" rel="stylesheet" href="./css/groundy/groundy.css">
@@ -53,12 +53,11 @@
     // })();
     // fallback if SVG unsupported
     Modernizr.load({
-      test: Modernizr.svg,
-      nope: './css/no-svg.css'
-    });
-    Modernizr.load({
-      test: Modernizr.svg,
-      nope: './css/groundy/no-svg.css'
+      test: Modernizr.inlinesvg,
+      nope: [
+        './css/no-svg.css',
+        './css/groundy/no-svg.css'
+      ]
     });
     // polyfill for HTML5 placeholders
     Modernizr.load({
@@ -75,7 +74,7 @@
     <div class="container">
       <div class="row">
         <div class="one half">
-          <h1 class="big responsive heading" data-compression="6.95" data-min="20" data-max="120" style="font-size:86px;"><a href="./home"><span class="logo"></span> Groundwork<sup>Beta</sup></a></h1>
+          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:86px;"><a href="./home"><span class="logo"></span> GroundworkCSS <sup>Beta</sup></a></h1>
         </div>
         <div class="one half double pad-top">
           <nav class="inline pull-right">
@@ -127,10 +126,10 @@
             </div>
           </div>
           <!-- <br/>
-          <p class="align-left">Have a look at the complete set of <a href="./components" class="invert-color">CSS and Javascript components</a> that are packed into Groundwork.</p> -->
+          <p class="align-left">Have a look at the complete set of <a href="./components" class="invert-color">CSS and Javascript components</a> that are packed into GroundworkCSS.</p> -->
         </div>
         <div class="two thirds padded align-center">
-          <a href="./components"><img src="./images/responsive-design-sample.png" alt="Groundwork CSS - A Responsive Design Framework" class="glow double gap-top" style="margin-bottom:-42px;" /></a>
+          <a href="./components"><img src="./images/responsive-design-sample.png" alt="GroundworkCSS - A Responsive Design Framework" class="glow double gap-top" style="margin-bottom:-42px;" /></a>
         </div>
       </div>
     </div>
@@ -145,31 +144,27 @@
             <div class="large circle"><div class="blue-3 cell"><i class="icon-plus-sign-alt"></i></div></div>
             <h1 class="align-center">Built with Sass &amp; Compass</h1>
           </a>
-          <p class="pad-left pad-right">Groundwork has been built from the ground up with the incredibly powerful CSS preprocessor, Sass. Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.</p>
+          <p class="pad-left pad-right">GroundworkCSS has been built from the ground up with the incredibly powerful CSS preprocessor, Sass. Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.</p>
         </div>
         <div class="one third padded">
           <a href="./components">
             <div class="large circle"><div class="red cell"><i class="icon-laptop"></i></div></div>
             <h1 class="align-center">Flexible &amp; Responsive</h1>
           </a>
-<<<<<<< HEAD
-          <p class="pad-left pad-right">Groundwork offers the most advanced responsive layout techniques in the world. Featuring an incredibly flexible, nestable, fluid grid system: the Groundwork grid system supports any columns in any fractional amount from halves to twelths. The result is a framework that works for virtually any immaginable modern layout.</p>
-=======
           <p class="pad-left pad-right">GroundworkCSS offers the most advanced responsive layout techniques in the world. Featuring an incredibly flexible, nestable, fluid grid system: the GroundworkCSS grid system supports any columns in any fractional amount from halves to twelfths. The result is a framework that works for virtually any imaginable modern layout.</p>
->>>>>>> 6c7302c2a0b3e4a1b858a0207380caa03ff162e6
         </div>
         <div class="one third padded">
           <a href="https://github.com/groundworkcss/groundwork" target="_blank">
             <div class="large circle"><div class="green cell"><i class="icon-github-alt"></i></div></div>
             <h1 class="align-center">Free &amp; Open-Source</h1>
           </a>
-          <p class="pad-left pad-right">Groundwork is open-source, hosted on Github and 100% free. Groundwork was created by Gary Hepting, Senior Front-End Engineer at SideReel, to make responsive development and rapid responsive prototyping a breeze.</p>
+          <p class="pad-left pad-right">GroundworkCSS is open-source, hosted on Github and 100% free. GroundworkCSS was created by Gary Hepting, Sr. Front-End Engineer at SideReel, to make responsive development and rapid responsive prototyping a breeze.</p>
         </div>
       </section>
       <hr class="gapped" />
       <div class="row">
         <div class="one whole pad-left">
-          <h2>Why Use Groundwork?</h2>
+          <h2>Why Use GroundworkCSS?</h2>
         </div>
       </div>
       <section class="row">
@@ -177,7 +172,7 @@
           <div class="row">
             <div class="three small-tablet fourths right-one padded">
               <h3>The Last Grid You'll Ever Need</h3>
-              <p>Groundwork's flexible grid system enables you to do rapid development and scales to fit any screen size, from handheld devices to large format televisions.</p>
+              <p>GroundworkCSS's flexible grid system enables you to do rapid development and scales to fit any screen size, from handheld devices to large format televisions.</p>
             </div>
             <div class="one small-tablet fourth left-three padded align-center">
               <a href="./grid"><div class="large square"><div class="green rounded cell"><i class="icon-th"></i></div></div></a>
@@ -218,7 +213,7 @@
     </div>
   </section>
 
-  <!-- <h3>Sites using Groundwork:</h3>
+  <!-- <h3>Sites using GroundworkCSS:</h3>
   <div class="row">
     <div class="one small-tablet third align-center"><a href="http://www.sidereel.com/" target="_blank"><img src="./images/sites/sidereel-horizontal-white.svg" alt="sidereel.com" class="glow" /></a></div>
     <div class="one small-tablet third align-center"><a href="http://garyhepting.com/" target="_blank"><img src="./images/sites/garyhepting-white.svg" alt="garyhepting.com" class="glow" /></a></div>
@@ -228,7 +223,7 @@
     <section class="row">
       <div class="one third padded gap-top">
         <h4>Created by <a href="http://twitter.com/ghepting" target="_blank">Gary Hepting</a> at SideReel</h4>
-        <p>Groundwork has been brought to you by <a href="http://twitter.com/ghepting" target="_blank">@ghepting</a> at <a href="http://www.sidereel.com/" target="_blank">SideReel</a> in San Francisco, California.</p>
+        <p>GroundworkCSS has been brought to you by <a href="http://twitter.com/ghepting" target="_blank">@ghepting</a> at <a href="http://www.sidereel.com/" target="_blank">SideReel</a> in San Francisco, California.</p>
         <p><a class="dk-blue button" href="http://github.com/ghepting" target="_blank">ghepting <i class="icon-github-alt"></i></a> <a class="dk-blue button" href="http://twitter.com/ghepting" target="_blank">@ghepting <i class="icon-twitter"></i></a></p>
       </div>
       <div class="one third padded gap-top">

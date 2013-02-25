@@ -8,13 +8,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>Groundwork CSS &hearts; Navigation Components</title>
+  <title>GroundworkCSS &hearts; Navigation Components</title>
   <!-- Modernizr -->
   <script src="./js/libs/modernizr-2.6.2.min.js"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">window.jQuery || document.write('<script src="./js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- Groundwork CSS -->
+  <!-- GroundworkCSS -->
   <link type="text/css" rel="stylesheet" href="./css/groundwork.css">
   <!-- Groundy theme files -->
   <link type="text/css" rel="stylesheet" href="./css/groundy/groundy.css">
@@ -51,12 +51,11 @@
     // })();
     // fallback if SVG unsupported
     Modernizr.load({
-      test: Modernizr.svg,
-      nope: './css/no-svg.css'
-    });
-    Modernizr.load({
-      test: Modernizr.svg,
-      nope: './css/groundy/no-svg.css'
+      test: Modernizr.inlinesvg,
+      nope: [
+        './css/no-svg.css',
+        './css/groundy/no-svg.css'
+      ]
     });
     // polyfill for HTML5 placeholders
     Modernizr.load({
@@ -73,7 +72,7 @@
     <div class="container">
       <div class="row">
         <div class="one half">
-          <h1 class="big responsive heading" data-compression="6.95" data-min="20" data-max="120" style="font-size:86px;"><a href="./home"><span class="logo"></span> Groundwork<sup>Beta</sup></a></h1>
+          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:86px;"><a href="./home"><span class="logo"></span> GroundworkCSS <sup>Beta</sup></a></h1>
         </div>
         <div class="one half double pad-top">
           <nav class="inline pull-right">
@@ -145,7 +144,7 @@
       </div>
       <div class="two thirds padded">
         <h2>Navigation</h2>
-        <p>Much like form fields in Groundwork, unordered list items within <code class="inline">&lt;nav&gt;</code> elements are set by default to 100% the width of their container and can utilize the grid properties in order to achieve scalable horizontal sizing.</p>
+        <p>Much like form fields in GroundworkCSS, unordered list items within <code class="inline">&lt;nav&gt;</code> elements are set by default to 100% the width of their container and can utilize the grid properties in order to achieve scalable horizontal sizing.</p>
         <h2>Horizontal Navigation (with grid)</h2>
         <nav class="small-tablet">
           <ul class="row">

@@ -189,6 +189,14 @@
         return $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
       });
     }
+    $('#browser-support .browser, #browser-support a').on({
+      click: function(e) {
+        $('#browser-support').toggleClass('open');
+        $('#browser-support').find('#browser-support-grid').fadeToggle();
+        e.preventDefault();
+        return false;
+      }
+    });
     $('.demo > .row > .whole, \
      .demo > .row > .wholes, \
      .demo > .row > .half, \

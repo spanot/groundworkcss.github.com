@@ -177,6 +177,13 @@ $(document).ready ->
     $("img[src$='.svg']").each ->
       $(this).attr('src',$(this).attr('src').replace('.svg','.png'))
 
+  $('#browser-support .browser, #browser-support a').on
+    click: (e) ->
+      $('#browser-support').toggleClass('open')
+      $('#browser-support').find('#browser-support-grid').fadeToggle()
+      e.preventDefault()
+      false
+
   # add titles to demo grid cells
   $('.demo > .row > .whole, 
      .demo > .row > .wholes, 

@@ -9,9 +9,10 @@
 
 // font color
 .invert-color { color:$white;
-  *           { color:inherit; }
+  h1, h2, h3, h4, h5, h6 { color:inherit; }
+  table { color:$font-color; }
 }
-a.invert-color, a.invert-color:link, a.invert-color:visited {
+a.invert-color, a.invert-color:visited {
   @extend .invert-color;
   border-color:$white;
   &:hover, &:focus {
@@ -69,4 +70,4 @@ a.invert-color, a.invert-color:link, a.invert-color:visited {
 
 // shadows, borders
 .glow { @include filter-shadow(rgba(0,0,0,0.35), 5px, 0, 0); }
-.rounded { border-radius:0.4em; }
+.rounded { @include rounded(0.4em); }

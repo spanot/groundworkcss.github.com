@@ -5,7 +5,7 @@
 
 
 
-a, a:link, a:visited {
+a, a:visited {
   color:$navy;
   text-decoration:none;
   &:hover, &:focus {
@@ -17,7 +17,7 @@ a, a:link, a:visited {
 h1.heading {
   font-size:3em;
   text-shadow:0 0 5px rgba(0,0,0,0.25);
-  a, a:link, a:visited {
+  a, a:visited {
     color:$navy;
     a:hover, a:focus {
       color:$navy;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, dl {
-  a, a:link, a:visited {
+  a, a:visited {
     color:$navy;
     border-bottom:1px dotted $navy;
     @include transition('color 0.25s, border-color 0.25s');

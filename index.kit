@@ -1,0 +1,162 @@
+<!-- @import "_doctype.kit" -->
+  <title>GroundworkCSS &hearts; A Responsive HTML5, CSS &amp; Javascript Framework</title>
+  <meta name="description" content="GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design." />
+  <meta name="keywords" content="groundwork, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass, groundworkcss, groundwork css, @groundworkcss" />
+<!-- @import "_head.kit" -->
+  <style type="text/css">
+    html, body {
+      width:100%;
+      height:100%;
+      text-align:center;
+      background:#333 url('./images/black_linen_v2.png') center repeat;
+      overflow:hidden;
+    }
+    #resizerFrame {
+      width:100%;
+      max-width:100%;
+      height:100%;
+      max-height:100%;
+      margin:0 auto;
+      background:white;
+      box-shadow:0 0 50px #000;
+      position:relative;
+    }
+    #resizer {
+      position:fixed;
+      top:0;
+      z-index:99;
+      width:315px;
+      left:50%;
+      height:2em;
+      margin:0 auto;
+      margin-left:-162px;
+    }
+    #resizer ul {
+      -webkit-filter: drop-shadow(0 1px 5px rgba(0,0,0,.25));
+      -moz-filter: drop-shadow(0 1px 5px rgba(0,0,0,.25));
+      -ms-filter: drop-shadow(0 1px 5px rgba(0,0,0,.25));
+      -o-filter: drop-shadow(0 1px 5px rgba(0,0,0,.25));
+      filter: drop-shadow(0 1px 5px rgba(0,0,0,.25));
+      margin:-0.2em auto 0;
+    }
+    #closeResizer {
+      padding:0.3em 0.5em;
+      text-decoration:none;
+      color:#222;
+      text-shadow:0 0 2px rgba(255,255,255,0.65), 0 0 10px rgba(255,255,255,0.5);
+    }
+    a.rotate i, a[data-rotate] i {
+      -webkit-transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -mx-transition: all 0.15s linear;
+      -o-transition: all 0.15s linear;
+      transition: all 0.15s linear;
+    }
+  </style>
+  <script type="text/javascript">
+    (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))window.location=b})(navigator.userAgent||navigator.vendor||window.opera,'./home.html');
+    function querystring(key) {
+      var re=new RegExp('(?:\\?|&)'+key+'=(.*?)(?=&|$)','gi');
+      var r=[], m;
+      while ((m=re.exec(document.location.search)) != null) r.push(m[1]);
+      return r;
+    }
+    function basename(str) {
+      var base = new String(str).substring(str.lastIndexOf('/') + 1);
+      if(base.lastIndexOf(".") != -1) {
+        base = base.substring(0, base.lastIndexOf("."));
+      }
+      return base;
+    }
+    function updateQueryStringParameter(uri, key, value) {
+      var re = new RegExp("([?|&])" + key + "=.*?(&|$)", "i");
+      separator = uri.indexOf('?') !== -1 ? "&" : "?";
+      var url = window.location.href;
+      if (uri.match(re)) {
+        url = uri.replace(re, '$1' + key + "=" + value + '$2');
+      }
+      else {
+        url = uri + separator + key + "=" + value;
+      }
+      return url;
+    }
+    $(document).ready(function() {
+      $('#resizerFrame').each(function() {
+        $(this).css('max-width',$(window).width());
+        $(this).css('max-height',$(window).height());
+      });
+      $('a[data-viewport-width]').on('click', function(e) {
+        if($(this).attr('data-viewport-width') == '100%') {
+          newWidth = $(window).width();
+        }else{
+          newWidth = $(this).attr('data-viewport-width');
+        }
+        if($(this).attr('data-viewport-height') == '100%') {
+          newHeight = $(window).height();
+        }else{
+          newHeight = $(this).attr('data-viewport-height');
+        }
+        $('a[data-viewport-width]').removeClass('active');
+        $(this).addClass('active');
+        $('#resizerFrame').stop().animate({'max-width': newWidth, 'max-height': newHeight}, 200);
+        $('title').text('W: '+newWidth+', H: '+newHeight);
+        e.preventDefault();
+        return false;
+      });
+      $('a.rotate').on('click', function(e) {
+        $(this).children('i[class*=icon]').toggleClass('rotate-90-ctr');
+        $('a[data-rotate=true]').each(function() {
+          $(this).children('i[class*=icon]').toggleClass('rotate-90-ctr');
+          width = $(this).attr('data-viewport-width');
+          height = $(this).attr('data-viewport-height');
+          // shuffle values
+          $(this).attr('data-viewport-width', height);
+          $(this).attr('data-viewport-height', width);
+          if($(this).hasClass('active')) {
+            $(this).trigger('click');
+          }
+        });
+      });
+      $('#closeResizer').on('click', function(e) {
+        newWidth = $(window).width();
+        newHeight = $(window).height();
+        $('a[data-viewport-width]').removeClass('active');
+        $('#resizerFrame').stop().animate({'max-width': newWidth, 'max-height': newHeight}, 200);
+        $('#resizer').fadeOut(500, function() {
+          document.location = document.getElementById("resizerFrame").contentWindow.location.href;
+        });
+        e.preventDefault();
+        return false;
+      });
+      if(querystring('url').length > 0) {
+        $('#resizerFrame').attr('src',querystring('url'));
+      }
+      $('#resizerFrame').on('load', function() {
+        var url = basename(this.contentWindow.location.href);
+        var href = updateQueryStringParameter(document.location.href, 'url', url);
+        var stateObj = { resizer: 'resizer' };
+        history.pushState(stateObj, url, href);
+      });
+    });
+    $(window).resize(function() {
+      if($('#resizer li:first-child a').hasClass('active')) {
+        $('#resizerFrame').css('max-width', $(window).width());
+        $('#resizerFrame').css('max-height', $(window).height());
+      }
+    });
+  </script>
+  <div style="position:fixed;top:0;z-index:99;width:100%;">
+    <div id="resizer">
+      <ul class="button-list pull-left">
+        <li><a class="active" title="Fullscreen" href="#" data-viewport-width="100%" data-viewport-height="100%"><i class="icon-fullscreen"></i></a></li>
+        <li><a title="Desktop" href="#" data-viewport-width="1920" data-viewport-height="1080"><i class="icon-desktop"></i></a></li>
+        <li><a title="13&quot; MacBook" href="#" data-viewport-width="1280px" data-viewport-height="800px"><i class="icon-laptop"></i></a></li>
+        <li><a title="Small Tablet" href="#" data-rotate="true" data-viewport-width="720px" data-viewport-height="1280px"><i class="icon-tablet"></i></a></li>
+        <li><a title="Mobile Phone" href="#" data-rotate="true" data-viewport-width="480px" data-viewport-height="720px"><i class="icon-mobile-phone"></i></a></li>
+        <li><a title="Rotate" href="#" class="rotate"><i class="icon-refresh"></i></a></li>
+      </ul>
+      <a id="closeResizer" class="pull-left" title="Close Resizer" href="./home.html"><i class="icon-remove"></i></a>
+    </div>
+  </div>
+  <iframe id="resizerFrame" src="./home.html" frameborder="0"></iframe>
+<!-- @import "_scripts.kit" -->

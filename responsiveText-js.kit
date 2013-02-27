@@ -1,0 +1,44 @@
+<!-- $pageTitle = Responsive Text -->
+<!-- $page = responsiveText-js -->
+
+<!-- @import "_doctype.kit" -->
+  <title>GroundworkCSS &hearts; Responsive Text Sizing</title>
+<!-- @import "_head.kit" -->
+<!-- @import "_header.kit" -->
+<!-- @import "_breadcrumbs.kit" -->
+  <div class="container">
+    <div class="row">
+      <div class="one third padded">
+        <h1><i class="icon-text-width"></i> ResponsiveText</h1>
+        <p>ResponsiveText allows you to have dynamically sized text that adapts to the width of the viewport. It's incredibly useful for headings or SVG graphics that you want to scale to fit their container on any device.</p>
+      </div>
+      <div class="two thirds padded">
+        <h2 class="responsive" data-compression="7.375"><i class="icon-text-width"></i> ResponsiveText</h2>
+        <p>ResponsiveText is a jQuery plugin that let's you set font sizes responsively based on an element's container width. Use responsiveText.js to have scalable headlines, build responsive tables and more!</p>
+        <h6>Example Usage:</h6>
+        <code>
+<pre>&lt;<tag>h1</tag> class=&quot;<span>responsive</span>&quot;&gt;<content>Default Options</content>&lt;/<tag>h1</tag>&gt;</pre>
+        </code>
+        <hr/>
+        <h6>Result:</h6>
+        <h1 class="responsive">Default Options</h1>
+        <hr/>
+        <h6>Example Usage:</h6>
+        <code>
+<pre>&lt;<tag>h1</tag> class=&quot;<span>responsive</span>&quot; data-compression=&quot;<span>12.2</span>&quot; data-min=&quot;<span>20</span>&quot; data-max=&quot;<span>170</span>&quot;&gt;<content>A Longer Responsive Heading</content>&lt;/<tag>h1</tag>&gt;</pre>
+        </code>
+        <hr/>
+        <h6>Result:</h6>
+        <h1 class="responsive" data-compression="12.2" data-min="20" data-max="170">A Longer Responsive Heading</h1>
+        <hr/>
+        <h6>Example Usage:</h6>
+        <code>
+<pre>&lt;<tag>h1</tag> class=&quot;<span>responsive</span>&quot; data-compression=&quot;<span>9.4</span>&quot; data-min=&quot;<span>20</span>&quot; data-max=&quot;<span>170</span>&quot;&gt;<content>A Responsive Heading &lt;<tag>br</tag>/&gt;You Want To Wrap</content>&lt;/<tag>h1</tag>&gt;</pre>
+        </code>
+        <hr/>
+        <h6>Result:</h6>
+        <h3 class="responsive" data-compression="9.4" data-min="20" data-max="170">A Responsive Heading <br/>You Want To Wrap</h3>
+      </div>
+    </div>
+  </div>
+<!-- @import "_scripts.kit" -->

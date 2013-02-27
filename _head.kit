@@ -1,0 +1,59 @@
+  <!-- Modernizr -->
+  <script src="./groundwork/lib/assets/js/libs/modernizr-2.6.2.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/lib/assets/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
+  <!-- GroundworkCSS -->
+  <link type="text/css" rel="stylesheet" href="./groundwork/lib/assets/css/groundwork.css">
+  <!-- Groundy theme files -->
+  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
+  <!--[if IE]>
+  <link type="text/css" rel="stylesheet" href="./groundwork/lib/assets/css/groundwork-ie.css">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="./groundwork/lib/assets/js/libs/html5shiv.js"></script>
+  <script>
+    /* polyfill custom tags for code samples */
+    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+    for (var i = 0; i < customTags.length; i++) {
+      document.createElement(customTags[i]);
+    }
+  </script>
+  <![endif]-->
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" href="./groundwork/lib/assets/css/font-awesome-ie7.min.css">
+  <![endif]-->
+  <script type="text/javascript">
+    // (function(){
+    //   var datauri = new Image();
+    //   datauri.onerror = function() {
+    //       Modernizr.addTest('datauri', function () { return false; });
+    //   };  
+    //   datauri.onload = function() {
+    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+    //       Modernizr.load({
+    //         test: Modernizr.datauri,
+    //         nope: './groundwork/lib/assets/css/no-datauri.css'
+    //       });
+    //   };
+    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+    // })();
+    // fallback if SVG unsupported
+    Modernizr.load({
+      test: Modernizr.inlinesvg,
+      nope: [
+        './groundwork/lib/assets/css/no-svg.css',
+        './css/no-svg.css'
+      ]
+    });
+    // polyfill for HTML5 placeholders
+    Modernizr.load({
+      test: Modernizr.input.placeholder,
+      nope: [
+        './groundwork/lib/assets/css/placeholder_polyfill.css',
+        './groundwork/lib/assets/js/libs/placeholder_polyfill.jquery.js'
+      ]
+    });
+  </script>
+</head>
+<body>

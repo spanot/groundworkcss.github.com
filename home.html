@@ -11,6 +11,11 @@
   <title>GroundworkCSS &hearts; Say Hello to Responsive Design Made Easy</title>
   <meta name="description" content="GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design." />
   <meta name="keywords" content="groundwork, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass, groundworkcss, groundwork css, @groundworkcss" />
+  <link rel="apple-touch-icon" href="../groundwork/lib/assets/apple-icons/apple-touch-icon-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/lib/assets/apple-icons/apple-touch-icon-57x57-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/lib/assets/apple-icons/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/lib/assets/apple-icons/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/lib/assets/apple-icons/apple-touch-icon-144x144-precomposed.png" />
   <!-- Modernizr -->
   <script src="./groundwork/lib/assets/js/libs/modernizr-2.6.2.min.js"></script>
   <!-- jQuery -->
@@ -110,7 +115,7 @@
       </div>
     </div>
   </header>
-  <div class="hero band lt-blue invert-color tripple padded">
+  <div class="hero band lt-blue invert-color triple padded">
     <div class="container">
       <div class="row">
         <div class="one third padded align-center">
@@ -123,6 +128,30 @@
             </div>
             <div class="four small-tablet sevenths gap-top">
               <a class="block button" href="http://twitter.com/groundworkCSS/" target="_blank">Follow <i class="icon-twitter"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one whole gap-top">
+              <a href="#subscribe" class="block button">Receive email updates <i class="icon-envelope-alt"></i></a>
+              <div id="subscribe" class="modal">
+                <form action="http://groundworkcss.createsend.com/t/t/s/niuuy/" method="post" id="subForm">
+                  <div class="row">
+                    <div class="one whole padded">
+                      <h4>Get notified when big things happen.</h4>
+                      <input type="text" name="cm-name" id="name" tab-index="1" placeholder="First &amp; Last Name" />
+                      <br/>
+                      <input type="text" name="cm-niuuy-niuuy" id="niuuy-niuuy" tab-index="2" placeholder="Email Address" />
+                      <br/>
+                      <h3 class="pull-left">
+                        <a href="http://github.com/groundworkcss" target="_blank" title="Follow @groundworkcss" class="tooltip"><i class="icon-github-alt"></i></a>
+                        <a href="http://twitter.com/groundworkCSS/" target="_blank" title="Follow @GroundworkCSS" class="tooltip"><i class="icon-twitter"></i></a>
+                        <a href="mailto:groundwork@sidereel.com" target="_blank" title="Email GroundworkCSS" class="tooltip"><i class="icon-envelope-alt"></i></a>
+                      </h3>
+                      <input class="pull-right" type="submit" value="Subscribe" />
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <!-- <br/>
@@ -197,7 +226,7 @@
   <section class="navy band gap-top invert-color">
     <div class="container">
       <div class="row">
-        <div class="one whole tripple padded" id="browser-support">
+        <div class="one whole triple padded" id="browser-support">
           <h3>Works in All Major Browsers</h3>
           <div class="row">
             <div class="one mobile ninth">

@@ -128,7 +128,7 @@
     <div class="row">
       <div class="one third padded">
         <h1><i class="icon-th"></i> The Grid</h1>
-        <p>Unlike most grid systems, GroundworkCSS supports a varied number of columns per row, up to 12. Column widths are specifed by classes which indicate what percentage of the row they take up, for example <code>one half</code>, <code>three fourths</code>, or <code>two fifths</code>.</p>
+        <p>The GroundworkCSS grid system supports a variable number of columns per row and supports fractions from halves through twelfths out of the box. Column widths can be specifed with classes (i.e. <code>one half</code>, <code>three fourths</code>, or <code>two fifths</code>) or without classes using <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend" target="_blank">@extend</a> with <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_" target="_blank">placeholder selectors</a> to achieve pure semantic implementations.</p>
         <h6>Example usage:</h6>
         <pre>
 <code>&lt;<tag>div</tag> class="<span>row</span>"&gt;</code>
@@ -161,6 +161,7 @@
             <div class="one mobile half">2nd</div>
           </div>
         </div>
+        <p class="small">Note: Resizing the viewport to mobile proportions will not collapse these columns.</p>
       </div>
       <div class="two thirds padded">
         <!-- start demo grid -->

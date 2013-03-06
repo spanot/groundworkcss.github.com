@@ -91,10 +91,10 @@ ol.list > li:before {
   color:$white;
 }
 
-code {
-  color:$lt-blue;
-  background:$dk-gray;
-  border-left:2.5em solid $gray;
+pre {
+  code {
+    color:$lt-blue;
+  }
   tag {
     color:$lt-red;
   }

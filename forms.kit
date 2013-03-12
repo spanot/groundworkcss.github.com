@@ -13,24 +13,24 @@
         <p>Forms are a part of almost any modern web application. Users need clean and easy to use forms to submit their information.</p>
         <h6>Example usage:</h6>
         <pre>
-<code>&lt;<tag>form</tag> action="<span>#</span>" method="<span>post</span>"&gt;</code>
+<code>&lt;<tag>form</tag> action="<span>#</span>" method="<span>get</span>"&gt;</code>
 <code>&lt;<tag>label</tag>&gt;<content>Example Label</content>&lt;/<tag>label</tag>&gt;</code>
 <code>&lt;<tag>p</tag>&gt;&lt;<tag>input</tag> placeholder=&quot;<span>placeholder text</span>&quot; /&gt;&lt;/<tag>p</tag>&gt;</code>
-<code>&lt;<tag>button</tag>&gt;<content>Submit</content>&lt;/<tag>button</tag>&gt;</code>
+<code>&lt;<tag>button type=&quot;<span>button</span>&quot;</tag>&gt;<content>Submit</content>&lt;/<tag>button</tag>&gt;</code>
 <code>&lt;/<tag>form</tag>&gt;</code>
         </pre>
         <hr/>
         <h6>Result:</h6>
-        <form action="#" method="post">
+        <form action="#" method="get">
           <label>Example Label</label>
           <p><input placeholder="placeholder text" /></p>
-          <button>Submit</button>
+          <button type="button">Submit</button>
         </form>
       </div>
       <div class="two thirds padded">
         <h2>Form Elements</h2>
         <p>GroundworkCSS makes creating beautiful forms pretty darn easy. By default, form elements such as <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> expand to 100% width of their containers. This makes setting up forms using the grid system really simple.</p>
-        <form action="#" method="post">
+        <form action="#" method="get">
           <fieldset>
             <legend>Example Form</legend>
             <div class="row">
@@ -188,7 +188,7 @@
             </div>
             <div class="row">
               <div class="one whole padded">
-                <button>Submit</button> <button class="warning">Cancel</button>
+                <button type="button">Submit</button> <button type="button" class="warning">Cancel</button>
               </div>
             </div>
             <div class="row">

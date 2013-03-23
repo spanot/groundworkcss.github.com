@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Sass &amp; Compass</title>
+  <title>GroundworkCSS &hearts; Cycle2 Slider</title>
   <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
@@ -118,7 +118,8 @@
       <div class="one whole padded">
         <ul class="breadcrumbs">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./sass-compass.html">SASS &amp; Compass</a></li>
+          <li><a href="./components.html">Components</a></li>
+          <li><a href="./cycle2-js.html">Cycle2</a></li>
         </ul>
       </div>
     </div>
@@ -126,33 +127,60 @@
   <div class="container">
     <div class="row">
       <div class="one third padded">
-        <h1><i class="icon-plus-sign-alt"></i> Sass + Compass</h1>
-        <p>Sass is a powerful extension to CSS and provides variables, functions, the use of mixins and extends which speeds up development and makes code cleaner and much more organized.</p>
-        <p><i class="icon-warning-sign"></i> NOTE: For those that aren't using a CSS preprocessor yet, have no fear! We've packaged all of the normal CSS with GroundworkCSS as well. However, we strongly encourage you to <a href="http://sass-lang.com/" target="_blank">learn and use Sass</a>. The SCSS syntax is very familiar, is easy to learn and can drastically increase your efficiency.</p>
-        <p class="small">P.S. &mdash; If you're not a fan of the terminal, <a href="http://incident57.com/codekit/" target="_blank">give CodeKit a try</a>.</p>
+        <h1><i class="icon-picture"></i> Cycle2</h1>
+        <p>A powerful responsive content slider created by <a href="http://www.malsup.com/jquery/cycle2/" target="_blank">@malsup</a>. For documentation visit the <a href="http://www.malsup.com/jquery/cycle2/" target="_blank">Cycle2 homepage</a></p>
       </div>
       <div class="two thirds padded">
-        <h2>Sass + Compass</h2>
-        <blockquote><strong>Sass makes CSS fun again</strong>. Sass is an extension of CSS3, adding <a href="#nesting">nested rules</a>, <a href="#variables">variables</a>, <a href="#mixins">mixins</a>, <a href="#extend">selector inheritance</a>, and <a href="/docs/yardoc/file.SASS_REFERENCE.html">more</a>. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
-          <cite><a href="http://sass-lang.com/" target="_blank">http://sass-lang.com/</a></cite>
-        </blockquote>
-        <h2>Example Usage:</h2>
+        <h2><i class="icon-picture"></i> Cycle2 Slideshows</h2>
+        <blockquote>Cycle2 is a versatile slideshow plugin for jQuery built around ease-of-use. It supports a declarative initialization style that allows full customization without any scripting. Simply include the plugin, declare your markup, and Cycle2 does the rest.<cite>@malsup</cite></blockquote>
+        <hr/>
+        <h6>Example Usage:</h6>
         <pre>
-<code><content>$blue: <val>#3bbfce</val>;</content></code>
-<code><content>$margin: <val>16px</val>;</content></code>
-<code></code>
-<code><tag>nav</tag><class>.special</class> {</code>
-<code>  <pair>border-color: <content>$blue;</content></pair></code>
-<code>  <pair>color: darken<content>($blue, <val>9</val><span>%</span>);</content></pair></code>
-<code></code>
-<code>  <tag>a</tag><class>.border</class> {</code>
-<code>    <pair>padding: <content>$margin / <val>2</val>;</content></code>
-<code>    margin: <content>$margin / <val>2</val>;</content></code>
-<code>    border-color: <content>$blue;</pair></content></code>
-<code>  }</code>
-<code>}</code>
+<code>&lt;<tag>div</tag> class=&quot;<span>cycle-slideshow</span>&quot; data-cycle-fx=&quot;<span>scrollHorz</span>&quot;&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/24cada/ffffff/&amp;amp;text=Slide+1</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/bada55/ffffff/&amp;amp;text=Slide+2</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/c82647/ffffff/&amp;amp;text=Slide+3</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/198d98/ffffff/&amp;amp;text=Slide+4</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
         </pre>
-        <p class="small">NOTE: This example is demonstrating the use of <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_" target="_blank">variables</a> as well as <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules" target="_blank">nested rules</a> using the <a href="#" target="_blank">SCSS</a> syntax.</p>
+        <hr/>
+        <h6>Result:</h6>
+        <div class="cycle-slideshow" data-cycle-fx="scrollHorz">
+          <img src="http://placehold.it/1200x400/24cada/ffffff/&amp;text=Slide+1" alt="" />
+          <img src="http://placehold.it/1200x400/bada55/ffffff/&amp;text=Slide+2" alt="" />
+          <img src="http://placehold.it/1200x400/c82647/ffffff/&amp;text=Slide+3" alt="" />
+          <img src="http://placehold.it/1200x400/198d98/ffffff/&amp;text=Slide+4" alt="" />
+        </div>
+        <hr/>
+        <h6>Example Usage:</h6>
+        <pre>
+<code>&lt;<tag>div</tag> class=&quot;<span>cycle-slideshow</span>&quot; data-cycle-slides=&quot;<span>&gt; div</span>&quot; data-cycle-timeout=&quot;<span>2000</span>&quot;&gt;</code>
+<code>  &lt;<tag>div</tag> class=&quot;<span>one whole callout</span>&quot;&gt;</code>
+<code>    &lt;<tag>h1</tag>&gt;<content>Content Slide</content>&lt;/<tag>h1</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;<content>This slide has HTML content instead of an image and has also had &lt;<tag>code</tag> class=&quot;<span>inline&quot;&gt;.callout</span>&lt;/<tag>code</tag>&gt; applied to it.</content>&lt;/<tag>p</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;&lt;<tag>a</tag> href=&quot;<span>#</span>&quot; class=&quot;<span>success button</span>&quot;&gt;<content>Click Me</content>&lt;/<tag>a</tag>&gt;&lt;/<tag>p</tag>&gt;</code>
+<code>  &lt;/<tag>div</tag>&gt;</code>
+<code>  &lt;<tag>div</tag> class=&quot;<span>one whole warning callout</span>&quot;&gt;</code>
+<code>    &lt;<tag>h1</tag>&gt;<content>Another Content Slide</content>&lt;/<tag>h1</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;<content>This slide has HTML content instead of an image and has also had </content>&lt;<tag>code</tag> class=&quot;<span>inline</span>&quot;&gt;<content>.warning.callout</content>&lt;/<tag>code</tag>&gt;<content> applied to it.</content>&lt;/<tag>p</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;&lt;<tag>a</tag> href=&quot;<span>#</span>&quot; class=&quot;<span>large button</span>&quot;&gt;<content>Click Me</content>&lt;/<tag>a</tag>&gt;&lt;/<tag>p</tag>&gt;</code>
+<code>  &lt;/<tag>div</tag>&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
+        </pre>
+        <hr/>
+        <h6>Result:</h6>
+        <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-timeout="2000">
+          <div class="one whole callout">
+            <h1>Content Slide</h1>
+            <p>This slide has HTML content instead of an image and has also had <code class="inline">.callout</code> applied to it.</p>
+            <p><a href="#" class="success button">Click Me</a></p>
+          </div>
+          <div class="one whole warning callout">
+            <h1>Another Content Slide</h1>
+            <p>This slide has HTML content instead of an image and has also had <code class="inline">.warning.callout</code> applied to it.</p>
+            <p><a href="#" class="large button">Click Me</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,69 @@
+<!-- $pageTitle = Cycle2 -->
+<!-- $page = cycle2-js -->
+
+<!-- @import "_doctype.kit" -->
+  <title><!-- $siteName--> &hearts; Cycle2 Slider</title>
+<!-- @import "_head.kit" -->
+<!-- @import "_header.kit" -->
+<!-- @import "_breadcrumbs.kit" -->
+  <div class="container">
+    <div class="row">
+      <div class="one third padded">
+        <h1><i class="icon-picture"></i> Cycle2</h1>
+        <p>A powerful responsive content slider created by <a href="http://www.malsup.com/jquery/cycle2/" target="_blank">@malsup</a>. For documentation visit the <a href="http://www.malsup.com/jquery/cycle2/" target="_blank">Cycle2 homepage</a></p>
+      </div>
+      <div class="two thirds padded">
+        <h2><i class="icon-picture"></i> Cycle2 Slideshows</h2>
+        <blockquote>Cycle2 is a versatile slideshow plugin for jQuery built around ease-of-use. It supports a declarative initialization style that allows full customization without any scripting. Simply include the plugin, declare your markup, and Cycle2 does the rest.<cite>@malsup</cite></blockquote>
+        <hr/>
+        <h6>Example Usage:</h6>
+        <pre>
+<code>&lt;<tag>div</tag> class=&quot;<span>cycle-slideshow</span>&quot; data-cycle-fx=&quot;<span>scrollHorz</span>&quot;&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/24cada/ffffff/&amp;amp;text=Slide+1</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/bada55/ffffff/&amp;amp;text=Slide+2</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/c82647/ffffff/&amp;amp;text=Slide+3</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>  &lt;<tag>img</tag> src=&quot;<span>http://placehold.it/1200x400/198d98/ffffff/&amp;amp;text=Slide+4</span>&quot; alt=&quot;&quot; /&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
+        </pre>
+        <hr/>
+        <h6>Result:</h6>
+        <div class="cycle-slideshow" data-cycle-fx="scrollHorz">
+          <img src="http://placehold.it/1200x400/24cada/ffffff/&amp;text=Slide+1" alt="" />
+          <img src="http://placehold.it/1200x400/bada55/ffffff/&amp;text=Slide+2" alt="" />
+          <img src="http://placehold.it/1200x400/c82647/ffffff/&amp;text=Slide+3" alt="" />
+          <img src="http://placehold.it/1200x400/198d98/ffffff/&amp;text=Slide+4" alt="" />
+        </div>
+        <hr/>
+        <h6>Example Usage:</h6>
+        <pre>
+<code>&lt;<tag>div</tag> class=&quot;<span>cycle-slideshow</span>&quot; data-cycle-slides=&quot;<span>&gt; div</span>&quot; data-cycle-timeout=&quot;<span>2000</span>&quot;&gt;</code>
+<code>  &lt;<tag>div</tag> class=&quot;<span>one whole callout</span>&quot;&gt;</code>
+<code>    &lt;<tag>h1</tag>&gt;<content>Content Slide</content>&lt;/<tag>h1</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;<content>This slide has HTML content instead of an image and has also had &lt;<tag>code</tag> class=&quot;<span>inline&quot;&gt;.callout</span>&lt;/<tag>code</tag>&gt; applied to it.</content>&lt;/<tag>p</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;&lt;<tag>a</tag> href=&quot;<span>#</span>&quot; class=&quot;<span>success button</span>&quot;&gt;<content>Click Me</content>&lt;/<tag>a</tag>&gt;&lt;/<tag>p</tag>&gt;</code>
+<code>  &lt;/<tag>div</tag>&gt;</code>
+<code>  &lt;<tag>div</tag> class=&quot;<span>one whole warning callout</span>&quot;&gt;</code>
+<code>    &lt;<tag>h1</tag>&gt;<content>Another Content Slide</content>&lt;/<tag>h1</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;<content>This slide has HTML content instead of an image and has also had </content>&lt;<tag>code</tag> class=&quot;<span>inline</span>&quot;&gt;<content>.warning.callout</content>&lt;/<tag>code</tag>&gt;<content> applied to it.</content>&lt;/<tag>p</tag>&gt;</code>
+<code>    &lt;<tag>p</tag>&gt;&lt;<tag>a</tag> href=&quot;<span>#</span>&quot; class=&quot;<span>large button</span>&quot;&gt;<content>Click Me</content>&lt;/<tag>a</tag>&gt;&lt;/<tag>p</tag>&gt;</code>
+<code>  &lt;/<tag>div</tag>&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
+        </pre>
+        <hr/>
+        <h6>Result:</h6>
+        <div class="cycle-slideshow" data-cycle-slides="> div" data-cycle-timeout="2000">
+          <div class="one whole callout">
+            <h1>Content Slide</h1>
+            <p>This slide has HTML content instead of an image and has also had <code class="inline">.callout</code> applied to it.</p>
+            <p><a href="#" class="success button">Click Me</a></p>
+          </div>
+          <div class="one whole warning callout">
+            <h1>Another Content Slide</h1>
+            <p>This slide has HTML content instead of an image and has also had <code class="inline">.warning.callout</code> applied to it.</p>
+            <p><a href="#" class="large button">Click Me</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- @import "_scripts.kit"

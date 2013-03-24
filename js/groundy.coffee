@@ -62,7 +62,7 @@ $(document).ready ->
      .demo > .row > .eleventh,
      .demo > .row > .elevenths, 
      .demo > .row > .twelfth,
-     .demo > .row > .twelfths').hover (->
+     .demo > .row > .twelfths').not('.equal').hover (->
     $(this).text $(this).attr("data-title")
   ), ->
     $(this).text $(this).attr("data-text")

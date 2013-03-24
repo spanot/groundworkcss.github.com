@@ -49,6 +49,7 @@ hr {
     padding-bottom:$gutter;
     background:$blue-1;
     border:1px dashed $white;
+    margin-top:-1px;
     @include drop-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
     color:$white;
     h1,h2,h3,h4,h5,h6 {
@@ -118,6 +119,25 @@ hr {
     .eleventh, .elevenths, 
     .twelfth, .twelfths {
       background:$lt-blue;
+    }
+  }
+  &.equal-columns {
+    .row {
+      background:lighten($navy, 35%);
+    }
+    .whole, 
+    .half, .halves, 
+    .third, .thirds, 
+    .fourth, .fourths, 
+    .fifth, .fifths, 
+    .sixth, .sixths, 
+    .seventh, .sevenths, 
+    .eighth, .eighths, 
+    .ninth, .ninths, 
+    .tenth, .tenths, 
+    .eleventh, .elevenths, 
+    .twelfth, .twelfths {
+      background:$navy;
     }
   }
 }

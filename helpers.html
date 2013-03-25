@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; UI Elements</title>
+  <title>GroundworkCSS &hearts; Responsive Grid System</title>
   <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
@@ -120,7 +120,7 @@
         <ul class="breadcrumbs">
           <li><a href="./home.html">Home</a></li>
           <li><a href="./components.html">Components</a></li>
-          <li><a href="./ui-elements.html">UI Elements</a></li>
+          <li><a href="./grid.html">Grid System</a></li>
         </ul>
       </div>
     </div>
@@ -128,61 +128,146 @@
   <div class="container">
     <div class="row">
       <div class="one third padded">
-        <h1><i class="icon-comment"></i> UI Elements</h1>
-        <p>Common UI elements that provide user feedback or call users to take action.</p>
-        <h4>Example usage:</h4>
+        <h1><i class="icon-tasks"></i> Layout Helpers</h1>
+        <p>Layout helpers work with the grid system and other elements allowing you to have a standized method for padding, positioning, aligning elements and more.</p>
+        <br/>
+        <h6>Example usage:</h6>
         <pre>
-<code>&lt;<tag>p</tag> class="<span>important message</span>"&gt;<content>Important message</content>&lt;/<tag>p</tag>&gt;</code>
-<code>&lt;<tag>p</tag> class="<span>success message</span>"&gt;<content>Example success message</content>&lt;/<tag>p</tag>&gt;</code>
-        </pre>
-        <hr/>
-        <h4>Result:</h4>
-        <p class="important message">Important message</p>
-        <p class="success message">Example success message</p>
-        <hr/>
-        <h4>Example usage:</h4>
-        <pre>
-<code>&lt;<tag>div</tag> class="<span>callout</span>"&gt;</code>
-<code>  &lt;<tag>h3</tag>&gt;<content>Callout Box</content>&lt;/<tag>h3</tag>&gt;</code>
-<code>  &lt;<tag>p</tag>&gt;<content>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</content>&lt;/<tag>p</tag>&gt;</code>
+<code>&lt;<tag>div</tag> class="<span>row</span>"&gt;</code>
+<code>  &lt;<tag>div</tag> class="<span>one half padded align-right</span>"&gt;<content>this column is padded and aligned right</content>&lt;/<tag>div</tag>&gt;</code>
+<code>  &lt;<tag>div</tag> class="<span>one half double padded</span>"&gt;&lt;<tag>span</tag> class=&quot;<span>callout pull-right</span>&quot;&gt;<content>2nd</content>&lt;/<tag>span</tag>&gt;<content> this column is double padded and has a callout element floating to the right</content>&lt;/<tag>div</tag>&gt;</code>
 <code>&lt;/<tag>div</tag>&gt;</code>
         </pre>
         <hr/>
-        <h4>Result:</h4>
-        <div class="callout">
-          <h3>Callout Box</h3>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </div>
-      </div>
-      <div class="two thirds padded">
-        <h2>Messages</h2>
-        <p>Communicate instructions, success, warnings or errors with GroundworkCSS messages.</p>
-        <p class="message">This is an important message.</p>
-        <p class="success message">This is a success message.</p>
-        <p class="warning message">This is a warning message.</p>
-        <p class="error message">This is an error message.</p>
-
+        <h6>Result:</h6>
+        <div class="helpers">
+<div class="row">
+  <div class="one half padded align-right">this column is padded and aligned right</div>
+  <div class="one half double padded"><span class="callout pull-right">2nd</span> this column is double padded and has a callout element floating to the right</div>
+</div>
         <hr/>
-
-        <h2>Callout Boxes</h2>
-        <p>Seperate special content with callout boxes.</p>
-        <div class="callout">
-          <h4>This is a normal callout box</h4>
-          <p>Use these to contain or call attention to special content.</p>
-        </div>
-        <div class="success callout">
-          <h4>This is a success callout box</h4>
-          <p>Use these to communicate multi-element success messages as a block.</p>
-        </div>
-        <div class="warning callout">
-          <h4>This is a warning callout box</h4>
-          <p>Use these to communicate multi-element warning messages as a block.</p>
-        </div>
-        <div class="error callout">
-          <h4>This is a error callout box</h4>
-          <p>Use these to communicate multi-element error messages as a block.</p>
+        <h6>Example usage:</h6>
+        <pre>
+<code>&lt;<tag>div</tag> class=&quot;<span>callout</span>&quot;&gt;</code>
+<code>  &lt;<tag>p</tag>&gt;<content>This is a normal callout with padding</content>&lt;/<tag>p</tag>&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
+<code>&lt;<tag>div</tag> class=&quot;<span>callout zero align-center</span>&quot;&gt;</code>
+<code>  &lt;<tag>p</tag>&gt;<content>This is a callout with the zero and align-center helpers</content>&lt;/<tag>p</tag>&gt;</code>
+<code>&lt;/<tag>div</tag>&gt;</code>
+        </pre>
+        <hr/>
+        <h6>Result:</h6>
+<div class="callout">
+  <p>This is a normal callout</p>
+</div>
+<div class="callout zero align-center">
+  <p>This is a callout with zero and align-center</p>
+</div>
         </div>
       </div>
+      <div class="two thirds">
+        <div class="row">
+          <div class="one half padded">
+            <dl>
+              <dt>.clear, .clearfix</dt>
+              <dd><code>clear: both;
+  &:after { content: ''; display: block; clear: both; }</code></dd>
+              <dt>.padded</dt>
+              <dd><code>padding: $gutter;</code></dd>
+              <dt>.padded.double</dt>
+              <dd><code>padding: $gutter * 2;</code></dd>
+              <dt>.padded.triple</dt>
+              <dd><code>padding: $gutter * 3;</code></dd>
+              <dt>.pad-top</dt>
+              <dd><code>padding-top: $gutter;</code></dd>
+              <dt>.pad-right</dt>
+              <dd><code>padding-right: $gutter;</code></dd>
+              <dt>.pad-bottom</dt>
+              <dd><code>padding-bottom: $gutter;</code></dd>
+              <dt>.pad-left</dt>
+              <dd><code>padding-left: $gutter;</code></dd>
+              <dt>.gapped</dt>
+              <dd><code>margin: $gutter;</code></dd>
+              <dt>.gapped.double</dt>
+              <dd><code>margin: $gutter * 2;</code></dd>
+              <dt>.gapped.triple</dt>
+              <dd><code>margin: $gutter * 3;</code></dd>
+              <dt>.gap-top</dt>
+              <dd><code>margin-top: $gutter;</code></dd>
+              <dt>.gap-right</dt>
+              <dd><code>margin-right: $gutter;</code></dd>
+              <dt>.gap-bottom</dt>
+              <dd><code>margin-bottom: $gutter;</code></dd>
+              <dt>.gap-left</dt>
+              <dd><code>margin-left: $gutter;</code></dd>
+              <dt>.stick</dt>
+              <dd><code>position: fixed; z-index: 1;</code></dd>
+              <dt>.stick.middle</dt>
+              <dd><code>top: 50%;</code></dd>
+              <dt>.stick.center</dt>
+              <dd><code>left: 50%;</code></dd>
+              <dt>.stick.top</dt>
+              <dd><code>top: 0;</code></dd>
+              <dt>.stick.right</dt>
+              <dd><code>right: 0;</code></dd>
+              <dt>.stick.bottom</dt>
+              <dd><code>bottom:0;</code></dd>
+              <dt>.stick.left</dt>
+              <dd><code>left: 0;</code></dd>
+            </dl>
+          </div>
+          <div class="one half padded">
+            <dl>
+              <dt>.inline</dt>
+              <dd><code>display: inline; width: auto;</code></dd>
+              <dt>.block</dt>
+              <dd><code>display:block;</code></dd>
+              <dt>.zero</dt>
+              <dd><code>margin: 0; padding: 0;</code></dd>
+              <dt>.pull-right</dt>
+              <dd><code>float: right;</code></dd>
+              <dt>.pull-left</dt>
+              <dd><code>float: left;</code></dd>
+              <dt>.bordered</dt>
+              <dd><code>border: 1px solid $border-color;</code></dd>
+              <dt>.border-top</dt>
+              <dd><code>border-top: 1px solid $border-color;</code></dd>
+              <dt>.border-right</dt>
+              <dd><code>border-right: 1px solid $border-color;</code></dd>
+              <dt>.border-bottom</dt>
+              <dd><code>border-bottom: 1px solid $border-color;</code></dd>
+              <dt>.border-left</dt>
+              <dd><code>border-left: 1px solid $border-color;</code></dd>
+              <dt>.align-right</dt>
+              <dd><code>text-align: right;</code></dd>
+              <dt>.align-left</dt>
+              <dd><code>text-align: left;</code></dd>
+              <dt>.align-center</dt>
+              <dd><code>text-align: center;</code></dd>
+              <dt>.justify</dt>
+              <dd><code>text-align: justify;</code></dd>
+              <dt>.center</dt>
+              <dd><code>display: block; margin: 0 auto;</code></dd>
+              <dt>.space</dt>
+              <dd><code>height: $gutter;</code></dd>
+              <dt>.round</dt>
+              <dd><code>@include rounded(9999px);</code></dd>
+              <dt>.rotate-90</dt>
+              <dd><code>@include rotate(90deg);</code></dd>
+              <dt>.rotate-180</dt>
+              <dd><code>@include rotate(180deg);</code></dd>
+              <dt>.rotate-270</dt>
+              <dd><code>@include rotate(270deg);</code></dd>
+              <dt>.rotate-90-ctr</dt>
+              <dd><code>@include rotate(-90deg);</code></dd>
+              <dt>.rotate-180-ctr</dt>
+              <dd><code>@include rotate(-180deg);</code></dd>
+              <dt>.rotate-270-ctr</dt>
+              <dd><code>@include rotate(-270deg);</code></dd>
+            </dl>
+          </div>
+      </div>
+      <!-- end demo grid -->
     </div>
   </div>
   <!-- scripts -->

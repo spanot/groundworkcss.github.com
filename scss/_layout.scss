@@ -27,6 +27,30 @@ hr {
   @include rounded($radius);
 }
 
+.helpers {
+  .row {
+    background:lighten($yellow, 10%);
+  }
+  .whole, 
+  .half, .halves, 
+  .third, .thirds, 
+  .fourth, .fourths, 
+  .fifth, .fifths, 
+  .sixth, .sixths, 
+  .seventh, .sevenths, 
+  .eighth, .eighths, 
+  .ninth, .ninths, 
+  .tenth, .tenths, 
+  .eleventh, .elevenths, 
+  .twelfth, .twelfths {
+    background:$yellow;
+    border:1px dashed $white;
+    margin-top:-1px;
+    @include drop-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
+    color:$white;
+  }
+}
+
 .demo, .layout {
   .row {
     background:lighten($blue-1, 20%);

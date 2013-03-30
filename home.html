@@ -122,13 +122,25 @@
         <div class="one third padded align-center">
           <h1 class="responsive zero" data-compression="3.825" data-min="20" data-max="170" style="font-size:99px;">Say Hello</h1>
           <h3 class="responsive" data-compression="13.6" data-min="15" data-max="50"  style="font-size:27px;">To responsive design made easy.</h3>
-          <a class="large blue block button" href="https://github.com/groundworkcss/groundwork" target="_blank">Fork on Github <i class="icon-github-alt"></i></a>
+          <a id="github-button" class="large blue block button" href="https://github.com/groundworkcss/groundwork" target="_blank">Fork on Github <i class="icon-github-alt"></i></a>
+          <!-- <script type="text/javascript">
+            $.getJSON("https://api.github.com/repos/groundworkcss/groundwork", function(data) {
+              var forks_count = data.forks_count;
+              $('#github-button').append(' ('+forks_count+')');
+            });
+          </script> -->
           <div class="row">
             <div class="three small-tablet sevenths gap-top pad-right no-padding-mobile">
               <a class="block button" href="https://github.com/groundworkcss/groundwork/archive/master.zip" title="Download from Github">Download <i class="icon-download-alt"></i></a>
             </div>
             <div class="four small-tablet sevenths gap-top">
-              <a class="block button" href="http://twitter.com/groundworkCSS/" target="_blank">Follow <i class="icon-twitter"></i></a>
+              <a id="twitter-button" class="block button" href="http://twitter.com/groundworkCSS/" target="_blank">Follow <i class="icon-twitter"></i></a>
+              <!-- <script type="text/javascript">
+                $.getJSON("https://api.twitter.com/1/users/show.json?callback=?&screen_name=groundworkcss", function(data) {
+                    var followers_count = data.followers_count;
+                    $('#twitter-button').append(' ('+followers_count+')');
+                  });
+              </script> -->
             </div>
           </div>
           <div class="row">

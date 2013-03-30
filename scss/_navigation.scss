@@ -169,16 +169,9 @@ nav {
       }
     }
     ul {
-      @include filter-shadow(rgba(0,0,0,0.75), 10px, 0, 5px);
       li {
         a {
           @extend .red;
-        }
-        &:first-child a {
-          border-radius:0;
-        }
-        &:last-child a {
-          border-radius:0 0 0.4em 0.4em;
         }
       }
     }

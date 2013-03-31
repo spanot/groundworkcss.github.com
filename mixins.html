@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Layout Example 2</title>
+  <title>GroundworkCSS &hearts; Sass Mixins</title>
   <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
@@ -120,101 +120,135 @@
       <div class="one whole padded">
         <ul class="breadcrumbs">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./layout-2.html">Layout 2</a></li>
+          <li><a href="./components.html">Components</a></li>
+          <li><a href="./grid.html">Grid System</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="one third padded">
-          <h1 class="responsive zero" data-compression="5.65" data-min="20" data-max="200"><a href="#">Layout 2</a></h1>
-        </div>
-        <div class="two thirds padded">
-          <nav class="inline pull-right gap-top">
-            <ul>
-              <li><a href="./layout-1.html">Layout 1</a></li>
-              <li><a href="./layout-2.html">Layout 2</a></li>
-              <li><a href="./layout-3.html">Layout 3</a></li>
-              <li><a href="./layout-4.html">Layout 4</a></li>
-              <li><a href="./layout-5.html">Layout 5</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
   <div class="container">
-
-    <div class="padded">
-      <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true">
-        <img src="http://placehold.it/1200x400/24cada/ffffff&amp;text=Slide+1" alt=""/>
-        <img src="http://placehold.it/1200x400/bada55/ffffff&amp;text=Slide+2" alt=""/>
-        <img src="http://placehold.it/1200x400/c82647/ffffff&amp;text=Slide+3" alt=""/>
-        <img src="http://placehold.it/1200x400/198d98/ffffff&amp;text=Slide+4" alt=""/>
+    <div class="row">
+      <div class="one third padded">
+        <h1><i class="icon-beaker"></i> Sass Mixins</h1>
+        <p>Mixins can contain full CSS rules that can be shared throughout your Sass code. They can even take arguments which allows you to produce a wide variety of styles with very few mixins. GroundworkCSS contains mixins that help out with media queries, drop shadows, css3 transitions, inline images (dataURIs), gradients, font stacks and more.</p>
+        <h6>Example Mixin:</h6>
+<pre>
+<code><tag>@mixin</tag> <span>ipad</span> <content>{</content></code>
+<code>  <tag>@media</tag> only screen <tag>and</tag> <content>(</content>min-width<content>:</content><val>768</val><tag>px</tag><content>)</content> <tag>and</tag> <content>(</content>max-width<content>:</content><val>1024</val><tag>px</tag><content>) {</content></code>
+<code>    <tag>@content</tag><content>;</content></code>
+<code>  <content>}</content></code>
+<code><content>}</content></code>
+</pre>
+        <hr/>
+        <h6>Example Usage:</h6>
+<pre>
+<code><tag>@include</tag> small-tablet <content>{</content></code>
+<code>  <span>.desktop-only</span> <content>{</content> display:none<content>; }</content></code>
+<code><content>}</content></code>
+</pre>
+        <hr/>
+        <h6>Result:</h6>
+<pre>
+<code><tag>@media</tag> only screen <tag>and</tag> <content>(</content>max-width<content>:</content><val>767</val><tag>px</tag><content>) {</content></code>
+<code>  <span>.desktop-only</span> <content>{</content> display:none<content>; }</content></code>
+<code><content>}</content></code>
+</pre>
+      </div>
+      <div class="two thirds">
+        <div class="row">
+          <div class="one whole padded">
+            <h5>Media Query - Mobile</h5>
+<pre>
+<code>@mixin mobile {</code>
+<code>  @media only screen and (max-width:480px) {</code>
+<code>    @content;</code>
+<code>  }</code>
+<code>}</code>
+</pre>
+<!-- <script src="https://gist.github.com/ghepting/5278285.js"></script> -->
+            <hr/>
+            <h5>Inline Image (DataURI)</h5>
+<pre>
+<code>@mixin data-image($file) {</code>
+<code>  background-image:url<content>(</content>'../images/#{$file}'<content>);</content>       <comment>// fallback</comment></code>
+<code>  background-image:inline-image<content>(</content>$file<content>);</content>             <comment>// data URI</comment></code>
+<code>  *background-image:url<content>(</content>'../images/#{$file}'<content>);</content>      <comment>// IE7- hack</comment></code>
+<code>}</code>
+</pre>
+            <hr/>
+            <h5>Drop Shadow</h5>
+<pre>
+<code>@mixin drop-shadow($color:rgba(0,0,0,0.2), $blur:0, $x:0, $y:0) { // color, blur, x, y</code>
+<code>  -ms-box-shadow:$x $y $blur $color; // IE10+</code>
+<code>  @if ($x == 0 and $y == 0) { // non directional glow</code>
+<code>    filter: Glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});</code>
+<code>    -ms-filter: glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});</code>
+<code>  } @else {</code>
+<code>    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}')"; // IE8</code>
+<code>    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}'); // IE7-</code>
+<code>  }</code>
+<code>  -o-box-shadow:$x $y $blur $color; // Opera</code>
+<code>  -moz-box-shadow:$x $y $blur $color; // Firefox</code>
+<code>  -webkit-box-shadow:$x $y $blur $color; // Webkit (Safari, Chrome, other)</code>
+<code>  box-shadow:$x $y $blur $color;</code>
+<code>}</code>
+</pre>
+            <hr/>
+            <h5>Border Radius</h5>
+<pre>
+<code>@mixin rounded($radius:4px) {</code>
+<code>  -ms-border-radius:$radius; // IE10+</code>
+<code>  -o-border-radius:$radius; // Opera</code>
+<code>  -moz-border-radius:$radius; // Firefox</code>
+<code>  -webkit-border-radius:$radius; // Webkit (Safari, Chrome, other)</code>
+<code>  border-radius:$radius;</code>
+<code>}</code>
+</pre>
+            <hr/>
+            <h5>CSS3 - Transition</h5>
+<pre>
+<code>@mixin transition($transition:all 0.2s) {</code>
+<code>  -ms-transition:$transition; // IE10+</code>
+<code>  -o-transition:$transition; // Opera</code>
+<code>  -moz-transition:$transition; // Firefox</code>
+<code>  -webkit-transition:$transition; // Webkit (Safari, Chrome, other)</code>
+<code>  transition:$transition;</code>
+<code>}</code>
+</pre>
+            <hr/>
+            <h5>Font Stack</h5>
+<pre>
+<code>@mixin font-stack($primaryFont:"", $secondaryFont:"", $fallbackFonts:"Arial, Helvetica, Geneva, sans-serif") {</code>
+<code>  /* might add inline-font-files() at some point */</code>
+<code>  @if $secondaryFont != "" {</code>
+<code>    font-family:#{$primaryFont}, #{$secondaryFont}, #{$fallbackFonts};</code>
+<code>  } @else {</code>
+<code>    @if $primaryFont != "" {</code>
+<code>      font-family:#{$primaryFont}, #{$fallbackFonts};</code>
+<code>    } @else {</code>
+<code>      font-family:#{$fallbackFonts};</code>
+<code>    }</code>
+<code>  }</code>
+<code>}</code>
+</pre>
+            <hr/>
+            <h5>Vertical Gradient</h5>
+<pre>
+<code>@mixin gradient($startColor:$white, $endColor:$gray-2) {</code>
+<code>  background:$startColor; // fallback</code>
+<code>  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}',GradientType=0 ); // IE 6-8</code>
+<code>  background:-ms-linear-gradient(top, $startColor 0%, $endColor 100%); // IE 10+</code>
+<code>  background:-o-linear-gradient(top, $startColor 0%, $endColor 100%); // Opera</code>
+<code>  background:-moz-linear-gradient(top, $startColor 0%, $endColor 100%); // Firefox</code>
+<code>  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(100%, $endColor));  // Webkit (Safari, Chrome, other)</code>
+<code>  background:-webkit-linear-gradient(top, $startColor 0%, $endColor 100%);  // Webkit (Safari, Chrome, other)</code>
+<code>  background:linear-gradient(to bottom, $startColor 0%, $endColor 100%);</code>
+<code>}</code>
+</pre>
+          </div>
+        </div>
       </div>
     </div>
-
-    <article class="row">
-      <aside class="one fourth padded border-right">
-        <h1>Section Heading 1</h1>
-        <ul class="list">
-          <li>Unordered list item #1</li>
-          <li>Unordered list item #2</li>
-          <li>Unordered list item #3</li>
-          <li>Unordered list item #4</li>
-        </ul>
-        <ol class="list">
-          <li>Ordered list item #1</li>
-          <li>Ordered list item #2</li>
-          <li>Ordered list item #3</li>
-        </ol>
-        <hr/>
-        <h3>Section Heading 3</h3>
-        <div class="row">
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-          <div class="one mobile half padded">
-            <img src="http://placehold.it/120x85/198d98/ffffff" alt=""/>
-          </div>
-        </div>
-      </aside>
-      <section class="three fourths padded">
-        <img src="http://placehold.it/300x200/198d98/ffffff/" class="pull-left gap-right gap-bottom" alt="" />
-        <h1>Section Heading 1</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.</p>
-        <hr/>
-        <img src="http://placehold.it/300x200/198d98/ffffff/" class="pull-right gap-left gap-bottom" alt="" />
-        <h3>Section Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.</p>
-        <hr/>
-        <img src="http://placehold.it/300x200/198d98/ffffff/" class="pull-left gap-right gap-bottom" alt="" />
-        <h3>Section Heading 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.</p>
-      </section>
-    </article>
-
-    <footer class="footer align-right">
-        <p>&copy; 2013 Gary Hepting. Free to use, but <a href="mailto:groundwork@sidereel.com">give me a shout</a> if you find GroundworkCSS extremely useful!</p>
-    </footer>
   </div>
   <!-- scripts -->
   <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>

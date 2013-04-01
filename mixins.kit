@@ -12,119 +12,47 @@
         <h1><i class="icon-beaker"></i> Sass Mixins</h1>
         <p>Mixins can contain full CSS rules that can be shared throughout your Sass code. They can even take arguments which allows you to produce a wide variety of styles with very few mixins. <!-- $siteName --> contains mixins that help out with media queries, drop shadows, css3 transitions, inline images (dataURIs), gradients, font stacks and more.</p>
         <h6>Example Mixin:</h6>
-<pre>
-<code><tag>@mixin</tag> <span>ipad</span> <content>{</content></code>
-<code>  <tag>@media</tag> only screen <tag>and</tag> <content>(</content>min-width<content>:</content><val>768</val><tag>px</tag><content>)</content> <tag>and</tag> <content>(</content>max-width<content>:</content><val>1024</val><tag>px</tag><content>) {</content></code>
-<code>    <tag>@content</tag><content>;</content></code>
-<code>  <content>}</content></code>
-<code><content>}</content></code>
-</pre>
+        <script src="https://gist.github.com/ghepting/5282525.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
         <hr/>
         <h6>Example Usage:</h6>
-<pre>
-<code><tag>@include</tag> small-tablet <content>{</content></code>
-<code>  <span>.desktop-only</span> <content>{</content> display:none<content>; }</content></code>
-<code><content>}</content></code>
-</pre>
+        <script src="https://gist.github.com/ghepting/5282572.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
         <hr/>
         <h6>Result:</h6>
-<pre>
-<code><tag>@media</tag> only screen <tag>and</tag> <content>(</content>max-width<content>:</content><val>767</val><tag>px</tag><content>) {</content></code>
-<code>  <span>.desktop-only</span> <content>{</content> display:none<content>; }</content></code>
-<code><content>}</content></code>
-</pre>
+        <script src="https://gist.github.com/ghepting/5282657.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
       </div>
       <div class="two thirds">
         <div class="row">
           <div class="one whole padded">
             <h5>Media Query - Mobile</h5>
-<pre>
-<code>@mixin mobile {</code>
-<code>  @media only screen and (max-width:480px) {</code>
-<code>    @content;</code>
-<code>  }</code>
-<code>}</code>
-</pre>
-<!-- <script src="https://gist.github.com/ghepting/5278285.js"></script> -->
+            <script src="https://gist.github.com/ghepting/5278285.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>Inline Image (DataURI)</h5>
-<pre>
-<code>@mixin data-image($file) {</code>
-<code>  background-image:url<content>(</content>'../images/#{$file}'<content>);</content>       <comment>// fallback</comment></code>
-<code>  background-image:inline-image<content>(</content>$file<content>);</content>             <comment>// data URI</comment></code>
-<code>  *background-image:url<content>(</content>'../images/#{$file}'<content>);</content>      <comment>// IE7- hack</comment></code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282490.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>Drop Shadow</h5>
-<pre>
-<code>@mixin drop-shadow($color:rgba(0,0,0,0.2), $blur:0, $x:0, $y:0) { // color, blur, x, y</code>
-<code>  -ms-box-shadow:$x $y $blur $color; // IE10+</code>
-<code>  @if ($x == 0 and $y == 0) { // non directional glow</code>
-<code>    filter: Glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});</code>
-<code>    -ms-filter: glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});</code>
-<code>  } @else {</code>
-<code>    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}')"; // IE8</code>
-<code>    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}'); // IE7-</code>
-<code>  }</code>
-<code>  -o-box-shadow:$x $y $blur $color; // Opera</code>
-<code>  -moz-box-shadow:$x $y $blur $color; // Firefox</code>
-<code>  -webkit-box-shadow:$x $y $blur $color; // Webkit (Safari, Chrome, other)</code>
-<code>  box-shadow:$x $y $blur $color;</code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282499.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>Border Radius</h5>
-<pre>
-<code>@mixin rounded($radius:4px) {</code>
-<code>  -ms-border-radius:$radius; // IE10+</code>
-<code>  -o-border-radius:$radius; // Opera</code>
-<code>  -moz-border-radius:$radius; // Firefox</code>
-<code>  -webkit-border-radius:$radius; // Webkit (Safari, Chrome, other)</code>
-<code>  border-radius:$radius;</code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282506.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>CSS3 - Transition</h5>
-<pre>
-<code>@mixin transition($transition:all 0.2s) {</code>
-<code>  -ms-transition:$transition; // IE10+</code>
-<code>  -o-transition:$transition; // Opera</code>
-<code>  -moz-transition:$transition; // Firefox</code>
-<code>  -webkit-transition:$transition; // Webkit (Safari, Chrome, other)</code>
-<code>  transition:$transition;</code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282508.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>Font Stack</h5>
-<pre>
-<code>@mixin font-stack($primaryFont:"", $secondaryFont:"", $fallbackFonts:"Arial, Helvetica, Geneva, sans-serif") {</code>
-<code>  /* might add inline-font-files() at some point */</code>
-<code>  @if $secondaryFont != "" {</code>
-<code>    font-family:#{$primaryFont}, #{$secondaryFont}, #{$fallbackFonts};</code>
-<code>  } @else {</code>
-<code>    @if $primaryFont != "" {</code>
-<code>      font-family:#{$primaryFont}, #{$fallbackFonts};</code>
-<code>    } @else {</code>
-<code>      font-family:#{$fallbackFonts};</code>
-<code>    }</code>
-<code>  }</code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282515.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
             <hr/>
             <h5>Vertical Gradient</h5>
-<pre>
-<code>@mixin gradient($startColor:$white, $endColor:$gray-2) {</code>
-<code>  background:$startColor; // fallback</code>
-<code>  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}',GradientType=0 ); // IE 6-8</code>
-<code>  background:-ms-linear-gradient(top, $startColor 0%, $endColor 100%); // IE 10+</code>
-<code>  background:-o-linear-gradient(top, $startColor 0%, $endColor 100%); // Opera</code>
-<code>  background:-moz-linear-gradient(top, $startColor 0%, $endColor 100%); // Firefox</code>
-<code>  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(100%, $endColor));  // Webkit (Safari, Chrome, other)</code>
-<code>  background:-webkit-linear-gradient(top, $startColor 0%, $endColor 100%);  // Webkit (Safari, Chrome, other)</code>
-<code>  background:linear-gradient(to bottom, $startColor 0%, $endColor 100%);</code>
-<code>}</code>
-</pre>
+            <script src="https://gist.github.com/ghepting/5282519.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
           </div>
         </div>
       </div>

@@ -135,3 +135,38 @@ pre {
     color:$navy;
   }
 }
+
+.gist {
+  .gist-file .gist-data pre.line-pre {
+    font-family:monospace;
+    font-size:inherit;
+    font-weight:normal;
+  }
+  .gist-syntax {
+    .k {
+      color:$lt-red;
+      font-weight:normal;
+    }
+    .o, .p, .nv, .err {
+      color:$white;
+      background:none;
+    }
+    .nf, .nt, .na {
+      color:$lt-blue;
+      font-weight:normal;
+    }
+    .nd, .nc, .s {
+      color:$green;
+      font-weight:normal;
+    }
+    .no {
+      color:$orange;
+    }
+    .s1, .s2, .si {
+      color:$yellow;
+    }
+  }
+  .line-data {
+    background:$navy;
+  }
+}

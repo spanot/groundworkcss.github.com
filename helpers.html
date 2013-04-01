@@ -135,30 +135,95 @@
         <h6>Example usage:</h6>
         <script src="https://gist.github.com/ghepting/5282674.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <hr/>
         <h6>Result:</h6>
         <div class="helpers">
-<div class="row">
-  <div class="one half padded align-right">this column is padded and aligned right</div>
-  <div class="one half double padded"><span class="callout pull-right">2nd</span> this column is double padded and has a callout element floating to the right</div>
-</div>
+          <div class="row">
+            <div class="one half padded align-right">this column is padded and aligned right</div>
+            <div class="one half double padded">
+              <span class="round callout pull-right gap-left rotate-90-ctr">2nd</span>
+              This column is double padded and has a round, rotated callout element pulling right with a gap on the left
+            </div>
+          </div>
+        </div>
         <hr/>
+        
         <h6>Example usage:</h6>
         <script src="https://gist.github.com/ghepting/5282677.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <hr/>
         <h6>Result:</h6>
-<div class="callout">
-  <p>This is a normal callout</p>
-</div>
-<div class="callout zero align-center">
-  <p>This is a callout with zero and align-center</p>
-</div>
+        <div class="callout">
+          <p>This is a normal callout</p>
         </div>
+        <div class="callout zero align-center">
+          <p>This is a callout with zero and align-center</p>
+        </div>
+        <hr/>
+        
+        <h6>Example usage:</h6>
+        <script src="https://gist.github.com/ghepting/5286072.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <h6>Result:</h6>
+        <button class="spin large round">Spin</button>
+        <button class="spin-slow large round">Slow</button>
+        <button class="spin-fast large round">Fast</button>
       </div>
       <div class="two thirds">
+        <h6>Conditional Content</h6>
+        <hr/>
         <div class="row">
           <div class="one half padded">
+            <dl>
+              <dt>.desktop-only</dt>
+              <dd>hides elements on ipad, small-tablet and mobile devices</dd>
+              <dt>.hide-on-desktop</dt>
+              <dd>hides elements on devices with viewport widths larger than 1024 pixels</dd>
+              <dt>.ipad-only</dt>
+              <dd>only shows elements on devices with viewport widths between 768 and 1024 pixels</dd>
+              <dt>.hide-on-ipad</dt>
+              <dd>hides elements on devices with viewport widths between 768 and 1024 pixels</dd>
+            </dl>
+          </div>
+          <div class="one half padded">
+            <dl>
+              <dt>.small-tablet-only</dt>
+              <dd>only shows elements on devices with viewport widths smaller than 768 pixels</dd>
+              <dt>.hide-on-small-tablet</dt>
+              <dd>hides elements on devices with viewport widths smaller than 768 pixels</dd>
+              <dt>.mobile-only</dt>
+              <dd>only shows elements on devices with viewport widths of 480 pixels and below</dd>
+              <dt>.hide-on-mobile</dt>
+              <dd>hides elements on devices with viewport widths of 480 pixels and below</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one half padded">
+            <h6>Display/Reset</h6>
+            <hr/>
+            <dl>
+              <dt>.inline</dt>
+              <dd><code>display: inline-block; width: auto;</code></dd>
+              <dt>.block</dt>
+              <dd><code>display:block;</code></dd>
+              <dt>.zero</dt>
+              <dd><code>margin: 0; padding: 0;</code></dd>
+            </dl>
+            <br/>
+            <br/>
+
+            <h6>Positioning</h6>
+            <hr/>
+            <dl>
+              <dt>.pull-right</dt>
+              <dd><code>float: right;</code></dd>
+              <dt>.pull-left</dt>
+              <dd><code>float: left;</code></dd>
+            </dl>
+            <br/>
+            <br/>
+
+            <h6>Layout/Spacing</h6>
+            <hr/>
             <dl>
               <dt>.clear, .clearfix</dt>
               <dd><code>clear: both;
@@ -191,6 +256,75 @@
               <dd><code>margin-bottom: $gutter;</code></dd>
               <dt>.gap-left</dt>
               <dd><code>margin-left: $gutter;</code></dd>
+              <dt>.space</dt>
+              <dd><code>height: $gutter;</code></dd>
+            </dl>
+            <br/>
+            <br/>
+
+            <h6>UI Element States</h6>
+            <hr/>
+            <dl>
+              <dt>.disabled</dt>
+              <dd><code>@include state(disabled);</code></dd>
+            </dl>
+            <dl>
+              <dt>.success</dt>
+              <dd><code>@include state(success);</code></dd>
+            </dl>
+            <dl>
+              <dt>.warning</dt>
+              <dd><code>@include state(warning);</code></dd>
+            </dl>
+            <dl>
+              <dt>.error</dt>
+              <dd><code>@include state(error);</code></dd>
+            </dl>
+            <br/>
+            <br/>
+
+            <h6>Appearance</h6>
+            <hr/>
+            <dl>
+              <dt>.round</dt>
+              <dd><code>@include rounded(9999px);</code></dd>
+              <dt>.bordered</dt>
+              <dd><code>border: 1px solid $border-color;</code></dd>
+              <dt>.border-top</dt>
+              <dd><code>border-top: 1px solid $border-color;</code></dd>
+              <dt>.border-right</dt>
+              <dd><code>border-right: 1px solid $border-color;</code></dd>
+              <dt>.border-bottom</dt>
+              <dd><code>border-bottom: 1px solid $border-color;</code></dd>
+              <dt>.border-left</dt>
+              <dd><code>border-left: 1px solid $border-color;</code></dd>
+            </dl>
+            <br/>
+            <br/>
+            
+          </div>
+          <div class="one half padded">
+            <h6>Alignment</h6>
+            <hr/>
+            <dl>
+              <dt>.align-right</dt>
+              <dd><code>text-align: right;</code></dd>
+              <dt>.align-left</dt>
+              <dd><code>text-align: left;</code></dd>
+              <dt>.align-center</dt>
+              <dd><code>text-align: center;</code></dd>
+              <dt>.justify</dt>
+              <dd><code>text-align: justify;</code></dd>
+              <dt>.center</dt>
+              <dd><code>display: block; margin: 0 auto;</code></dd>
+              
+            </dl>
+            <br/>
+            <br/>
+
+            <h6>Fixed Positioning</h6>
+            <hr/>
+            <dl>
               <dt>.stick</dt>
               <dd><code>position: fixed; z-index: 1;</code></dd>
               <dt>.stick.middle</dt>
@@ -206,45 +340,12 @@
               <dt>.stick.left</dt>
               <dd><code>left: 0;</code></dd>
             </dl>
-          </div>
-          <div class="one half padded">
+            <br/>
+            <br/>
+
+            <h6>Morphing</h6>
+            <hr/>
             <dl>
-              <dt>.inline</dt>
-              <dd><code>display: inline; width: auto;</code></dd>
-              <dt>.block</dt>
-              <dd><code>display:block;</code></dd>
-              <dt>.zero</dt>
-              <dd><code>margin: 0; padding: 0;</code></dd>
-              <dt>.pull-right</dt>
-              <dd><code>float: right;</code></dd>
-              <dt>.pull-left</dt>
-              <dd><code>float: left;</code></dd>
-              <dt>.bordered</dt>
-              <dd><code>border: 1px solid $border-color;</code></dd>
-              <dt>.border-top</dt>
-              <dd><code>border-top: 1px solid $border-color;</code></dd>
-              <dt>.border-right</dt>
-              <dd><code>border-right: 1px solid $border-color;</code></dd>
-              <dt>.border-bottom</dt>
-              <dd><code>border-bottom: 1px solid $border-color;</code></dd>
-              <dt>.border-left</dt>
-              <dd><code>border-left: 1px solid $border-color;</code></dd>
-              <dt>.align-right</dt>
-              <dd><code>text-align: right;</code></dd>
-              <dt>.align-left</dt>
-              <dd><code>text-align: left;</code></dd>
-              <dt>.align-center</dt>
-              <dd><code>text-align: center;</code></dd>
-              <dt>.justify</dt>
-              <dd><code>text-align: justify;</code></dd>
-              <dt>.center</dt>
-              <dd><code>display: block; margin: 0 auto;</code></dd>
-              <dt>.space</dt>
-              <dd><code>height: $gutter;</code></dd>
-              <dt>.disabled</dt>
-              <dd><code>@include disabled(true);</code></dd>
-              <dt>.round</dt>
-              <dd><code>@include rounded(9999px);</code></dd>
               <dt>.rotate-90</dt>
               <dd><code>@include rotate(90deg);</code></dd>
               <dt>.rotate-180</dt>
@@ -258,6 +359,41 @@
               <dt>.rotate-270-ctr</dt>
               <dd><code>@include rotate(-270deg);</code></dd>
             </dl>
+            <br/>
+            <br/>
+
+            <h6>Animating</h6>
+            <hr/>
+            <dl>
+              <dt>.spin</dt>
+              <dd><code>@extend %inline; @include spin;</code></dd>
+              <dt>.spin-once</dt>
+              <dd><code>@extend %inline; @include spin(1);</code></dd>
+              <dt>.spin-twice</dt>
+              <dd><code>@extend %inline; @include spin(2);</code></dd>
+              <dt>.spin-thrice</dt>
+              <dd><code>@extend %inline; @include spin(3);</code></dd>
+              <br/>
+              <dt>.spin-fast</dt>
+              <dd><code>@extend %inline; @include spin(infinite,1s); }</code></dd>
+              <dt>.spin-fast-once</dt>
+              <dd><code>@extend %inline; @include spin(1,1s); }</code></dd>
+              <dt>.spin-fast-twice</dt>
+              <dd><code>@extend %inline; @include spin(2,1s); }</code></dd>
+              <dt>.spin-fast-thrice</dt>
+              <dd><code>@extend %inline; @include spin(3,1s); }</code></dd>
+              <br/>
+              <dt>.spin-slow</dt>
+              <dd><code>@extend %inline; @include spin(infinite,5s); }</code></dd>
+              <dt>.spin-slow-once</dt>
+              <dd><code>@extend %inline; @include spin(1,5s); }</code></dd>
+              <dt>.spin-slow-twice</dt>
+              <dd><code>@extend %inline; @include spin(2,5s); }</code></dd>
+              <dt>.spin-slow-thrice</dt>
+              <dd><code>@extend %inline; @include spin(3,5s); }</code></dd>
+            </dl>
+            <br/>
+            <br/>
           </div>
       </div>
       <!-- end demo grid -->

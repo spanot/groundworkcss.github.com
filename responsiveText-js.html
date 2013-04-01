@@ -131,30 +131,68 @@
       <div class="one third padded">
         <h1><i class="icon-text-width"></i> ResponsiveText</h1>
         <p>ResponsiveText allows you to have dynamically sized text that adapts to the width of the viewport. It's incredibly useful for headings or SVG graphics that you want to scale to fit their container on any device.</p>
+
+        <h6>Example Usage:</h6>
+        <script src="https://gist.github.com/ghepting/5286511.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <h6>Result:</h6>
+        <h3 class="responsive" data-compression="7.375"><i class="icon-text-width"></i> ResponsiveText</h3>
       </div>
       <div class="two thirds padded">
-        <h2 class="responsive" data-compression="7.375"><i class="icon-text-width"></i> ResponsiveText</h2>
+        <h2><i class="icon-text-width"></i> ResponsiveText</h2>
         <p>ResponsiveText is a jQuery plugin that let's you set font sizes responsively based on an element's container width. Use responsiveText.js to have scalable headlines, build responsive tables and more!</p>
+        <h4>There are three attributes you can add to the markup to fine-tune sizing for each heading:</h4>
+        <hr/>
+        <div class="callout row">
+          <div class="three sevenths">
+            <dl>
+              <dt>data-compression <em class="small">(default: 10)</em></dt>
+              <dd>The multiplier used to determine the font-size</dd>
+            </dl>
+          </div>
+          <div class="two sevenths">
+            <dl>
+              <dt>data-min</dt>
+              <dd>The minimum font-size</dd>
+            </dl>
+          </div>
+          <div class="two sevenths">
+            <dl>
+              <dt>data-max</dt>
+              <dd>The maximum font-size</dd>
+            </dl>
+          </div>
+        </div>
+        <hr/>
         <h6>Example Usage:</h6>
         <script src="https://gist.github.com/ghepting/5282849.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <hr/>
         <h6>Result:</h6>
         <h1 class="responsive">Default Options</h1>
         <hr/>
+        
+        <h6>Example Usage:</h6>
+        <script src="https://gist.github.com/ghepting/5286644.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <h6>Result:</h6>
+        <h1 class="responsive" data-compression="9.1" data-min="20" data-max="170">A Responsive Heading</h1>
+        <hr/>
+        
         <h6>Example Usage:</h6>
         <script src="https://gist.github.com/ghepting/5282851.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <hr/>
         <h6>Result:</h6>
-        <h1 class="responsive" data-compression="12.2" data-min="20" data-max="170">A Longer Responsive Heading</h1>
+        <h1 class="responsive" data-compression="12.1" data-min="20" data-max="170">A Longer Responsive Heading</h1>
         <hr/>
+        
         <h6>Example Usage:</h6>
         <script src="https://gist.github.com/ghepting/5282855.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <hr/>
         <h6>Result:</h6>
-        <h3 class="responsive" data-compression="9.4" data-min="20" data-max="170">A Responsive Heading <br/>You Want To Wrap</h3>
+        <h3 class="responsive" data-compression="9.1" data-min="20" data-max="170">
+          A Responsive Heading<br/>
+          With Multiple Lines
+        </h3>
       </div>
     </div>
   </div>

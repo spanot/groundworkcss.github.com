@@ -5,6 +5,18 @@
 
 
 
-@media (max-width:480px) {
-  // adjustments for handheld devices
+@include small-tablet {
+  nav:not(.pagination), nav.inline {
+    ul, ul.row {
+      li {
+        ul {
+          li {
+            a, a:visited {
+              border-color:$dk-red;
+            }
+          }
+        }
+      }
+    }
+  }
 }

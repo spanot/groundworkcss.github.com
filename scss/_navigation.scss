@@ -10,169 +10,213 @@ nav {
     li {
       a, a:visited {
         background:$blue-2;
-        border:1px solid $blue;
+        border-color:$blue;
         color:$white;
+        text-align:left;
         text-shadow:0 0 5px rgba(0,0,0,0.25);
         &:hover, &:focus {
           background:$blue;
-          border:1px solid $blue;
+          border-color:$blue;
           color:$white;
         }
         &.active, &.active:hover, &.active:focus {
           background:$navy;
-          border:1px solid lighten($navy, 10%);
+          border-color:lighten($navy, 10%);
         }
         &.white {
           background:$white;
-          border:1px solid $lt-gray;
+          border-color:$lt-gray;
           &:hover, &:focus  {
             background:$lt-gray;
-            border:1px solid $lt-gray;
+            border-color:$lt-gray;
           }
         }
         &.black {
           background:$black;
-          border:1px solid $dk-gray;
+          border-color:$dk-gray;
           &:hover, &:focus  {
             background:$dk-gray;
-            border:1px solid $dk-gray;
+            border-color:$dk-gray;
           }
         }
         &.gray {
           background:$gray;
-          border:1px solid $dk-gray;
+          border-color:$dk-gray;
           &:hover, &:focus  {
             background:$dk-gray;
-            border:1px solid $dk-gray;
+            border-color:$dk-gray;
           }
         }
         &.lt-gray {
           background:$lt-gray;
-          border:1px solid $md-gray;
+          border-color:$md-gray;
           &:hover, &:focus  {
             background:$md-gray;
-            border:1px solid $md-gray;
+            border-color:$md-gray;
           }
         }
         &.md-gray {
           background:$md-gray;
-          border:1px solid $gray;
+          border-color:$gray;
           &:hover, &:focus  {
             background:$gray;
-            border:1px solid $gray;
+            border-color:$gray;
           }
         }
         &.dk-gray {
           background:$dk-gray;
-          border:1px solid $black;
+          border-color:$black;
           &:hover, &:focus  {
             background:$black;
-            border:1px solid $black;
+            border-color:$black;
           }
         }
         &.green {
           background:$green;
-          border:1px solid $dk-green;
+          border-color:$dk-green;
           &:hover, &:focus  {
             background:$dk-green;
-            border:1px solid $dk-green;
+            border-color:$dk-green;
           }
         }
         &.lt-green {
           background:$lt-green;
-          border:1px solid $green;
+          border-color:$green;
           &:hover, &:focus  {
             background:$green;
-            border:1px solid $green;
+            border-color:$green;
           }
         }
         &.dk-green {
           background:$dk-green;
-          border:1px solid $green;
+          border-color:$green;
           &:hover, &:focus  {
             background:$green;
-            border:1px solid $green;
+            border-color:$green;
           }
         }
         &.blue-1 {
           background:$blue-1;
-          border:1px solid $blue-2;
+          border-color:$blue-2;
           &:hover, &:focus  {
             background:$blue-2;
-            border:1px solid $blue-2;
+            border-color:$blue-2;
           }
         }
         &.blue-2 {
           background:$blue-2;
-          border:1px solid $blue;
+          border-color:$blue;
           &:hover, &:focus  {
             background:$blue;
-            border:1px solid $blue;
+            border-color:$blue;
           }
         }
         &.blue-3, &.blue {
           background:$blue;
-          border:1px solid $dk-blue;
+          border-color:$dk-blue;
           &:hover, &:focus  {
             background:$dk-blue;
-            border:1px solid $dk-blue;
+            border-color:$dk-blue;
           }
         }
         &.lt-blue {
           background:$lt-blue;
-          border:1px solid $blue;
+          border-color:$blue;
           &:hover, &:focus  {
             background:$blue;
-            border:1px solid $blue;
+            border-color:$blue;
           }
         }
         &.dk-blue {
           background:$dk-blue;
-          border:1px solid $blue;
+          border-color:$blue;
           &:hover, &:focus  {
             background:$blue;
-            border:1px solid $blue;
+            border-color:$blue;
           }
         }
         &.navy {
           background:$navy;
-          border:1px solid $dk-blue;
+          border-color:$dk-blue;
           &:hover, &:focus  {
             background:$dk-blue;
-            border:1px solid $dk-blue;
+            border-color:$dk-blue;
           }
         }
         &.red {
           background:$red;
-          border:1px solid $dk-red;
+          border-color:$dk-red;
           &:hover, &:focus  {
             background:$dk-red;
-            border:1px solid $dk-red;
+            border-color:$dk-red;
           }
         }
         &.lt-red {
           background:$lt-red;
-          border:1px solid $red;
+          border-color:$red;
           &:hover, &:focus  {
             background:$red;
-            border:1px solid $red;
+            border-color:$red;
           }
         }
         &.dk-red {
           background:$dk-red;
-          border:1px solid $red;
+          border-color:$red;
           &:hover, &:focus  {
             background:$red;
-            border:1px solid $red;
+            border-color:$red;
           }
         }
       }
     }
     ul {
       li {
-        top:-1px;
-        a {
+        a, a:visited {
+          &:first-child, &:last-child {
+            border-color:$dk-red;
+          }
           @extend .red;
+        }
+      }
+    }
+  }
+  &.row, &.inline {
+    ul {
+      li {
+        ul {
+          li {
+            a, a:visited {
+              border-color:$dk-red;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.menu {
+    > ul {
+      li.menu {
+        ul {
+          li {
+            a, a:visited {
+              border-color:$dk-red;
+              text-align:left;
+              padding-left:2.6em;
+              &:hover, &:focus {
+                border-color:$dk-red;
+              }
+              i {
+                position:absolute;
+                top:0.6em;
+                left:1em;
+              }
+            }
+          }
+        }
+        &.on {
+          > a, > a.visited {
+            border-color:$button-active;
+          }
         }
       }
     }

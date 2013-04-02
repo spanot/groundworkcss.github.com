@@ -62,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol, dl {
   a, a:visited {
     color:$navy;
-    border-bottom:1px dotted $navy;
+    // border-bottom:1px dotted $navy;
     @include transition('color 0.25s, border-color 0.25s');
     &:hover, &:focus {
       color:$blue;
-      border-bottom:1px dotted $blue;
+      // border-bottom:1px dotted $blue;
     }
   }
 }

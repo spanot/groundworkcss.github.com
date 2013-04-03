@@ -94,48 +94,6 @@ ol.list > li:before {
   color:$white;
 }
 
-pre {
-  background:$navy;
-  code {
-    color:$lt-blue;
-  }
-  tag {
-    color:$lt-red;
-  }
-  span {
-    color:$green;
-    &.key {
-      color:$lt-red;
-    }
-  }
-  content {
-    color:$white;
-  }
-  function, prop {
-    color:$lt-blue;
-  }
-  class, method {
-    color:$green;
-  }
-  val {
-    color:$purple;
-  }
-  string {
-    color:$yellow;
-  }
-  arg {
-    color:$orange;
-    font-style:italic;
-  }
-  comment {
-    color:lighten($gray, 10%);
-  }
-  &.inline {
-    background:darken($lt-gray, 5%);
-    color:$navy;
-  }
-}
-
 .gist {
   .gist-file .gist-data pre.line-pre {
     font-family:monospace;

@@ -14,15 +14,6 @@ button, .button, a.button, a.button:visited, input[type=submit],  input[type=but
     background:$blue;
     color:$white;
   }
-  &.active, &.active:hover, &.active:focus {
-    background:$navy;
-    border-color:lighten($navy, 10%);
-  }
-  &.disabled {
-    background:lighten(gray, 15%);
-    border-color:gray;
-    color:lighten(gray, 35%);
-  }
   &.white {
     background:$white;
     border:1px solid $lt-gray;
@@ -116,15 +107,6 @@ button, .button, a.button, a.button:visited, input[type=submit],  input[type=but
   &.dropdown {
     ul {
       @include filter-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
-      li {
-        a {
-          &.disabled {
-            background:lighten(gray, 15%);
-            border-color:gray;
-            color:lighten(gray, 30%);
-          }
-        }
-      }
     }
   }
 }

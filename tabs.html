@@ -149,6 +149,7 @@
       <div class="two thirds padded">
         <h2>Tabs</h2>
         <p>Tabs offer a way for a user to easily swap between seperated content.</p>
+        <p class="callout">NEW: Aria role support added for tabs. Tabs can be created by adding <code>class="tabs"</code> to a container with an unordered list and division as before, but can alternatively be done using only Aria roles to define the components. See the final example usage at the bottom of this page.</p>
         <div class="tabs">
           <ul>
             <li><a href="#content-1" class="active">Tab 1</a></li>
@@ -204,7 +205,9 @@
             </ul>
           </div>
         </div>
+        
         <hr/>
+
         <h2>Vertical Tabs</h2>
         <div class="vertical tabs">
           <ul>
@@ -235,6 +238,7 @@
             </dl>
           </div>
         </div>
+
         <hr/>
         
         <h6>Example Usage:</h6>
@@ -259,6 +263,38 @@
             </ul>
           </div>
           <div id="tab-3">
+            <h1>Tab 3</h1>
+            <dl>
+              <dt>Definition list</dt>
+              <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <hr/>
+        
+        <h6>Example Usage:</h6>
+        <script src="https://gist.github.com/ghepting/5302315.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <h6>Result:</h6>
+        <div role="tabpanel">
+          <div role="tablist">
+            <span role="tab"><a href="#tab-1b" class="active">Tab 1</a></span>
+            <span role="tab"><a href="#tab-2b">Tab 2</a></span>
+            <span role="tab"><a href="#tab-3b">Tab 3</a></span>
+          </div>
+          <div id="tab-1b" class="active" role="tabpanel">
+            <h1>Tab 1</h1>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+          </div>
+          <div id="tab-2b" role="tabpanel">
+            <h1>Tab 2</h1>
+            <ul>
+              <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+              <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</li>
+            </ul>
+          </div>
+          <div id="tab-3b" role="tabpanel">
             <h1>Tab 3</h1>
             <dl>
               <dt>Definition list</dt>

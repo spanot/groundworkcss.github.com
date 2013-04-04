@@ -86,16 +86,16 @@
               <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
               ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
                 <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
+                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
                   <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
+                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
+                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
                   <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
                   <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
                   <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
                   <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
+                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
+                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
                   <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
                   <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
                   <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
@@ -128,7 +128,7 @@
   <div class="container">
     <div class="row">
       <div class="one third padded">
-        <h1><i class="icon-th"></i> The Grid</h1>
+        <h1><i class="icon-th"></i> Grid System</h1>
         <p>The GroundworkCSS grid system supports a variable number of columns per row and supports fractions from halves through twelfths out of the box. Column widths can be specifed with classes (i.e. <code>one half</code>, <code>three fourths</code>, or <code>two fifths</code>) or without classes using <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend" target="_blank">@extend</a> with <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_" target="_blank">placeholder selectors</a> to achieve pure semantic implementations.</p>
         <h6>Example usage:</h6>
         <script src="https://gist.github.com/ghepting/5282665.js"></script>
@@ -157,6 +157,8 @@
         <p class="small">Note: Resizing the viewport to mobile proportions will not collapse these columns.</p>
         <hr/>
         
+        <h4 class="double gap-top">Equal Height Columns</h4>
+        <p>Equal height columns without using a <code>&lt;table&gt;</code> is something that is unexpectedly difficult to achieve with CSS in its current state. GroundworkCSS comes with a helpful, lightweight Javascript component that makes this easy.</p>
         <h6>Example Usage:</h6>
         <script src="https://gist.github.com/ghepting/5285384.js"></script>
         <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
@@ -170,14 +172,22 @@
       </div>
       <div class="two thirds padded">
         <!-- start demo grid -->
+        <h2>Semantic, Fractional Column Sizing</h2>
+        <p>One of the key features of GroundworkCSS is the responsive, fractions-based, nestable fluid grid system. Utilizing semantic class names and boasting built-in support for purely semantic implementations using selector inheritance (<code>@extend</code>) and mixins (<code>@include</code>), the grid system has been engineered to be the last grid you will ever need. You can easily optimize it to fit your specific needs and customize the range of fractions that it supports. There are three variable strings in the <code><a href="https://github.com/groundworkcss/groundwork/blob/master/src/scss/_grid.scss" target="_blank">src/scss/_grid.scss</a></code> file that you can modify:</p>
+        <script src="https://gist.github.com/ghepting/5311695.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <p>By default, the grid system supports <em>wholes</em> through <em>twelfths</em> to achieve a high level of flexibility. However, it is highly recommended that you fine tune it to the specific needs of each project. If you only use thirds, for example, removing the unused numerators/denominators will greatly reduce the output CSS filesize. Note that these space-delimited string variables are used as arrays and are looped through, so having the proper numerators (<code>$numbers</code>) and denominators (<code>$fractions</code> &amp; <code>$fractions_plural</code>) for each fractional step in the total range is required.</p>
+        <hr/>
+
         <div class="demo">
-          <h2>Halves</h2>
+          <h4>Halves</h4>
           <div class="row">
             <div class="one half">1/2</div>
             <div class="one half">1/2</div>
           </div>
+          <hr/>
           
-          <h2>Thirds</h2>
+          <h4>Thirds</h4>
           <div class="row">
             <div class="one third">1/3</div>
             <div class="one third">1/3</div>
@@ -187,8 +197,9 @@
             <div class="one third">1/3</div>
             <div class="two thirds">2/3</div>
           </div>
+          <hr/>
           
-          <h2>Fourths</h2>
+          <h4>Fourths</h4>
           <div class="row">
             <div class="one fourth">1/4</div>
             <div class="two fourths">2/4</div>
@@ -198,8 +209,9 @@
             <div class="one fourth">1/4</div>
             <div class="three fourths">3/4</div>
           </div>
+          <hr/>
           
-          <h2>Fifths</h2>
+          <h4>Fifths</h4>
           <div class="row">
             <div class="one fifth">1/5</div>
             <div class="three fifths">3/5</div>
@@ -209,8 +221,9 @@
             <div class="one fifth">1/5</div>
             <div class="four fifths">4/5</div>
           </div>
+          <hr/>
           
-          <h2>Sixths</h2>
+          <h4>Sixths</h4>
           <div class="row">
             <div class="one sixth">1/6</div>
             <div class="two sixths">2/6</div>
@@ -220,8 +233,9 @@
             <div class="one sixth">1/6</div>
             <div class="five sixths">5/6</div>
           </div>
+          <hr/>
           
-          <h2>Sevenths</h2>
+          <h4>Sevenths</h4>
           <div class="row">
             <div class="one seventh">1/7</div>
             <div class="two sevenths">2/7</div>
@@ -231,8 +245,9 @@
             <div class="one seventh">1/7</div>
             <div class="six sevenths">6/7</div>
           </div>
+          <hr/>
           
-          <h2>Eighths</h2>
+          <h4>Eighths</h4>
           <div class="row">
             <div class="one eighth">1/8</div>
             <div class="three eighths">3/8</div>
@@ -242,8 +257,9 @@
             <div class="one eighth">1/8</div>
             <div class="seven eighths">7/8</div>
           </div>
+          <hr/>
           
-          <h2>Ninths</h2>
+          <h4>Ninths</h4>
           <div class="row">
             <div class="one ninth">1/9</div>
             <div class="three ninth">3/9</div>
@@ -253,8 +269,9 @@
             <div class="one ninth">1/9</div>
             <div class="eight ninths">8/9</div>
           </div>
+          <hr/>
           
-          <h2>Tenths</h2>
+          <h4>Tenths</h4>
           <div class="row">
             <div class="one tenth">1/10</div>
             <div class="three tenths">3/10</div>
@@ -264,8 +281,9 @@
             <div class="one tenth">1/10</div>
             <div class="nine tenths">9/10</div>
           </div>
+          <hr/>
           
-          <h2>Elevenths</h2>
+          <h4>Elevenths</h4>
           <div class="row">
             <div class="one eleventh">1/11</div>
             <div class="three elevenths">3/11</div>
@@ -275,8 +293,9 @@
             <div class="one eleventh">1/11</div>
             <div class="ten elevenths">10/11</div>
           </div>
+          <hr/>
           
-          <h2>Twelfths</h2>
+          <h4>Twelfths</h4>
           <div class="row">
             <div class="one twelfth">1/12</div>
             <div class="three twelfths">3/12</div>
@@ -291,7 +310,7 @@
         <hr/>
 
         <h2>Small Tablets Grid</h2>
-        <p>Columns don't collapse into seperate rows until viewport width falls below 480 pixels</p>
+        <p>By default, the grid columns will collapse into individual rows when the viewport is below 768 pixles wide. Using the <code>small-tablet</code> modifier, you can specify columns to maintain their grid structure until the viewport width falls below 480 pixels.</p>
         <div class="demo">
           <div class="row">
             <div class="one small-tablet third">1/3</div>
@@ -331,7 +350,7 @@
         <hr/>
 
         <h2>Mobile Grid</h2>
-        <p>Columns maintain structure down through mobile viewport sizes</p>
+        <p>Using the <code>mobile</code> modifier maintains the grid column structure at all viewport sizes.</p>
         <div id="mobilegriddemo" class="demo">
           <div class="row">
             <div class="four mobile twelfths">1/3</div>
@@ -384,6 +403,7 @@
         <hr/>
 
         <h2>Re-ordering</h2>
+        <p>Re-ordering or "source ordering" is an especially useful modifier when you want content on the right on larger viewports, but on top on mobile viewports. This can be especially applicable when optimizing content for search engines and accessibility. For example, you can relatively adjust columns positioning by using <code>right-one</code> or <code>left-three</code>.</p>
         <div class="reordering demo">
           <div class="row">
             <div class="one fifth right-four">1/5 (first)</div>
@@ -409,6 +429,7 @@
         <hr/>
 
         <h2>Centering</h2>
+        <p>When using "orphaned" columns that do not expand 100% of a row, the <code>centered</code> modifier can be used to center the column.</p>
         <div class="centering demo">
           <div class="row">
             <div class="one centered mobile seventh">1/7</div>
@@ -424,6 +445,7 @@
         <hr/>
 
         <h2>Offsetting</h2>
+        <p>When you want "gaps" between columns, you can skip columns using <code>skip-one</code>, <code>skip-two</code>, etc.</p>
         <div class="offsetting demo">
           <div class="row">
             <div class="eleven mobile twelfths skip-one">11</div>
@@ -477,6 +499,7 @@
         <hr/>
 
         <h2>Equal Height Columns</h2>
+        <p>Equal height columns can be achieved by adding the <code>equalize</code> modifier class to a <code>row</code>. This uses Javascript to detect the tallest column within that row and apply that height to each additional column within it. NOTE: Semantic support for this feature is currently not available as the Javascript component relies on the class to trigger this functionality.</p>
         <div class="equal-columns demo">
           <div class="equalize row">
             <div class="one small-tablet third padded">
@@ -493,6 +516,13 @@
             </div>
           </div>
         </div>
+
+        <hr/>
+
+        <h2>Media Queries</h2>
+        <p><a href="./media-queries">Media Queries</a> contain CSS code that is conditionally applied based on viewport dimensions and other qualifying conditions and are what make the GroundworkCSS grid system responsive.</p>
+        <p><a class="button" href="./media-queries">Read More <i class="icon-chevron-right"></i></a></p>
+
       </div>
       <!-- end demo grid -->
     </div>

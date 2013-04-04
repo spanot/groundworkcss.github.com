@@ -93,6 +93,7 @@
                   <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
                   <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
                   <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
+                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
                   <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
                   <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
                   <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
@@ -103,7 +104,6 @@
                   <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
                   <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
                   <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles (NEW!)</a></li>
                 </ul>
               </li
               ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
@@ -128,7 +128,7 @@
   <div class="container">
     <div class="row">
       <div class="one third padded">
-        <h1><i class="icon-list-alt"></i> Tiles</h1>
+        <h1><i class="icon-check"></i> Tiles</h1>
         <p>UI elements that offer great alternative to radio buttons and other boring standard form elements. Created by <a href="https://github.com/xinix" target="_blank">@xinix</a> and enhanced by <a href="https://github.com/ghepting" target="_blank">@ghepting</a>.</p>
 
         <h6>Example Usage:</h6>
@@ -137,8 +137,8 @@
         <h6>Result:</h6>
         <div class="tiles">
           <input type="hidden" value="" id="exampleTile" class="value">
-          <div data-value="yep" class="small tile"><i class="icon-star"></i>star</div>
-          <div data-value="nope" class="small tile"><i class="icon-star-empty"></i>no star</div>
+          <div data-value="yep" class="small tile"><i class="icon-star"></i></div>
+          <div data-value="nope" class="small tile"><i class="icon-star-empty"></i></div>
         </div>
 
         <script type="text/javascript">
@@ -159,14 +159,14 @@
 
         <div class="tiles">
           <div class="row">
-            <div class="one mobile fifth pad-right">
+            <div class="one small-tablet fifth padded">
               <select class="value">
                 <option value="single" selected>Single</option>
                 <option value="group">Group</option>
                 <option value="corp">Corp</option>
               </select>
             </div>
-            <div class="four mobile fifths">
+            <div class="four small-tablet fifths padded">
               <div data-value="single" class="tile"><i class="icon-user"></i>Single user</div>
               <div data-value="group" class="tile"><i class="icon-group"></i>Small group</div>
               <div data-value="corp" class="tile"><i class="icon-building"></i>Corporation</div>
@@ -179,7 +179,7 @@
         <h4>Tile Colors</h4>
         <div class="tiles">
           <div class="row">
-            <div class="one mobile fifth pad-right">
+            <div class="one small-tablet fifth padded">
               <select size="5" class="value">
                 <option value="default" selected>Default</option>
                 <option value="green">Green</option>
@@ -192,7 +192,7 @@
                 <option value="asphalt">Asphalt</option>
               </select>
             </div>
-            <div class="four mobile fifths">
+            <div class="four small-tablet fifths padded">
               <div data-value="default" class="tile"><i class="icon-leaf"></i>default</div>
               <div data-value="green" class="tile green"><i class="icon-leaf"></i>green</div>
               <div data-value="blue" class="tile blue"><i class="icon-leaf"></i>blue</div>
@@ -211,10 +211,10 @@
         <h4>Tile States</h4>
         <div class="tiles">
           <div class="row">
-            <div class="one mobile fifth pad-right">
+            <div class="one small-tablet fifth padded">
               <input type="text" value="active" readonly class="value disabled">
             </div>
-            <div class="four mobile fifths">
+            <div class="four small-tablet fifths padded">
               <div data-value="disabled" class="tile disabled"><i class="icon-leaf"></i>disabled</div>
               <div data-value="active" class="tile active"><i class="icon-leaf"></i>active</div>
             </div>
@@ -226,10 +226,10 @@
         <h4>Tile Sizes</h4>
         <div class="tiles">
           <div class="row">
-            <div class="one mobile fifth pad-right">
+            <div class="one small-tablet fifth padded">
               <input type="text" value="small" class="value">
             </div>
-            <div class="four mobile fifths">
+            <div class="four small-tablet fifths padded">
               <div data-value="small" class="tile small"><i class="icon-leaf"></i>small</div>
               <div data-value="large" class="tile large"><i class="icon-leaf"></i>large</div>
               <div data-value="square" class="tile square"><i class="icon-leaf"></i>square</div>
@@ -252,8 +252,8 @@
               });
             });
           </script>
-          <div data-value="yep" class="tile"><i class="icon-thumbs-up"></i>thumbs up</div>
-          <div data-value="nope" class="tile"><i class="icon-thumbs-down"></i>thumbs down</div>
+          <div data-value="yep" class="tile"><i class="icon-thumbs-up"></i></div>
+          <div data-value="nope" class="tile"><i class="icon-thumbs-down"></i></div>
         </div>
 
       </div>

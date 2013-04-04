@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Page Not Found</title>
+  <title>GroundworkCSS &hearts; Tiles</title>
   <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
@@ -119,36 +119,143 @@
       <div class="one whole padded">
         <ul class="breadcrumbs">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./404.html">Page Not Found</a></li>
+          <li><a href="./components.html">Components</a></li>
+          <li><a href="./modals-js.html">Modals</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="two centered thirds triple padded align-center">
-        <h1 class="responsive" data-compression="7.5" data-min="30" data-max="200"><i class="icon-ambulance"></i> Not found</h1>
-        <h3 class="responsive" data-compression="16" data-min="18" data-max="170">Sorry, but the page you were<br/>trying to view does not exist.</h3>
-        <div class="row">
-          <div class="four mobile fifths centered double padded">
-            <form action="http://www.google.com/search" method="get" target="_blank" class="row">
-              <div class="two small-tablet thirds padded">
-                <input type="text" name="q" placeholder="Search" />
-              </div>
-              <div class="one small-tablet third padded">
-                <button class="block">Search</button>
-              </div>
-            </form>
+      <div class="one third padded">
+        <h1><i class="icon-list-alt"></i> Tiles</h1>
+        <p>UI elements that offer great alternative to radio buttons and other boring standard form elements. Created by <a href="https://github.com/xinix" target="_blank">@xinix</a> and enhanced by <a href="https://github.com/ghepting" target="_blank">@ghepting</a>.</p>
+
+        <h6>Example Usage:</h6>
+        <script src="https://gist.github.com/ghepting/5306575.js"></script>
+        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
+        <h6>Result:</h6>
+        <div class="tiles">
+          <input type="hidden" value="" id="exampleTile" class="value">
+          <div data-value="yep" class="small tile"><i class="icon-star"></i>star</div>
+          <div data-value="nope" class="small tile"><i class="icon-star-empty"></i>no star</div>
+        </div>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('input#exampleTile').on('change', function() {
+              if($(this).val() == 'yep')
+                alert("Right on!");
+              else
+                alert("Aww, how come?");
+            });
+          });
+        </script>
+        
+
+      </div>
+      <div class="two thirds padded">
+        <h2>Tiles</h2>
+
+        <div class="tiles">
+          <div class="row">
+            <div class="one mobile fifth pad-right">
+              <select class="value">
+                <option value="single" selected>Single</option>
+                <option value="group">Group</option>
+                <option value="corp">Corp</option>
+              </select>
+            </div>
+            <div class="four mobile fifths">
+              <div data-value="single" class="tile"><i class="icon-user"></i>Single user</div>
+              <div data-value="group" class="tile"><i class="icon-group"></i>Small group</div>
+              <div data-value="corp" class="tile"><i class="icon-building"></i>Corporation</div>
+            </div>
           </div>
         </div>
-        <h3 class="responsive" data-compression="21.25" data-min="16" data-max="170">It looks like this could be the result of:</h3>
-        <h4>
-          <ul class="list centered align-left" style="display:inline-block;">
-            <li>A mistyped address</li>
-            <li>An out-of-date link</li>
-            <li>An engineer needing a coffee</li>
-          </ul>
-        </h4>
+
+        <hr/>
+
+        <h4>Tile Colors</h4>
+        <div class="tiles">
+          <div class="row">
+            <div class="one mobile fifth pad-right">
+              <select size="5" class="value">
+                <option value="default" selected>Default</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+                <option value="turquoise">Turquoise</option>
+                <option value="asphalt">Asphalt</option>
+              </select>
+            </div>
+            <div class="four mobile fifths">
+              <div data-value="default" class="tile"><i class="icon-leaf"></i>default</div>
+              <div data-value="green" class="tile green"><i class="icon-leaf"></i>green</div>
+              <div data-value="blue" class="tile blue"><i class="icon-leaf"></i>blue</div>
+              <div data-value="purple" class="tile purple"><i class="icon-leaf"></i>purple</div>
+              <div data-value="yellow" class="tile yellow"><i class="icon-leaf"></i>yellow</div>
+              <div data-value="orange" class="tile orange"><i class="icon-leaf"></i>orange</div>
+              <div data-value="red" class="tile red"><i class="icon-leaf"></i>red</div>
+              <div data-value="turquoise" class="tile turquoise"><i class="icon-leaf"></i>turquoise</div>
+              <div data-value="asphalt" class="tile asphalt"><i class="icon-leaf"></i>asphalt</div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <h4>Tile States</h4>
+        <div class="tiles">
+          <div class="row">
+            <div class="one mobile fifth pad-right">
+              <input type="text" value="active" readonly class="value disabled">
+            </div>
+            <div class="four mobile fifths">
+              <div data-value="disabled" class="tile disabled"><i class="icon-leaf"></i>disabled</div>
+              <div data-value="active" class="tile active"><i class="icon-leaf"></i>active</div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <h4>Tile Sizes</h4>
+        <div class="tiles">
+          <div class="row">
+            <div class="one mobile fifth pad-right">
+              <input type="text" value="small" class="value">
+            </div>
+            <div class="four mobile fifths">
+              <div data-value="small" class="tile small"><i class="icon-leaf"></i>small</div>
+              <div data-value="large" class="tile large"><i class="icon-leaf"></i>large</div>
+              <div data-value="square" class="tile square"><i class="icon-leaf"></i>square</div>
+            </div>
+          </div>
+        </div>
+
+        <hr/>
+
+        <h4>Hidden Field &amp; Custom Callback Function</h4>
+        <div class="tiles">
+          <input type="hidden" value="" id="yepNope" class="value">
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('input#yepNope').on('change', function() {
+                if($(this).val() == 'yep')
+                  alert("Right on!");
+                else
+                  alert("Aww, how come?");
+              });
+            });
+          </script>
+          <div data-value="yep" class="tile"><i class="icon-thumbs-up"></i>thumbs up</div>
+          <div data-value="nope" class="tile"><i class="icon-thumbs-down"></i>thumbs down</div>
+        </div>
+
       </div>
     </div>
   </div>

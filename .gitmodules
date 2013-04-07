@@ -1,3 +1,3 @@
 [submodule "groundwork"]
 	path = groundwork
-	url = git@github.com-gary:groundworkcss/groundwork.git
+	url = git://github.com/groundworkcss/groundwork.git

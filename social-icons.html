@@ -1,286 +1,131 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Responsive Tooltips</title>
-  <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png" />
-  <!-- Modernizr -->
-  <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- framework css -->
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
-  <!-- Groundy theme files -->
-  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
-  <!--[if IE]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
-  <script>
-    /* polyfill custom tags for code samples */
-    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
-    for (var i = 0; i < customTags.length; i++) {
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GroundworkCSS ♥ </title>
+    <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- Modernizr-->
+    <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\\/script>')</script>
+    <!-- framework css-->
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
+    <!-- Groundy theme files-->
+    <link type="text/css" rel="stylesheet" href="./css/groundy.css"><!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
+    <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
+    <script>
+      /* polyfill custom tags for code samples */
+      customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+      for (var i = 0; i < customTags.length; i++) {
       document.createElement(customTags[i]);
-    }
-  </script>
-  <![endif]-->
-  <!--[if IE 7]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css">
-  <![endif]-->
-  <script type="text/javascript">
-    // (function(){
-    //   var datauri = new Image();
-    //   datauri.onerror = function() {
-    //       Modernizr.addTest('datauri', function () { return false; });
-    //   };  
-    //   datauri.onload = function() {
-    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-    //       Modernizr.load({
-    //         test: Modernizr.datauri,
-    //         nope: './groundwork/css/no-datauri.css'
-    //       });
-    //   };
-    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    // })();
-    // fallback if SVG unsupported
-    Modernizr.load({
+      }
+    </script><![endif]--><!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css"><![endif]-->
+    <script type="text/javascript">
+      // (function(){
+      //   var datauri = new Image();
+      //   datauri.onerror = function() {
+      //       Modernizr.addTest('datauri', function () { return false; });
+      //   };
+      //   datauri.onload = function() {
+      //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+      //       Modernizr.load({
+      //         test: Modernizr.datauri,
+      //         nope: './groundwork/css/no-datauri.css'
+      //       });
+      //   };
+      //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+      // })();
+      // fallback if SVG unsupported
+      Modernizr.load({
       test: Modernizr.inlinesvg,
       nope: [
-        './groundwork/css/no-svg.css',
-        './css/no-svg.css'
+      './groundwork/css/no-svg.css',
+      './css/no-svg.css'
       ]
-    });
-    // polyfill for HTML5 placeholders
-    Modernizr.load({
+      });
+      // polyfill for HTML5 placeholders
+      Modernizr.load({
       test: Modernizr.input.placeholder,
       nope: [
-        './groundwork/css/placeholder_polyfill.css',
-        './groundwork/js/libs/placeholder_polyfill.jquery.js'
+      './groundwork/css/placeholder_polyfill.css',
+      './groundwork/js/libs/placeholder_polyfill.jquery.js'
       ]
-    });
-  </script>
-  <!-- pinterest verification -->
-  <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be"/>
-</head>
-<body>
-  <header class="white band padded">
-    <div class="container">
-      <div class="row">
-        <div class="one half">
-          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:66px;"><a href="./home"><span class="logo"></span> GroundworkCSS<sup>Beta</sup></a></h1>
-        </div>
-        <div class="one half double pad-top">
-          <nav class="inline nav menu pull-right" data-label="Menu">
-            <a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
-            <ul>
-              <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
-              ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
-                <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
-                  <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
-                  <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
-                  <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
-                  <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
-                  <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
-                  <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
-                  <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
-                  <li><a href="./social-icons"><i class="icon-twitter"></i> Social Icons</a></li>
-                  <li><a href="./responsiveText-js"><i class="icon-text-width"></i> ResponsiveText</a></li>
-                  <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
-                  <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
-                  <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                </ul>
-              </li
-              ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
-              ><li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i> <span class="small-tablet-only mobile-only">Download</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="one whole padded">
-        <ul class="breadcrumbs">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./components.html">Components</a></li>
-          <li><a href="./tooltips-js.html">Tooltips</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one third padded">
-        <h1><i class="icon-twitter"></i> Social Icons</h1>
-        <p>Awesome vector social icons created by Adam Fairhead at Fairhead Creative.</p>
-        <p>Each icon is designed to be used as the background of an anchor, and each icon has its own class as well as a couple of global classes. They are all set to be inline, so you can put them up against each other, in line with your text, or in any kind of layout or construct.</p>
-        <p>To use an icon, create an anchor and give it a class of <code>.social-icon</code>, as well as a class for the social network or service.</p>
-        <p>By default, the icons inherit their dimensions from the font-size of their parent container. However, you can also control the appearance of your icon by including the <code>.small</code>, <code>.medium</code>, <code>.large</code> or even <code>.round</code> helper classes.</p>
-        
-        <h6>Example Usage:</h6>
-        <script src="https://gist.github.com/ghepting/5282840.js"></script>
-        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <h6>Result:</h6>
-        <a class="small social-icon twitter" href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a>
-        <a class="medium social-icon twitter" href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a>
-        <a class="large social-icon twitter" href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a>
-        <a class="large round social-icon twitter" href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a>
-
-      </div>
-      <div class="two thirds padded">
-        <h2><i class="icon-twitter"></i> Social Icons</h2>
-        <p>Each icon is very clearly and reliably named. Hover on any of the icons on this page to see what their class is when you add it to an anchor.</p>
-
-        <h6 class="small">Large Icons</h6>
-        <a class="social-icon behance large tooltip" href="#" title=".social-icon.behance.large">Behance</a>
-        <a class="social-icon creativecloud large tooltip" href="#" title=".social-icon.creativecloud.large">Creative Cloud</a>
-        <a class="social-icon dribbble large tooltip" href="#" title=".social-icon.dribbble.large">Dribbble</a>
-        <a class="social-icon dropbox large tooltip" href="#" title=".social-icon.dropbox.large">Dropbox</a>
-        <a class="social-icon evernote large tooltip" href="#" title=".social-icon.evernote.large">Evernote</a>
-        <a class="social-icon facebook large tooltip" href="#" title=".social-icon.facebook.large">Facebook</a>
-        <a class="social-icon flickr large tooltip" href="#" title=".social-icon.flickr.large">Flickr</a>
-        <a class="social-icon github large tooltip" href="#" title=".social-icon.github.large">Github</a>
-        <a class="social-icon googleplus large tooltip" href="#" title=".social-icon.googleplus.large">GooglePlus</a>
-        <a class="social-icon icloud large tooltip" href="#" title=".social-icon.icloud.large">iCloud</a>
-        <a class="social-icon linkedin large tooltip" href="#" title=".social-icon.linkedin.large">LinkedIn</a>
-        <a class="social-icon mail large tooltip" href="#" title=".social-icon.mail.large">Mail</a>
-        <a class="social-icon msn large tooltip" href="#" title=".social-icon.msn.large">MSN</a>
-        <a class="social-icon pinterest large tooltip" href="#" title=".social-icon.pinterest.large">Pinterest</a>
-        <a class="social-icon rdio large tooltip" href="#" title=".social-icon.rdio.large">Rdio</a>
-        <a class="social-icon rss large tooltip" href="#" title=".social-icon.rss.large">RSS</a>
-        <a class="social-icon skitch large tooltip" href="#" title=".social-icon.skitch.large">Skitch</a>
-        <a class="social-icon skype large tooltip" href="#" title=".social-icon.skype.large">Skype</a>
-        <a class="social-icon spotify large tooltip" href="#" title=".social-icon.spotify.large">Spotify</a>
-        <a class="social-icon stumbleupon large tooltip" href="#" title=".social-icon.stumbleupon.large">StumbleUpon!</a>
-        <a class="social-icon twitter large tooltip" href="#" title=".social-icon.twitter.large">Twitter</a>
-        <a class="social-icon vimeo large tooltip" href="#" title=".social-icon.vimeo.large">Vimeo</a>
-        <a class="social-icon youtube large tooltip" href="#" title=".social-icon.youtube.large">YouTube</a>
-        <a class="social-icon youversion large tooltip" href="#" title=".social-icon.youversion.large">YouVersion</a>
-        <a class="social-icon zerply large tooltip" href="#" title=".social-icon.zerply.large">Zerply</a>
-        <a class="social-icon pocket large tooltip" href="#" title=".social-icon.pocket.large">Pocket App</a>
-          
-        <hr/>
-        
-        <h6 class="small">Medium Icons</h6>
-        <a class="social-icon behance medium tooltip" href="#" title=".social-icon.behance.medium">Behance</a>
-        <a class="social-icon creativecloud medium tooltip" href="#" title=".social-icon.creativecloud.medium">Creative Cloud</a>
-        <a class="social-icon dribbble medium tooltip" href="#" title=".social-icon.dribbble.medium">Dribbble</a>
-        <a class="social-icon dropbox medium tooltip" href="#" title=".social-icon.dropbox.medium">Dropbox</a>
-        <a class="social-icon evernote medium tooltip" href="#" title=".social-icon.evernote.medium">Evernote</a>
-        <a class="social-icon facebook medium tooltip" href="#" title=".social-icon.facebook.medium">Facebook</a>
-        <a class="social-icon flickr medium tooltip" href="#" title=".social-icon.flickr.medium">Flickr</a>
-        <a class="social-icon github medium tooltip" href="#" title=".social-icon.github.medium">Github</a>
-        <a class="social-icon googleplus medium tooltip" href="#" title=".social-icon.googleplus.medium">GooglePlus</a>
-        <a class="social-icon icloud medium tooltip" href="#" title=".social-icon.icloud.medium">iCloud</a>
-        <a class="social-icon linkedin medium tooltip" href="#" title=".social-icon.linkedin.medium">LinkedIn</a>
-        <a class="social-icon mail medium tooltip" href="#" title=".social-icon.mail.medium">Mail</a>
-        <a class="social-icon msn medium tooltip" href="#" title=".social-icon.msn.medium">MSN</a>
-        <a class="social-icon pinterest medium tooltip" href="#" title=".social-icon.pinterest.medium">Pinterest</a>
-        <a class="social-icon rdio medium tooltip" href="#" title=".social-icon.rdio.medium">Rdio</a>
-        <a class="social-icon rss medium tooltip" href="#" title=".social-icon.rss.medium">RSS</a>
-        <a class="social-icon skitch medium tooltip" href="#" title=".social-icon.skitch.medium">Skitch</a>
-        <a class="social-icon skype medium tooltip" href="#" title=".social-icon.skype.medium">Skype</a>
-        <a class="social-icon spotify medium tooltip" href="#" title=".social-icon.spotify.medium">Spotify</a>
-        <a class="social-icon stumbleupon medium tooltip" href="#" title=".social-icon.stumbleupon.medium">StumbleUpon!</a>
-        <a class="social-icon twitter medium tooltip" href="#" title=".social-icon.twitter.medium">Twitter</a>
-        <a class="social-icon vimeo medium tooltip" href="#" title=".social-icon.vimeo.medium">Vimeo</a>
-        <a class="social-icon youtube medium tooltip" href="#" title=".social-icon.youtube.medium">YouTube</a>
-        <a class="social-icon youversion medium tooltip" href="#" title=".social-icon.youversion.medium">YouVersion</a>
-        <a class="social-icon zerply medium tooltip" href="#" title=".social-icon.zerply.medium">Zerply</a>
-        <a class="social-icon pocket medium tooltip" href="#" title=".social-icon.pocket.medium">Pocket App</a>
-        
-        <hr/>
-
-        <h6 class="small">Small Icons</h6>
-        <a class="social-icon behance small tooltip" href="#" title=".social-icon.behance.small">Behance</a>
-        <a class="social-icon creativecloud small tooltip" href="#" title=".social-icon.creativecloud.small">Creative Cloud</a>
-        <a class="social-icon dribbble small tooltip" href="#" title=".social-icon.dribbble.small">Dribbble</a>
-        <a class="social-icon dropbox small tooltip" href="#" title=".social-icon.dropbox.small">Dropbox</a>
-        <a class="social-icon evernote small tooltip" href="#" title=".social-icon.evernote.small">Evernote</a>
-        <a class="social-icon facebook small tooltip" href="#" title=".social-icon.facebook.small">Facebook</a>
-        <a class="social-icon flickr small tooltip" href="#" title=".social-icon.flickr.small">Flickr</a>
-        <a class="social-icon github small tooltip" href="#" title=".social-icon.github.small">Github</a>
-        <a class="social-icon googleplus small tooltip" href="#" title=".social-icon.googleplus.small">GooglePlus</a>
-        <a class="social-icon icloud small tooltip" href="#" title=".social-icon.icloud.small">iCloud</a>
-        <a class="social-icon linkedin small tooltip" href="#" title=".social-icon.linkedin.small">LinkedIn</a>
-        <a class="social-icon mail small tooltip" href="#" title=".social-icon.mail.small">Mail</a>
-        <a class="social-icon msn small tooltip" href="#" title=".social-icon.msn.small">MSN</a>
-        <a class="social-icon pinterest small tooltip" href="#" title=".social-icon.pinterest.small">Pinterest</a>
-        <a class="social-icon rdio small tooltip" href="#" title=".social-icon.rdio.small">Rdio</a>
-        <a class="social-icon rss small tooltip" href="#" title=".social-icon.rss.small">RSS</a>
-        <a class="social-icon skitch small tooltip" href="#" title=".social-icon.skitch.small">Skitch</a>
-        <a class="social-icon skype small tooltip" href="#" title=".social-icon.skype.small">Skype</a>
-        <a class="social-icon spotify small tooltip" href="#" title=".social-icon.spotify.small">Spotify</a>
-        <a class="social-icon stumbleupon small tooltip" href="#" title=".social-icon.stumbleupon.small">StumbleUpon!</a>
-        <a class="social-icon twitter small tooltip" href="#" title=".social-icon.twitter.small">Twitter</a>
-        <a class="social-icon vimeo small tooltip" href="#" title=".social-icon.vimeo.small">Vimeo</a>
-        <a class="social-icon youtube small tooltip" href="#" title=".social-icon.youtube.small">YouTube</a>
-        <a class="social-icon youversion small tooltip" href="#" title=".social-icon.youversion.small">YouVersion</a>
-        <a class="social-icon zerply small tooltip" href="#" title=".social-icon.zerply.small">Zerply</a>
-        <a class="social-icon pocket small tooltip" href="#" title=".social-icon.pocket.small">Pocket App</a>
-
-        <hr/>
-        
-        <h6 class="small">Round Icons</h6>
-        <a class="social-icon twitter round small tooltip" href="#" title=".social-icon.twitter.round.small">Twitter</a>
-        <a class="social-icon twitter round medium tooltip" href="#" title=".social-icon.twitter.round.medium">Twitter</a>
-        <a class="social-icon twitter round large tooltip" href="#" title=".social-icon.twitter.round.large">Twitter</a>
-        
-        <hr/>
-
-        <h6 class="small">Inline Social Icons (relative sizing)</h6>
+      });
+    </script>
+    <!-- pinterest verification-->
+    <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be">
+  </head>
+  <body>
+    <!-- page header-->
+    <header class="white band padded">
+      <div class="container">
         <div class="row">
-          <div class="one whole">
-            <h1><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 1 heading</h1>
-            <h2><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 2 heading</h2>
-            <h3><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 3 heading</h3>
-            <h4><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 4 heading</h4>
-            <h5><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 5 heading</h5>
-            <h6><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a level 6 heading</h6>
-            <p><span class="social-icon twitter tooltip" title=".twitter.social-icon"></span> Example of avatar embedded in a paragraph</p>
+          <div class="one half">
+            <h1 data-compression="9" data-min="20" data-max="120" style="font-size: 66px;" class="big responsive heading"><a href="./home"><span class="logo"></span>GroundworkCSS<sup>Beta</sup></a></h1>
+          </div>
+          <div class="one half double pad-top">
+            <nav data-label="Menu" class="inline nav menu pull-right"><a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
+              <ul>
+                <li><a href="./home"><i class="icon-home"></i><span class="small-tablet-only mobile-only">Home</span></a></li>
+                <li class="menu"><a href="./components"><i class="icon-cogs"></i>Components</a>
+                  <ul>
+                    <li><a href="./grid"><i class="icon-th"></i>Grid System</a></li>
+                    <li><a href="./media-queries"><i class="icon-tablet"></i>Media Queries</a></li>
+                    <li><a href="./mixins"><i class="icon-tasks"></i>Sass Mixins</a></li>
+                    <li><a href="./helpers"><i class="icon-beaker"></i>Layout Helpers</a></li>
+                    <li><a href="./typography"><i class="icon-font"></i>Typography</a></li>
+                    <li><a href="./buttons"><i class="icon-sign-blank"></i>Buttons</a></li>
+                    <li><a href="./navigation"><i class="icon-reorder"></i>Navigation</a></li>
+                    <li><a href="./tabs"><i class="icon-folder-close"></i>Tabs</a></li>
+                    <li><a href="./forms"><i class="icon-edit"></i>Forms</a></li>
+                    <li><a href="./tiles"><i class="icon-check"></i>Tiles</a></li>
+                    <li><a href="./ui-elements"><i class="icon-comment"></i>UI Elements</a></li>
+                    <li><a href="./tables"><i class="icon-table"></i>Tables</a></li>
+                    <li><a href="./icons"><i class="icon-magic"></i>Icons</a></li>
+                    <li><a href="./social-icons"><i class="icon-twitter"></i>Social Icons</a></li>
+                    <li><a href="./responsiveText-js"><i class="icon-text-width"></i>ResponsiveText</a></li>
+                    <li><a href="./modals-js"><i class="icon-list-alt"></i>Modals</a></li>
+                    <li><a href="./tooltips-js"><i class="icon-info-sign"></i>Tooltips</a></li>
+                    <li><a href="./cycle2-js"><i class="icon-picture"></i>Cycle2</a></li>
+                  </ul>
+                </li>
+                <li><a href="./templates"><i class="icon-file-alt"></i>Templates</a></li>
+                <li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i><span class="small-tablet-only mobile-only">Download</span></a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- scripts -->
-  <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
-  <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
-  <script type="text/javascript" src="./js/groundy.js"></script>
-
-  <!-- google analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17121602-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
+    </header>
+    <!-- page content-->
+    <!-- scripts-->
+    <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="./js/groundy.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17121602-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-</body>
+      })();
+    </script>
+  </body>
 </html>

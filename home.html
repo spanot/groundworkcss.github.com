@@ -1,513 +1,701 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Say Hello to Responsive Design Made Easy</title>
-  <meta name="description" content="GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design." />
-  <meta name="keywords" content="GroundworkCSS, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass" />
-  <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png" />
-  <!-- Modernizr -->
-  <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- framework css -->
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
-  <!-- Groundy theme files -->
-  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
-  <!--[if IE]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
-  <script>
-    /* polyfill custom tags for code samples */
-    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
-    for (var i = 0; i < customTags.length; i++) {
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GroundworkCSS ♥ Say Hello to Responsive Design Made Easy</title>
+    <meta name="description" content="GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS &amp; Javascript components that enables rapid prototyping and responsive design.">
+    <meta name="keywords" content="GroundworkCSS, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass">
+    <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- Modernizr-->
+    <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\\/script>')</script>
+    <!-- framework css-->
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
+    <!-- Groundy theme files-->
+    <link type="text/css" rel="stylesheet" href="./css/groundy.css"><!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
+    <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
+    <script>
+      /* polyfill custom tags for code samples */
+      customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+      for (var i = 0; i < customTags.length; i++) {
       document.createElement(customTags[i]);
-    }
-  </script>
-  <![endif]-->
-  <!--[if IE 7]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css">
-  <![endif]-->
-  <script type="text/javascript">
-    // (function(){
-    //   var datauri = new Image();
-    //   datauri.onerror = function() {
-    //       Modernizr.addTest('datauri', function () { return false; });
-    //   };  
-    //   datauri.onload = function() {
-    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-    //       Modernizr.load({
-    //         test: Modernizr.datauri,
-    //         nope: './groundwork/css/no-datauri.css'
-    //       });
-    //   };
-    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    // })();
-    // fallback if SVG unsupported
-    Modernizr.load({
+      }
+    </script><![endif]--><!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css"><![endif]-->
+    <script type="text/javascript">
+      // (function(){
+      //   var datauri = new Image();
+      //   datauri.onerror = function() {
+      //       Modernizr.addTest('datauri', function () { return false; });
+      //   };
+      //   datauri.onload = function() {
+      //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+      //       Modernizr.load({
+      //         test: Modernizr.datauri,
+      //         nope: './groundwork/css/no-datauri.css'
+      //       });
+      //   };
+      //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+      // })();
+      // fallback if SVG unsupported
+      Modernizr.load({
       test: Modernizr.inlinesvg,
       nope: [
-        './groundwork/css/no-svg.css',
-        './css/no-svg.css'
+      './groundwork/css/no-svg.css',
+      './css/no-svg.css'
       ]
-    });
-    // polyfill for HTML5 placeholders
-    Modernizr.load({
+      });
+      // polyfill for HTML5 placeholders
+      Modernizr.load({
       test: Modernizr.input.placeholder,
       nope: [
-        './groundwork/css/placeholder_polyfill.css',
-        './groundwork/js/libs/placeholder_polyfill.jquery.js'
+      './groundwork/css/placeholder_polyfill.css',
+      './groundwork/js/libs/placeholder_polyfill.jquery.js'
       ]
-    });
-  </script>
-  <!-- pinterest verification -->
-  <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be"/>
-</head>
-<body>
-  <header class="white band padded">
-    <div class="container">
-      <div class="row">
-        <div class="one half">
-          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:66px;"><a href="./home"><span class="logo"></span> GroundworkCSS<sup>Beta</sup></a></h1>
-        </div>
-        <div class="one half double pad-top">
-          <nav class="inline nav menu pull-right" data-label="Menu">
-            <a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
-            <ul>
-              <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
-              ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
-                <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
-                  <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
-                  <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
-                  <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
-                  <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
-                  <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
-                  <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
-                  <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
-                  <li><a href="./social-icons"><i class="icon-twitter"></i> Social Icons</a></li>
-                  <li><a href="./responsiveText-js"><i class="icon-text-width"></i> ResponsiveText</a></li>
-                  <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
-                  <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
-                  <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                </ul>
-              </li
-              ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
-              ><li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i> <span class="small-tablet-only mobile-only">Download</span></a></li>
-            </ul>
-          </nav>
+      });
+    </script>
+    <!-- pinterest verification-->
+    <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be">
+  </head>
+  <body>
+    <!-- page header-->
+    <header class="white band padded">
+      <div class="container">
+        <div class="row">
+          <div class="one half">
+            <h1 data-compression="9" data-min="20" data-max="120" style="font-size: 66px;" class="big responsive heading"><a href="./home"><span class="logo"></span>GroundworkCSS<sup>Beta</sup></a></h1>
+          </div>
+          <div class="one half double pad-top">
+            <nav data-label="Menu" class="inline nav menu pull-right"><a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
+              <ul>
+                <li><a href="./home"><i class="icon-home"></i><span class="small-tablet-only mobile-only">Home</span></a></li>
+                <li class="menu"><a href="./components"><i class="icon-cogs"></i>Components</a>
+                  <ul>
+                    <li><a href="./grid"><i class="icon-th"></i>Grid System</a></li>
+                    <li><a href="./media-queries"><i class="icon-tablet"></i>Media Queries</a></li>
+                    <li><a href="./mixins"><i class="icon-tasks"></i>Sass Mixins</a></li>
+                    <li><a href="./helpers"><i class="icon-beaker"></i>Layout Helpers</a></li>
+                    <li><a href="./typography"><i class="icon-font"></i>Typography</a></li>
+                    <li><a href="./buttons"><i class="icon-sign-blank"></i>Buttons</a></li>
+                    <li><a href="./navigation"><i class="icon-reorder"></i>Navigation</a></li>
+                    <li><a href="./tabs"><i class="icon-folder-close"></i>Tabs</a></li>
+                    <li><a href="./forms"><i class="icon-edit"></i>Forms</a></li>
+                    <li><a href="./tiles"><i class="icon-check"></i>Tiles</a></li>
+                    <li><a href="./ui-elements"><i class="icon-comment"></i>UI Elements</a></li>
+                    <li><a href="./tables"><i class="icon-table"></i>Tables</a></li>
+                    <li><a href="./icons"><i class="icon-magic"></i>Icons</a></li>
+                    <li><a href="./social-icons"><i class="icon-twitter"></i>Social Icons</a></li>
+                    <li><a href="./responsiveText-js"><i class="icon-text-width"></i>ResponsiveText</a></li>
+                    <li><a href="./modals-js"><i class="icon-list-alt"></i>Modals</a></li>
+                    <li><a href="./tooltips-js"><i class="icon-info-sign"></i>Tooltips</a></li>
+                    <li><a href="./cycle2-js"><i class="icon-picture"></i>Cycle2</a></li>
+                  </ul>
+                </li>
+                <li><a href="./templates"><i class="icon-file-alt"></i>Templates</a></li>
+                <li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i><span class="small-tablet-only mobile-only">Download</span></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="hero band lt-blue invert-color padded">
-    <div class="container">
-      <div class="row">
-        <div class="one third padded align-center">
-          <h1 class="responsive zero" data-compression="3.825" data-min="20" data-max="170" style="font-size:99px;">Say Hello</h1>
-          <h3 class="responsive" data-compression="13.6" data-min="15" data-max="50"  style="font-size:27px;">To responsive design made easy.</h3>
-          <a id="github-button" class="large blue block button" href="https://github.com/groundworkcss/groundwork" target="_blank">Fork on Github <i class="icon-github-alt"></i></a>
-          <!-- <script type="text/javascript">
-            $.getJSON("https://api.github.com/repos/groundworkcss/groundwork", function(data) {
-              var forks_count = data.forks_count;
-              $('#github-button').append(' ('+forks_count+')');
-            });
-          </script> -->
-          <div class="row">
-            <div class="four small-tablet sevenths gap-top pad-right no-padding-mobile">
-              <a class="block button" href="https://github.com/groundworkcss/groundwork/archive/master.zip" title="Download from Github">Download <i class="icon-download-alt"></i></a>
+    </header>
+    <!-- page content-->
+    <div class="hero band lt-blue invert-color padded">
+      <div class="container">
+        <div class="row">
+          <div class="one third padded align-center">
+            <h1 data-compression="3.825" data-min="20" data-max="170" style="font-size: 99px;" class="responsive zero">Say Hello</h1>
+            <h3 data-compression="13.6" data-min="15" data-max="50" style="font-size: 27px;" class="responsive">To responsive design made easy.</h3><a id="github-button" href="https://github.com/groundworkcss/groundwork" target="_blank" class="large blue block button">Fork on Github <i class="icon-github-alt"></i></a>
+            <div class="row">
+              <div class="four small-tablet sevenths gap-top pad-right no-padding-mobile"><a href="https://github.com/groundworkcss/groundwork/archive/master.zip" title="Download from Github" class="block button">Download <i class="icon-download-alt"></i></a></div>
+              <div class="three small-tablet sevenths gap-top"><a id="twitter-button" href="http://twitter.com/groundworkCSS/" target="_blank" class="block button">Follow <i class="icon-twitter"></i></a></div>
             </div>
-            <div class="three small-tablet sevenths gap-top">
-              <a id="twitter-button" class="block button" href="http://twitter.com/groundworkCSS/" target="_blank">Follow <i class="icon-twitter"></i></a>
-              <!-- <script type="text/javascript">
-                $.getJSON("https://api.twitter.com/1/users/show.json?callback=?&screen_name=groundworkcss", function(data) {
-                    var followers_count = data.followers_count;
-                    $('#twitter-button').append(' ('+followers_count+')');
-                  });
-              </script> -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="one whole gap-top">
-              <a href="#subscribe" class="block button">Receive email updates <i class="icon-envelope-alt"></i></a>
-              <div id="subscribe" class="modal">
-                <form action="http://groundworkcss.createsend.com/t/t/s/niuuy/" method="post" id="subForm">
-                  <div class="row">
-                    <div class="one whole padded">
-                      <h4>Get notified when big things happen.</h4>
-                      <input type="text" name="cm-name" id="name" tab-index="1" placeholder="First &amp; Last Name" />
-                      <br/>
-                      <input type="text" name="cm-niuuy-niuuy" id="niuuy-niuuy" tab-index="2" placeholder="Email Address" />
-                      <br/>
-                      <h3 class="pull-left">
-                        <a href="http://github.com/groundworkcss" target="_blank" title="Follow @groundworkcss" class="tooltip"><i class="icon-github-alt"></i></a>
-                        <a href="http://twitter.com/groundworkCSS/" target="_blank" title="Follow @GroundworkCSS" class="tooltip"><i class="icon-twitter"></i></a>
-                        <a href="mailto:groundwork@sidereel.com" target="_blank" title="Email GroundworkCSS" class="tooltip"><i class="icon-envelope-alt"></i></a>
-                      </h3>
-                      <input class="pull-right" type="submit" value="Subscribe" />
+            <div class="row">
+              <div class="one whole gap-top"><a href="#subscribe" class="block button">Receive email updates <i class="icon-envelope-alt"></i></a>
+                <div id="subscribe" class="modal">
+                  <form id="subForm" action="http://groundworkcss.createsend.com/t/t/s/niuuy/" method="post">
+                    <div class="row">
+                      <div class="one whole padded">
+                        <h4>Get notified when big things happen.</h4>
+                        <input id="name" type="text" name="cm-name" tab-index="1" placeholder="First &amp; Last Name"><br>
+                        <input id="niuuy-niuuy" type="text" name="cm-niuuy-niuuy" tab-index="2" placeholder="Email Address"><br>
+                        <h3 class="pull-left"><a href="http://github.com/groundworkcss" target="_blank" title="Follow @groundworkcss" class="tooltip"><i class="icon-github-alt"></i></a><a href="http://twitter.com/groundworkCSS/" target="_blank" title="Follow @GroundworkCSS" class="tooltip"><i class="icon-twitter"></i></a><a href="mailto:groundwork@sidereel.com" target="_blank" title="Email GroundworkCSS" class="tooltip"><i class="icon-envelope-alt"></i></a></h3>
+                        <input type="submit" value="Subscribe" class="pull-right">
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="two thirds padded align-center">
-          <img src="./images/all-devices.png" alt="GroundworkCSS - A Responsive Design Framework" />
-          <!-- <div class="cycle-slideshow" data-cycle-center-horz="true" style="position:relative;margin-bottom:-20px;">
-            <img src="./images/responsive-design-sample.png" alt="GroundworkCSS - A Responsive Design Framework" style="margin:0 auto;right:0;left:auto !important;" />
-            <img src="./images/responsive-text.png" alt="GroundworkCSS Responsive Text Javascript Component" style="margin:0 auto;right:0;left:auto !important;"  />
-            <img src="./images/responsive-modals.png" alt="GroundworkCSS Responsive Modals Javascript Component" style="margin:0 auto;right:0;left:auto !important;"  />
-          </div> -->
+          <div class="two thirds padded align-center"><img src="./images/all-devices.png" alt="GroundworkCSS - A Responsive Design Framework"></div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container">
-    <article>
-      <div class="space gap-top"></div>
-      <section class="row">
-        <div class="one third padded">
-          <a href="./sass-compass">
-            <div class="large circle"><div class="blue-3 cell"><i class="icon-plus-sign-alt"></i></div></div>
-            <h1 class="align-center">Built with Sass &amp; Compass</h1>
-          </a>
-          <p class="pad-left pad-right">GroundworkCSS has been built from the ground up with the incredibly powerful CSS preprocessor, Sass. Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.</p>
-        </div>
-        <div class="one third padded">
-          <a href="./components">
-            <div class="large circle"><div class="red cell"><i class="icon-laptop"></i></div></div>
-            <h1 class="align-center">Flexible &amp; Responsive</h1>
-          </a>
-          <p class="pad-left pad-right">GroundworkCSS offers the most advanced responsive layout techniques in the world. Featuring an incredibly flexible, nestable, fluid grid system: the GroundworkCSS grid system supports any columns in any fractional amount from halves to twelfths. The result is a framework that works for virtually any imaginable modern layout.</p>
-        </div>
-        <div class="one third padded">
-          <a href="https://github.com/groundworkcss/groundwork" target="_blank">
-            <div class="large circle"><div class="green cell"><i class="icon-github-alt"></i></div></div>
-            <h1 class="align-center">Free &amp; Open-Source</h1>
-          </a>
-          <p class="pad-left pad-right">GroundworkCSS is open-source, hosted on Github and 100% free. GroundworkCSS was created by Gary Hepting, Sr. Front-End Engineer at SideReel, to make responsive development and rapid responsive prototyping a breeze.</p>
-        </div>
-      </section>
-      <hr class="gapped" />
-      <div class="row">
-        <div class="one whole pad-left">
-          <h2>Why Use GroundworkCSS?</h2>
-        </div>
-      </div>
-      <section class="row">
-        <div class="one half">
-          <div class="row">
-            <div class="three small-tablet fourths right-one padded">
-              <h3>The Last Grid You'll Ever Need</h3>
-              <p>GroundworkCSS's flexible grid system enables you to do rapid development and scales to fit any screen size, from handheld devices to large format televisions.</p>
-            </div>
-            <div class="one small-tablet fourth left-three padded align-center">
-              <a href="./grid"><div class="large square"><div class="green rounded cell"><i class="icon-th"></i></div></div></a>
-            </div>
-          </div>
-        </div>
-        <div class="one half">
-          <div class="row">
-            <div class="three small-tablet fourths right-one padded">
-              <h3>Device Agnostic</h3>
-              <p>The grid allows you to quickly and easily adapt page layouts for mobile devices as well as the desktop and enables you to build one site that looks great on virtually any device.</p>
-            </div>
-            <div class="one small-tablet fourth left-three padded align-center">
-              <a href="./grid"><div class="large square"><div class="navy rounded cell"><i class="icon-mobile-phone"></i></div></div></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
-  </div>
-
-  <section class="navy band gap-top invert-color">
     <div class="container">
-      <div class="row">
-        <div class="one whole triple padded" id="browser-support">
-          <h3>Works in All Major Browsers</h3>
-          <div class="row">
-            <div class="one mobile ninth">
-              <a href="#browser-support-grid"><i class="icon-plus-sign"></i></a>
-            </div>
-            <div class="eight mobile ninths">
-              <div class="row align-center">
-                <div class="one mobile fifth"><span class="chrome browser">Chrome</span></div>
-                <div class="one mobile fifth"><span class="firefox browser">Firefox</span></div>
-                <div class="one mobile fifth"><span class="safari browser">Safari</span></div>
-                <div class="one mobile fifth"><span class="opera browser">Opera</span></div>
-                <div class="one mobile fifth"><span class="internet_explorer browser">Internet Explorer</span></div>
-                <!-- <div class="one mobile seventh"><span class="apple browser">Apple</span></div>
-                <div class="one mobile seventh"><span class="android browser">Android</span></div> -->
+      <article>
+        <div class="space gap-top"></div>
+        <section class="row">
+          <div class="one third padded"><a href="./sass-compass">
+              <div class="large circle">
+                <div class="blue-3 cell"><i class="icon-plus-sign-alt"></i></div>
               </div>
-            </div>
+              <h1 class="align-center">Built with Sass & Compass</h1></a>
+            <p class="pad-left pad-right">GroundworkCSS has been built from the ground up with the incredibly powerful CSS preprocessor, Sass. Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.</p>
           </div>
-          <div id="browser-support-grid">
-            <table class="responsive align-center" data-compression="40" data-min="11" data-max="16">
-              <thead>
-                <tr>
-                  <th>Component</th>
-                  <th>Chrome 14+</th>
-                  <th>Firefox 3.6+</th>
-                  <th>Safari 4+</th>
-                  <th>Opera 11.1+</th>
-                  <th>IE 9+</th>
-                  <th>IE 8</th>
-                  <th>IE 7</th>
-                  <th>IE 6</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Grid System</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Media Queries</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="error"><h5><i class="icon-remove"></i></h5></td>
-                  <td class="error"><h5><i class="icon-remove"></i></h5></td>
-                  <td class="error"><h5><i class="icon-remove"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Typography</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Buttons</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Forms</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Navigation</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-minus"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Tabs</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-minus"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>UI Elements</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Tables</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Icons</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Social Icons</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-minus"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Responsive Text</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Modals</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="warning"><h5><i class="icon-minus"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Tooltips</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-                <tr>
-                  <th>Cycle2</th>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td class="success"><h5><i class="icon-ok"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                  <td><h5><i class="icon-question-sign"></i></h5></td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="9" style="text-align:left;">
-                    <h5 class="zero row">
-                      <div class="one fifth padded success"><i class="icon-ok icon-2x pull-left gap-right"></i> Supported</div> 
-                      <div class="one fifth padded warning"><i class="icon-ok icon-2x pull-left gap-right"></i> Supported with fallback/polyfill</div> 
-                      <div class="one fifth padded warning"><i class="icon-minus icon-2x pull-left gap-right"></i> Fallback support pending development</div> 
-                      <div class="one fifth padded error"><i class="icon-remove icon-2x pull-left gap-right"></i> Not supported</div>
-                      <div class="one fifth padded"><i class="icon-question-sign icon-2x pull-left gap-right"></i> Untested</div>
-                    </h5>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+          <div class="one third padded"><a href="./components">
+              <div class="large circle">
+                <div class="red cell"><i class="icon-laptop"></i></div>
+              </div>
+              <h1 class="align-center">Flexible & Responsive</h1></a>
+            <p class="pad-left pad-right">GroundworkCSS offers the most advanced responsive layout techniques in the world. Featuring an incredibly flexible, nestable, fluid grid system: the GroundworkCSS grid system supports any columns in any fractional amount from halves to twelfths. The result is a framework that works for virtually any imaginable modern layout.</p>
+          </div>
+          <div class="one third padded"><a href="https://github.com/groundworkcss/groundwork" target="_blank">
+              <div class="large circle">
+                <div class="green cell"><i class="icon-github-alt"></i></div>
+              </div>
+              <h1 class="align-center">Free & Open-Source</h1></a>
+            <p class="pad-left pad-right">GroundworkCSS is open-source, hosted on Github and 100% free. GroundworkCSS was created by Gary Hepting, Sr. Front-End Engineer at SideReel, to make responsive development and rapid responsive prototyping a breeze.</p>
+          </div>
+        </section>
+        <hr class="gapped">
+        <div class="row">
+          <div class="one whole pad-left">
+            <h2>Why Use GroundworkCSS?</h2>
           </div>
         </div>
-      </div>
+        <section class="row">
+          <div class="one half">
+            <div class="row">
+              <div class="three small-tablet fourths right-one padded">
+                <h3>The Last Grid You'll Ever Need</h3>
+                <p>GroundworkCSS's flexible grid system enables you to do rapid development and scales to fit any screen size, from handheld devices to large format televisions.</p>
+              </div>
+              <div class="one small-tablet fourth left-three padded align-center"><a href="./grid">
+                  <div class="large square">
+                    <div class="green rounded cell"><i class="icon-th"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="one half">
+            <div class="row">
+              <div class="three small-tablet fourths right-one padded">
+                <h3>Device Agnostic</h3>
+                <p>The grid allows you to quickly and easily adapt page layouts for mobile devices as well as the desktop and enables you to build one site that looks great on virtually any device.</p>
+              </div>
+              <div class="one small-tablet fourth left-three padded align-center"><a href="./grid">
+                  <div class="large square">
+                    <div class="navy rounded cell"><i class="icon-mobile-phone"></i></div>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+      </article>
     </div>
-  </section>
-
-  <!-- <h3>Sites using GroundworkCSS:</h3>
-  <div class="row">
-    <div class="one small-tablet third align-center"><a href="http://www.sidereel.com/" target="_blank"><img src="./images/sites/sidereel-horizontal-white.svg" alt="sidereel.com" class="glow" /></a></div>
-    <div class="one small-tablet third align-center"><a href="http://garyhepting.com/" target="_blank"><img src="./images/sites/garyhepting-white.svg" alt="garyhepting.com" class="glow" /></a></div>
-  </div> -->
-
-  <div class="container">
-    <section class="row">
-      <div class="one third padded gap-top">
-        <h4>Created by <a href="http://twitter.com/ghepting" target="_blank">Gary Hepting</a> at SideReel</h4>
-        <p>GroundworkCSS has been brought to you by <a href="http://twitter.com/ghepting" target="_blank">@ghepting</a> at <a href="http://www.sidereel.com/" target="_blank">SideReel</a> in San Francisco, California.</p>
-        <p><a class="dk-blue button" href="http://github.com/ghepting" target="_blank">ghepting <i class="icon-github-alt"></i></a> <a class="dk-blue button" href="http://twitter.com/ghepting" target="_blank">@ghepting <i class="icon-twitter"></i></a></p>
-      </div>
-      <div class="one third padded gap-top">
-        <!-- <h3>Vampire + Engineer = Vampeer</h3> -->
-        <h4>Looking for a Super-Human Engineering Team?</h4>
-        <p>Sidereel is always looking for talented Rails engineers to join the <a href="http://vampeer.sidereel.com/" target="_blank">INTERSpecies Pairing Program</a>. Do more with a <a href="http://vampeer.sidereel.com/" target="_blank">Vampeer</a> than humanly possible.</p>
-        <p><a class="dk-blue button" href="http://vampeer.sidereel.com/" target="_blank">Find out more <i class="icon-question-sign"></i></a></p>
-      </div>
-      <div class="one third padded gap-top">
-        <h4>Need Some Help or Have a Question?</h4>
-        <p><a href="https://github.com/groundworkcss/groundwork/issues" target="_blank">Browse or submit issues on Github</a>, send a tweet to <a href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a> or email us at <a href="mailto:groundwork@sidereel.com" target="_blank">groundwork@sidereel.com</a> any time. We'd love to hear from you!</p>
+    <section class="navy band gap-top invert-color">
+      <div class="container">
+        <div class="row">
+          <div id="browser-support" class="one whole triple padded">
+            <h3>Works in All Major Browsers</h3>
+            <div class="row">
+              <div class="one mobile ninth"><a href="#browser-support-grid"><i class="icon-plus-sign"></i></a></div>
+              <div class="eight mobile ninths">
+                <div class="row align-center">
+                  <div class="one mobile fifth"><span class="chrome browser">Chrome</span></div>
+                  <div class="one mobile fifth"><span class="firefox browser">Firefox</span></div>
+                  <div class="one mobile fifth"><span class="safari browser">Safari</span></div>
+                  <div class="one mobile fifth"><span class="opera browser">Opera</span></div>
+                  <div class="one mobile fifth"><span class="internet_explorer browser">Internet Explorer</span></div>
+                </div>
+              </div>
+            </div>
+            <div id="browser-support-grid">
+              <table data-compression="40" data-min="11" data-max="16" class="responsive align-center">
+                <thead>
+                  <tr>
+                    <th>Component</th>
+                    <th>Chrome 14+</th>
+                    <th>Firefox 3.6+</th>
+                    <th>Safari 4+</th>
+                    <th>Opera 11.1+</th>
+                    <th>IE 9+</th>
+                    <th>IE 8</th>
+                    <th>IE 7</th>
+                    <th>IE 6</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Grid System</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Media Queries</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="error">
+                      <h5><i class="icon-remove"></i></h5>
+                    </td>
+                    <td class="error">
+                      <h5><i class="icon-remove"></i></h5>
+                    </td>
+                    <td class="error">
+                      <h5><i class="icon-remove"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Typography</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Buttons</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Forms</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Navigation</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-minus"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Tabs</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-minus"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>UI Elements</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Tables</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Icons</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Social Icons</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-minus"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Responsive Text</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Modals</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="warning">
+                      <h5><i class="icon-minus"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Tooltips</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Cycle2</th>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td class="success">
+                      <h5><i class="icon-ok"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                    <td>
+                      <h5><i class="icon-question-sign"></i></h5>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="9" style="text-align: left;">
+                      <h5 class="zero row">
+                        <div class="one fifth padded success"><i class="icon-ok icon-2x pull-left gap-right"></i>Supported</div>
+                        <div class="one fifth padded warning"><i class="icon-ok icon-2x pull-left gap-right"></i>Supported with fallback/polyfill</div>
+                        <div class="one fifth padded warning"><i class="icon-minus icon-2x pull-left gap-right"></i>Fallback support pending development</div>
+                        <div class="one fifth padded error"><i class="icon-remove icon-2x pull-left gap-right"></i>Not supported</div>
+                        <div class="one fifth padded"><i class="icon-question-sign icon-2x pull-left gap-right"></i>Untested</div>
+                      </h5>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
-  <!-- scripts -->
-  <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
-  <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
-  <script type="text/javascript" src="./js/groundy.js"></script>
-
-  <!-- google analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17121602-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
+    <div class="container">
+      <section class="row">
+        <div class="one third padded gap-top">
+          <h4>Created by<a href="http://twitter.com/ghepting" target="_blank">Gary Hepting</a>at SideReel</h4>
+          <p>GroundworkCSS has been brought to you by<a href="http://twitter.com/ghepting" target="_blank">@ghepting</a>at<a href="http://www.sidereel.com/" target="_blank">SideReel</a>in San Francisco, California.</p>
+          <p><a href="http://github.com/ghepting" target="_blank" class="dk-blue button">ghepting <i class="icon-github-alt"></i></a> <a href="http://twitter.com/ghepting" target="_blank" class="dk-blue button">@ghepting <i class="icon-twitter"></i></a></p>
+        </div>
+        <div class="one third padded gap-top">
+          <h4>Looking for a Super-Human Engineering Team?</h4>
+          <p>Sidereel is always looking for talented Rails engineers to join the<a href="http://vampeer.sidereel.com/" target="_blank">INTERSpecies Pairing Program</a>. Do more with a<a href="http://vampeer.sidereel.com/" target="_blank">Vampeer</a>than humanly possible.</p>
+          <p><a href="http://vampeer.sidereel.com/" target="_blank" class="dk-blue button">Find out more <i class="icon-question-sign"></i></a></p>
+        </div>
+        <div class="one third padded gap-top">
+          <h4>Need Some Help or Have a Question?</h4>
+          <p><a href="https://github.com/groundworkcss/groundwork/issues" target="_blank">Browse or submit issues on Github</a>, send a tweet to<a href="http://twitter.com/groundworkcss" target="_blank">@GroundworkCSS</a>or email us at<a href="mailto:groundwork@sidereel.com" target="_blank">groundwork@sidereel.com</a>any time. We'd love to hear from you!</p>
+        </div>
+      </section>
+    </div>
+    <!-- scripts-->
+    <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="./js/groundy.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17121602-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-</body>
+      })();
+    </script>
+  </body>
 </html>

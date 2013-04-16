@@ -1,0 +1,591 @@
+extends template
+  
+block head
+  title GroundworkCSS ♥ Say Hello to Responsive Design Made Easy
+  meta(name='description', content='GroundworkCSS is an open-source, responsive front-end framework packed with HTML5, CSS & Javascript components that enables rapid prototyping and responsive design.')
+  meta(name='keywords', content='GroundworkCSS, html, html5, css, css3, javascript, jquery, framework, toolkit, components, coffeescript, haml, sass, compass')
+
+block content
+  .hero.band.lt-blue.invert-color.padded
+    .container
+      .row
+        .one.third.padded.align-center
+          h1.responsive.zero(data-compression='3.825', data-min='20', data-max='170', style='font-size: 99px;') Say Hello
+          h3.responsive(data-compression='13.6', data-min='15', data-max='50', style='font-size: 27px;') To responsive design made easy.
+          a#github-button.large.blue.block.button(href='https://github.com/groundworkcss/groundwork', target='_blank')
+            | Fork on Github 
+            i.icon-github-alt
+          .row
+            .four.small-tablet.sevenths.gap-top.pad-right.no-padding-mobile
+              a.block.button(href='https://github.com/groundworkcss/groundwork/archive/master.zip', title='Download from Github')
+                | Download 
+                i.icon-download-alt
+            .three.small-tablet.sevenths.gap-top
+              a#twitter-button.block.button(href='http://twitter.com/groundworkCSS/', target='_blank')
+                | Follow 
+                i.icon-twitter
+          .row
+            .one.whole.gap-top
+              a.block.button(href='#subscribe')
+                | Receive email updates 
+                i.icon-envelope-alt
+              #subscribe.modal
+                form#subForm(action='http://groundworkcss.createsend.com/t/t/s/niuuy/', method='post')
+                  .row
+                    .one.whole.padded
+                      h4 Get notified when big things happen.
+                      input#name(type='text', name='cm-name', tab-index='1', placeholder='First & Last Name')
+                      br
+                      input#niuuy-niuuy(type='text', name='cm-niuuy-niuuy', tab-index='2', placeholder='Email Address')
+                      br
+                      h3.pull-left
+                        a.tooltip(href='http://github.com/groundworkcss', target='_blank', title='Follow @groundworkcss')
+                          i.icon-github-alt
+                        a.tooltip(href='http://twitter.com/groundworkCSS/', target='_blank', title='Follow @GroundworkCSS')
+                          i.icon-twitter
+                        a.tooltip(href='mailto:groundwork@sidereel.com', target='_blank', title='Email GroundworkCSS')
+                          i.icon-envelope-alt
+                      input.pull-right(type='submit', value='Subscribe')
+        .two.thirds.padded.align-center
+          img(src='./images/all-devices.png', alt='GroundworkCSS - A Responsive Design Framework')
+  .container
+    article
+      .space.gap-top
+      section.row
+        .one.third.padded
+          a(href='./sass-compass')
+            .large.circle
+              .blue-3.cell
+                i.icon-plus-sign-alt
+            h1.align-center Built with Sass & Compass
+          p.pad-left.pad-right
+            | GroundworkCSS has been built from the ground up with the incredibly powerful CSS preprocessor, Sass. Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
+        .one.third.padded
+          a(href='./components')
+            .large.circle
+              .red.cell
+                i.icon-laptop
+            h1.align-center Flexible & Responsive
+          p.pad-left.pad-right
+            | GroundworkCSS offers the most advanced responsive layout techniques in the world. Featuring an incredibly flexible, nestable, fluid grid system: the GroundworkCSS grid system supports any columns in any fractional amount from halves to twelfths. The result is a framework that works for virtually any imaginable modern layout.
+        .one.third.padded
+          a(href='https://github.com/groundworkcss/groundwork', target='_blank')
+            .large.circle
+              .green.cell
+                i.icon-github-alt
+            h1.align-center Free & Open-Source
+          p.pad-left.pad-right
+            | GroundworkCSS is open-source, hosted on Github and 100% free. GroundworkCSS was created by Gary Hepting, Sr. Front-End Engineer at SideReel, to make responsive development and rapid responsive prototyping a breeze.
+      hr.gapped
+      .row
+        .one.whole.pad-left
+          h2 Why Use GroundworkCSS?
+      section.row
+        .one.half
+          .row
+            .three.small-tablet.fourths.right-one.padded
+              h3 The Last Grid You'll Ever Need
+              p
+                | GroundworkCSS's flexible grid system enables you to do rapid development and scales to fit any screen size, from handheld devices to large format televisions.
+            .one.small-tablet.fourth.left-three.padded.align-center
+              a(href='./grid')
+                .large.square
+                  .green.rounded.cell
+                    i.icon-th
+        .one.half
+          .row
+            .three.small-tablet.fourths.right-one.padded
+              h3 Device Agnostic
+              p
+                | The grid allows you to quickly and easily adapt page layouts for mobile devices as well as the desktop and enables you to build one site that looks great on virtually any device.
+            .one.small-tablet.fourth.left-three.padded.align-center
+              a(href='./grid')
+                .large.square
+                  .navy.rounded.cell
+                    i.icon-mobile-phone
+  section.navy.band.gap-top.invert-color
+    .container
+      .row
+        #browser-support.one.whole.triple.padded
+          h3 Works in All Major Browsers
+          .row
+            .one.mobile.ninth
+              a(href='#browser-support-grid')
+                i.icon-plus-sign
+            .eight.mobile.ninths
+              .row.align-center
+                .one.mobile.fifth
+                  span.chrome.browser Chrome
+                .one.mobile.fifth
+                  span.firefox.browser Firefox
+                .one.mobile.fifth
+                  span.safari.browser Safari
+                .one.mobile.fifth
+                  span.opera.browser Opera
+                .one.mobile.fifth
+                  span.internet_explorer.browser Internet Explorer
+          #browser-support-grid
+            table.responsive.align-center(data-compression='40', data-min='11', data-max='16')
+              thead
+                tr
+                  th Component
+                  th Chrome 14+
+                  th Firefox 3.6+
+                  th Safari 4+
+                  th Opera 11.1+
+                  th IE 9+
+                  th IE 8
+                  th IE 7
+                  th IE 6
+              tbody
+                tr
+                  th Grid System
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Media Queries
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.error
+                    h5
+                      i.icon-remove
+                  td.error
+                    h5
+                      i.icon-remove
+                  td.error
+                    h5
+                      i.icon-remove
+                tr
+                  th Typography
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Buttons
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Forms
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Navigation
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-minus
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Tabs
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-minus
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th UI Elements
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Tables
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Icons
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Social Icons
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-minus
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Responsive Text
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Modals
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.warning
+                    h5
+                      i.icon-minus
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Tooltips
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                tr
+                  th Cycle2
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td.success
+                    h5
+                      i.icon-ok
+                  td
+                    h5
+                      i.icon-question-sign
+                  td
+                    h5
+                      i.icon-question-sign
+              tfoot
+                tr
+                  td(colspan='9', style='text-align: left;')
+                    h5.zero.row
+                      .one.fifth.padded.success
+                        i.icon-ok.icon-2x.pull-left.gap-right
+                        | Supported
+                      .one.fifth.padded.warning
+                        i.icon-ok.icon-2x.pull-left.gap-right
+                        | Supported with fallback/polyfill
+                      .one.fifth.padded.warning
+                        i.icon-minus.icon-2x.pull-left.gap-right
+                        | Fallback support pending development
+                      .one.fifth.padded.error
+                        i.icon-remove.icon-2x.pull-left.gap-right
+                        | Not supported
+                      .one.fifth.padded
+                        i.icon-question-sign.icon-2x.pull-left.gap-right
+                        | Untested
+  .container
+    section.row
+      .one.third.padded.gap-top
+        h4
+          | Created by
+          a(href='http://twitter.com/ghepting', target='_blank') Gary Hepting
+          | at SideReel
+        p
+          | GroundworkCSS has been brought to you by
+          a(href='http://twitter.com/ghepting', target='_blank') @ghepting
+          | at
+          a(href='http://www.sidereel.com/', target='_blank') SideReel
+          | in San Francisco, California.
+        p
+          a.dk-blue.button(href='http://github.com/ghepting', target='_blank')
+            | ghepting 
+            i.icon-github-alt
+          | 
+          a.dk-blue.button(href='http://twitter.com/ghepting', target='_blank')
+            | @ghepting 
+            i.icon-twitter
+      .one.third.padded.gap-top
+        h4 Looking for a Super-Human Engineering Team?
+        p
+          | Sidereel is always looking for talented Rails engineers to join the
+          a(href='http://vampeer.sidereel.com/', target='_blank') INTERSpecies Pairing Program
+          | . Do more with a
+          a(href='http://vampeer.sidereel.com/', target='_blank') Vampeer
+          | than humanly possible.
+        p
+          a.dk-blue.button(href='http://vampeer.sidereel.com/', target='_blank')
+            | Find out more 
+            i.icon-question-sign
+      .one.third.padded.gap-top
+        h4 Need Some Help or Have a Question?
+        p
+          a(href='https://github.com/groundworkcss/groundwork/issues', target='_blank') Browse or submit issues on Github
+          | , send a tweet to
+          a(href='http://twitter.com/groundworkcss', target='_blank') @GroundworkCSS
+          | or email us at
+          a(href='mailto:groundwork@sidereel.com', target='_blank') groundwork@sidereel.com
+          | any time. We'd love to hear from you!

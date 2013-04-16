@@ -1,401 +1,131 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Forms</title>
-  <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png" />
-  <!-- Modernizr -->
-  <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- framework css -->
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
-  <!-- Groundy theme files -->
-  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
-  <!--[if IE]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
-  <script>
-    /* polyfill custom tags for code samples */
-    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
-    for (var i = 0; i < customTags.length; i++) {
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GroundworkCSS ♥ </title>
+    <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- Modernizr-->
+    <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\\/script>')</script>
+    <!-- framework css-->
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
+    <!-- Groundy theme files-->
+    <link type="text/css" rel="stylesheet" href="./css/groundy.css"><!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
+    <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
+    <script>
+      /* polyfill custom tags for code samples */
+      customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+      for (var i = 0; i < customTags.length; i++) {
       document.createElement(customTags[i]);
-    }
-  </script>
-  <![endif]-->
-  <!--[if IE 7]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css">
-  <![endif]-->
-  <script type="text/javascript">
-    // (function(){
-    //   var datauri = new Image();
-    //   datauri.onerror = function() {
-    //       Modernizr.addTest('datauri', function () { return false; });
-    //   };  
-    //   datauri.onload = function() {
-    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-    //       Modernizr.load({
-    //         test: Modernizr.datauri,
-    //         nope: './groundwork/css/no-datauri.css'
-    //       });
-    //   };
-    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    // })();
-    // fallback if SVG unsupported
-    Modernizr.load({
+      }
+    </script><![endif]--><!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css"><![endif]-->
+    <script type="text/javascript">
+      // (function(){
+      //   var datauri = new Image();
+      //   datauri.onerror = function() {
+      //       Modernizr.addTest('datauri', function () { return false; });
+      //   };
+      //   datauri.onload = function() {
+      //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+      //       Modernizr.load({
+      //         test: Modernizr.datauri,
+      //         nope: './groundwork/css/no-datauri.css'
+      //       });
+      //   };
+      //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+      // })();
+      // fallback if SVG unsupported
+      Modernizr.load({
       test: Modernizr.inlinesvg,
       nope: [
-        './groundwork/css/no-svg.css',
-        './css/no-svg.css'
+      './groundwork/css/no-svg.css',
+      './css/no-svg.css'
       ]
-    });
-    // polyfill for HTML5 placeholders
-    Modernizr.load({
+      });
+      // polyfill for HTML5 placeholders
+      Modernizr.load({
       test: Modernizr.input.placeholder,
       nope: [
-        './groundwork/css/placeholder_polyfill.css',
-        './groundwork/js/libs/placeholder_polyfill.jquery.js'
+      './groundwork/css/placeholder_polyfill.css',
+      './groundwork/js/libs/placeholder_polyfill.jquery.js'
       ]
-    });
-  </script>
-  <!-- pinterest verification -->
-  <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be"/>
-</head>
-<body>
-  <header class="white band padded">
-    <div class="container">
-      <div class="row">
-        <div class="one half">
-          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:66px;"><a href="./home"><span class="logo"></span> GroundworkCSS<sup>Beta</sup></a></h1>
-        </div>
-        <div class="one half double pad-top">
-          <nav class="inline nav menu pull-right" data-label="Menu">
-            <a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
-            <ul>
-              <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
-              ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
-                <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
-                  <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
-                  <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
-                  <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
-                  <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
-                  <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
-                  <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
-                  <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
-                  <li><a href="./social-icons"><i class="icon-twitter"></i> Social Icons</a></li>
-                  <li><a href="./responsiveText-js"><i class="icon-text-width"></i> ResponsiveText</a></li>
-                  <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
-                  <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
-                  <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                </ul>
-              </li
-              ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
-              ><li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i> <span class="small-tablet-only mobile-only">Download</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="one whole padded">
-        <ul class="breadcrumbs">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./components.html">Components</a></li>
-          <li><a href="./forms.html">Forms</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one third padded">
-        <h1><i class="icon-edit"></i> Forms</h1>
-        <p>Forms are a part of almost any modern web application. Users need clean and easy to use forms to submit their information.</p>
-        
-        <h6>Example usage:</h6>
-        <script src="https://gist.github.com/ghepting/5282696.js"></script>
-        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <h6>Result:</h6>
-        <form action="#" method="get">
-          <label>Example Label</label>
-          <p><input placeholder="placeholder text" /></p>
-          <button type="button">Submit</button>
-        </form>
-
-      </div>
-      <div class="two thirds padded">
-        <h2>Form Elements</h2>
-        <p>GroundworkCSS makes creating beautiful forms pretty darn easy. By default, form elements such as <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> expand to 100% width of their containers. This makes setting up forms using the grid system really simple.</p>
-        <form action="#" method="get">
-          <fieldset>
-            <legend>Example Form</legend>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="name">First &amp; Last Name</label>
-                <input type="text" id="name" placeholder="First &amp; Last Name" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="you@example.com" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="Street Address" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="one half padded">
-                <input type="text" placeholder="City" />
-              </div>
-              <div class="one fourth padded">
-                <span class="select">
-                  <select>
-                    <option value="" disabled selected>State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                    <option value="AS">American Samoa</option>
-                    <option value="DC">District of Columbia</option>
-                    <option value="FM">Federated States of Micronesia</option>
-                    <option value="GU">Guam</option>
-                    <option value="MH">Marshall Islands</option>
-                    <option value="MP">Northern Mariana Islands</option>
-                    <option value="PW">Palau</option>
-                    <option value="PR">Puerto Rico</option>
-                    <option value="VI">Virgin Islands</option>
-                    <option value="AE">Armed Forces Africa</option>
-                    <option value="AA">Armed Forces Americas</option>
-                    <option value="AE">Armed Forces Canada</option>
-                    <option value="AE">Armed Forces Europe</option>
-                    <option value="AE">Armed Forces Middle East</option>
-                    <option value="AP">Armed Forces Pacific</option>
-                    <option value="AB">Alberta</option>
-                    <option value="BC">British Columbia</option>
-                    <option value="MB">Manitoba</option>
-                    <option value="NB">New Brunswick</option>
-                    <option value="NL">Newfoundland and Labrador</option>
-                    <option value="NS">Nova Scotia</option>
-                    <option value="NT">Northwest Territories</option>
-                    <option value="NU">Nunavut</option>
-                    <option value="ON">Ontario</option>
-                    <option value="PE">Prince Edward Island</option>
-                    <option value="QC">Quebec</option>
-                    <option value="SK">Saskatchewan</option>
-                    <option value="YT">Yukon Territory</option>
-                  </select>
-                </span>
-              </div>
-              <div class="one fourth padded">
-                <input type="text" placeholder="Zip Code" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="message">Special Instructions</label>
-                <textarea id="message" placeholder="Enter your message..."></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="twitter">Twitter</label>
-                <div class="row">
-                  <div class="one half pad-right">
-                    <div class="row">
-                      <div class="one mobile sixth">
-                        <span class="prefix">@</span>
-                      </div>
-                      <div class="five mobile sixths">
-                        <input type="text" name="twitter" placeholder="username" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="one half pad-left">
-                    <div class="row">
-                      <div class="three mobile fifths">
-                        <input type="text" name="sidereel" placeholder="pick username" />
-                      </div>
-                      <div class="two mobile fifths">
-                        <span class="suffix">@example.com</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <label for="things">Pick a thing:</label>
-                <ul class="radio-list">
-                  <li><input type="radio" id="things1" name="things" checked /> <label class="inline" for="things1">Thing one</label></li>
-                  <li><input type="radio" id="things2" name="things" /> <label class="inline" for="things2">Thing two</label></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <button type="button">Submit</button> <button type="button" class="warning">Cancel</button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="one whole padded">
-                <input type="checkbox" id="things3" name="allthings" checked /> <label class="inline" for="things3">I want all the things!</label>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-
-        <hr/>
-
-        <h2>Field States</h2>
+      });
+    </script>
+    <!-- pinterest verification-->
+    <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be">
+  </head>
+  <body>
+    <!-- page header-->
+    <header class="white band padded">
+      <div class="container">
         <div class="row">
-          <div class="one whole padded">
-            <p class="invalid">
-              <label>Invalid entry field label</label>
-              <input value="Invalid entry" />
-            </p>
-            <div class="invalid row">
-              <div class="one mobile tenth">
-                <span class="prefix">@</span>
-              </div>
-              <div class="nine mobile tenths">
-                <input value="Invalid entry" />
-              </div>
-            </div>
+          <div class="one half">
+            <h1 data-compression="9" data-min="20" data-max="120" style="font-size: 66px;" class="big responsive heading"><a href="./home"><span class="logo"></span>GroundworkCSS<sup>Beta</sup></a></h1>
+          </div>
+          <div class="one half double pad-top">
+            <nav data-label="Menu" class="inline nav menu pull-right"><a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
+              <ul>
+                <li><a href="./home"><i class="icon-home"></i><span class="small-tablet-only mobile-only">Home</span></a></li>
+                <li class="menu"><a href="./components"><i class="icon-cogs"></i>Components</a>
+                  <ul>
+                    <li><a href="./grid"><i class="icon-th"></i>Grid System</a></li>
+                    <li><a href="./media-queries"><i class="icon-tablet"></i>Media Queries</a></li>
+                    <li><a href="./mixins"><i class="icon-tasks"></i>Sass Mixins</a></li>
+                    <li><a href="./helpers"><i class="icon-beaker"></i>Layout Helpers</a></li>
+                    <li><a href="./typography"><i class="icon-font"></i>Typography</a></li>
+                    <li><a href="./buttons"><i class="icon-sign-blank"></i>Buttons</a></li>
+                    <li><a href="./navigation"><i class="icon-reorder"></i>Navigation</a></li>
+                    <li><a href="./tabs"><i class="icon-folder-close"></i>Tabs</a></li>
+                    <li><a href="./forms"><i class="icon-edit"></i>Forms</a></li>
+                    <li><a href="./tiles"><i class="icon-check"></i>Tiles</a></li>
+                    <li><a href="./ui-elements"><i class="icon-comment"></i>UI Elements</a></li>
+                    <li><a href="./tables"><i class="icon-table"></i>Tables</a></li>
+                    <li><a href="./icons"><i class="icon-magic"></i>Icons</a></li>
+                    <li><a href="./social-icons"><i class="icon-twitter"></i>Social Icons</a></li>
+                    <li><a href="./responsiveText-js"><i class="icon-text-width"></i>ResponsiveText</a></li>
+                    <li><a href="./modals-js"><i class="icon-list-alt"></i>Modals</a></li>
+                    <li><a href="./tooltips-js"><i class="icon-info-sign"></i>Tooltips</a></li>
+                    <li><a href="./cycle2-js"><i class="icon-picture"></i>Cycle2</a></li>
+                  </ul>
+                </li>
+                <li><a href="./templates"><i class="icon-file-alt"></i>Templates</a></li>
+                <li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i><span class="small-tablet-only mobile-only">Download</span></a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <div class="row">
-          <div class="one whole padded">
-            <p class="valid">
-              <label>Valid entry field label</label>
-              <input value="Valid entry" />
-            </p>
-            <div class="valid row">
-              <div class="one mobile tenth">
-                <span class="prefix">@</span>
-              </div>
-              <div class="nine mobile tenths">
-                <input value="Valid entry" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one whole padded">
-            <p class="disabled">
-              <label>Disabled field label</label>
-              <input value="Disabled field" />
-            </p>
-            <div class="disabled row">
-              <div class="one mobile tenth">
-                <span class="prefix">@</span>
-              </div>
-              <div class="nine mobile tenths">
-                <input value="Disabled field" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr/>
-
-        <h2>Next Up: Tiles</h2>
-        <p>GroundworkCSS <a href="./tiles">Tiles</a> offer a great alternative to radio buttons and other boring standard form elements.</p>
-        <p><a class="button" href="./tiles">Read More <i class="icon-chevron-right"></i></a></p>
-
       </div>
-    </div>
-  </div>
-  <!-- scripts -->
-  <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
-  <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
-  <script type="text/javascript" src="./js/groundy.js"></script>
-
-  <!-- google analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17121602-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
+    </header>
+    <!-- page content-->
+    <!-- scripts-->
+    <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="./js/groundy.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17121602-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-</body>
+      })();
+    </script>
+  </body>
 </html>

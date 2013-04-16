@@ -1,0 +1,153 @@
+extends template
+  
+block head
+  title GroundworkCSS ♥ Typography
+  
+block content
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-font
+          |  Typography
+        p
+          | Keeping the typography consistent throughout a website is important. GroundworkCSS helps with that.
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5282691.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h1
+          | Heading 1 
+          sup
+            small w/small superscript
+        p
+          | Paragraph text with 
+          big big text 
+          | and 
+          small small text 
+        p.small Small paragraph text
+      .two.thirds.padded
+        h2 Headings
+        .row
+          .one.mobile.half
+            h1 &lt;h1&gt; Heading 1
+            h2 &lt;h2&gt; Heading 2
+            h3 &lt;h3&gt; Heading 3
+            h4 &lt;h4&gt; Heading 4
+            h5 &lt;h5&gt; Heading 5
+            h6 &lt;h6&gt; Heading 6
+          .one.mobile.half
+            h1
+              small &lt;small&gt; Heading 1
+            h2
+              small &lt;small&gt; Heading 2
+            h3
+              small &lt;small&gt; Heading 3
+            h4
+              small &lt;small&gt; Heading 4
+            h5
+              small &lt;small&gt; Heading 5
+            h6
+              small &lt;small&gt; Heading 6
+        hr
+        h2 Paragraphs
+        p
+          | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+        hr
+        h2 Adjusters
+        p
+          | Paragraph with 
+          sup superscript
+        p
+          | Paragraph with 
+          sub subscript
+        p
+          | Paragraph with 
+          small small text
+        p
+          | Paragraph with 
+          big large text
+        p
+          | Paragraph with 
+          em emphasized text
+        p
+          | Paragraph with 
+          b bold text
+        hr
+        h2 Lists
+        .row
+          .one.mobile.half
+            ul
+              li Default unordered list item
+              li Default unordered list item
+              li Default unordered list item
+            ul.list
+              li Styled unordered list item
+              li Styled unordered list item
+              li Styled unordered list item
+          .one.mobile.half
+            ol
+              li Default ordered list item
+              li Default ordered list item
+              li Default ordered list item
+            ol.list
+              li Styled ordered list item
+              li Styled ordered list item
+              li Styled ordered list item
+        .row
+          .one.mobile.half
+            dl
+              dt Definition list term
+              dd Definition list description
+              dt Definition list term #2
+              dd Definition list description #2
+        hr
+        h2 Links
+        h1
+          a(href='#') Link in a Heading 1
+        h2
+          a(href='#') Link in a Heading 2
+        h3
+          a(href='#') Link in a Heading 3
+        h4
+          a(href='#') Link in a Heading 4
+        h5
+          a(href='#') Link in a Heading 5
+        h6
+          a(href='#') Link in a Heading 6
+        p
+          a(href='#') Link in a paragraph
+        p
+          a.disabled(href='#') A disabled link
+        ul
+          li
+            a(href='#') Link in an unordered list
+        ol
+          li
+            a(href='#') Link in an ordered list
+        hr
+        h2 Quotes
+        blockquote
+          | A computer once beat me at chess, but it was no match for me at kick boxing.
+          cite Emo Philips
+        hr
+        h2 Code Blocks (Preformatted)
+        pre
+          code &lt;h3&gt;This is a code snippet that starts with a <em>&lt;pre&gt;</em> tag and has a <em>&lt;code&gt;</em> tag for each line of code&lt;/h3&gt;
+          code &lt;p&gt;Line numbers increment with each additional <em>&lt;code&gt;</em> tag&lt;/p&gt;
+        br
+        p
+          | As well as
+          code inline code
+          | snippets.
+        hr
+        h2 Next Up: Buttons
+        p
+          | A vital piece of virtually any web site or application,
+          a(href='./buttons') Buttons
+          | should be easy to customize and highly accessible on any device.
+        p
+          a.button(href='./buttons')
+            | Read More 
+            i.icon-chevron-right

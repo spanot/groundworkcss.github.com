@@ -1,423 +1,407 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Layout Templates</title>
-  <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png" />
-  <!-- Modernizr -->
-  <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- framework css -->
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
-  <!-- Groundy theme files -->
-  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
-  <!--[if IE]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
-  <script>
-    /* polyfill custom tags for code samples */
-    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
-    for (var i = 0; i < customTags.length; i++) {
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GroundworkCSS ♥ Responsive Templates to Get You Started</title>
+    <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- Modernizr-->
+    <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\\/script>')</script>
+    <!-- framework css-->
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
+    <!-- Groundy theme files-->
+    <link type="text/css" rel="stylesheet" href="./css/groundy.css"><!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
+    <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
+    <script>
+      /* polyfill custom tags for code samples */
+      customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+      for (var i = 0; i < customTags.length; i++) {
       document.createElement(customTags[i]);
-    }
-  </script>
-  <![endif]-->
-  <!--[if IE 7]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css">
-  <![endif]-->
-  <script type="text/javascript">
-    // (function(){
-    //   var datauri = new Image();
-    //   datauri.onerror = function() {
-    //       Modernizr.addTest('datauri', function () { return false; });
-    //   };  
-    //   datauri.onload = function() {
-    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-    //       Modernizr.load({
-    //         test: Modernizr.datauri,
-    //         nope: './groundwork/css/no-datauri.css'
-    //       });
-    //   };
-    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    // })();
-    // fallback if SVG unsupported
-    Modernizr.load({
+      }
+    </script><![endif]--><!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css"><![endif]-->
+    <script type="text/javascript">
+      // (function(){
+      //   var datauri = new Image();
+      //   datauri.onerror = function() {
+      //       Modernizr.addTest('datauri', function () { return false; });
+      //   };
+      //   datauri.onload = function() {
+      //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+      //       Modernizr.load({
+      //         test: Modernizr.datauri,
+      //         nope: './groundwork/css/no-datauri.css'
+      //       });
+      //   };
+      //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+      // })();
+      // fallback if SVG unsupported
+      Modernizr.load({
       test: Modernizr.inlinesvg,
       nope: [
-        './groundwork/css/no-svg.css',
-        './css/no-svg.css'
+      './groundwork/css/no-svg.css',
+      './css/no-svg.css'
       ]
-    });
-    // polyfill for HTML5 placeholders
-    Modernizr.load({
+      });
+      // polyfill for HTML5 placeholders
+      Modernizr.load({
       test: Modernizr.input.placeholder,
       nope: [
-        './groundwork/css/placeholder_polyfill.css',
-        './groundwork/js/libs/placeholder_polyfill.jquery.js'
+      './groundwork/css/placeholder_polyfill.css',
+      './groundwork/js/libs/placeholder_polyfill.jquery.js'
       ]
-    });
-  </script>
-  <!-- pinterest verification -->
-  <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be"/>
-</head>
-<body>
-  <header class="white band padded">
+      });
+    </script>
+    <!-- pinterest verification-->
+    <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be">
+  </head>
+  <body>
+    <!-- page header-->
+    <header class="white band padded">
+      <div class="container">
+        <div class="row">
+          <div class="one half">
+            <h1 data-compression="9" data-min="20" data-max="120" style="font-size: 66px;" class="big responsive heading"><a href="./home"><span class="logo"></span>GroundworkCSS<sup>Beta</sup></a></h1>
+          </div>
+          <div class="one half double pad-top">
+            <nav data-label="Menu" class="inline nav menu pull-right"><a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
+              <ul>
+                <li><a href="./home"><i class="icon-home"></i><span class="small-tablet-only mobile-only">Home</span></a></li>
+                <li class="menu"><a href="./components"><i class="icon-cogs"></i>Components</a>
+                  <ul>
+                    <li><a href="./grid"><i class="icon-th"></i>Grid System</a></li>
+                    <li><a href="./media-queries"><i class="icon-tablet"></i>Media Queries</a></li>
+                    <li><a href="./mixins"><i class="icon-tasks"></i>Sass Mixins</a></li>
+                    <li><a href="./helpers"><i class="icon-beaker"></i>Layout Helpers</a></li>
+                    <li><a href="./typography"><i class="icon-font"></i>Typography</a></li>
+                    <li><a href="./buttons"><i class="icon-sign-blank"></i>Buttons</a></li>
+                    <li><a href="./navigation"><i class="icon-reorder"></i>Navigation</a></li>
+                    <li><a href="./tabs"><i class="icon-folder-close"></i>Tabs</a></li>
+                    <li><a href="./forms"><i class="icon-edit"></i>Forms</a></li>
+                    <li><a href="./tiles"><i class="icon-check"></i>Tiles</a></li>
+                    <li><a href="./ui-elements"><i class="icon-comment"></i>UI Elements</a></li>
+                    <li><a href="./tables"><i class="icon-table"></i>Tables</a></li>
+                    <li><a href="./icons"><i class="icon-magic"></i>Icons</a></li>
+                    <li><a href="./social-icons"><i class="icon-twitter"></i>Social Icons</a></li>
+                    <li><a href="./responsiveText-js"><i class="icon-text-width"></i>ResponsiveText</a></li>
+                    <li><a href="./modals-js"><i class="icon-list-alt"></i>Modals</a></li>
+                    <li><a href="./tooltips-js"><i class="icon-info-sign"></i>Tooltips</a></li>
+                    <li><a href="./cycle2-js"><i class="icon-picture"></i>Cycle2</a></li>
+                  </ul>
+                </li>
+                <li><a href="./templates"><i class="icon-file-alt"></i>Templates</a></li>
+                <li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i><span class="small-tablet-only mobile-only">Download</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- page content-->
     <div class="container">
       <div class="row">
-        <div class="one half">
-          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:66px;"><a href="./home"><span class="logo"></span> GroundworkCSS<sup>Beta</sup></a></h1>
+        <div class="one third padded">
+          <h2>Templates</h2>
+          <div class="row">
+            <div class="one mobile sixth">
+              <div class="demo legend">
+                <div class="row">
+                  <div class="one whole"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="five mobile sixths padded">
+              <h4><i class="icon-laptop"></i> Desktop</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one mobile sixth">
+              <div class="demo legend">
+                <div class="row">
+                  <div class="one small-tablet whole"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="five mobile sixths padded">
+              <h4><i class="icon-tablet"></i> Small Tablet</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one mobile sixth">
+              <div class="demo legend">
+                <div class="row">
+                  <div class="one mobile whole"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="five mobile sixths padded">
+              <h4><i class="icon-mobile-phone"></i> Mobile</h4>
+            </div>
+          </div>
         </div>
-        <div class="one half double pad-top">
-          <nav class="inline nav menu pull-right" data-label="Menu">
-            <a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
-            <ul>
-              <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
-              ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
-                <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
-                  <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
-                  <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
-                  <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
-                  <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
-                  <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
-                  <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
-                  <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
-                  <li><a href="./social-icons"><i class="icon-twitter"></i> Social Icons</a></li>
-                  <li><a href="./responsiveText-js"><i class="icon-text-width"></i> ResponsiveText</a></li>
-                  <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
-                  <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
-                  <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                </ul>
-              </li
-              ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
-              ><li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i> <span class="small-tablet-only mobile-only">Download</span></a></li>
-            </ul>
-          </nav>
+        <div class="two thirds padded">
+          <h2>We've Taken Care of the Groundwork</h2>
+          <h4>Responsive Templates to Get You Started</h4>
+          <div class="row">
+            <!-- Layout 1-->
+            <div class="one third padded"><a href="./groundwork/templates/layout-1.html" class="modal">
+                <h6>Layout 1</h6>
+                <div class="layout">
+                  <div class="row">
+                    <div class="one whole">
+                      <h5>Slider</h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="three fourths padded">
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one small-tablet third"></div>
+                        <div class="two small-tablet thirds"></div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                    </div>
+                    <div class="one fourth padded">
+                      <div class="row">
+                        <div class="one whole"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <p class="align-center"><a href="./layout-1.html.zip"><i class="icon-download-alt"> </i> Download ZIP</a></p>
+            </div>
+            <!-- Layout 2-->
+            <div class="one third padded"><a href="./groundwork/templates/layout-2.html" class="modal">
+                <h6>Layout 2</h6>
+                <div class="layout">
+                  <div class="row">
+                    <div class="one whole">
+                      <h5>Slider</h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="one fourth padded">
+                      <div class="row">
+                        <div class="one whole"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                    <div class="three fourths padded">
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one small-tablet third"></div>
+                        <div class="two small-tablet thirds"></div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <p class="align-center"><a href="./layout-2.html.zip"><i class="icon-download-alt"> </i> Download ZIP</a></p>
+            </div>
+            <!-- Layout 3-->
+            <div class="one third padded"><a href="./groundwork/templates/layout-3.html" class="modal">
+                <h6>Layout 3</h6>
+                <div class="layout">
+                  <div class="row">
+                    <div class="three fourths right-one padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h5>Slider</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one small-tablet third"></div>
+                        <div class="two small-tablet thirds"></div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                    </div>
+                    <div class="one fourth left-three padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h6>1</h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <p class="align-center"><a href="./layout-3.html.zip"><i class="icon-download-alt"> </i> Download ZIP</a></p>
+            </div>
+            <!-- Layout 4-->
+            <div class="one third padded"><a href="./groundwork/templates/layout-4.html" class="modal">
+                <h6>Layout 4</h6>
+                <div class="layout">
+                  <div class="row">
+                    <div class="three fourths padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h5>Slider</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one small-tablet third"></div>
+                        <div class="two small-tablet thirds"></div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                    </div>
+                    <div class="one fourth padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h6>1</h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <p class="align-center"><a href="./layout-4.html.zip"><i class="icon-download-alt"> </i> Download ZIP</a></p>
+            </div>
+            <!-- Layout 5-->
+            <div class="one third padded"><a href="./groundwork/templates/layout-5.html" class="modal">
+                <h6>Layout 5</h6>
+                <div class="layout">
+                  <div class="row">
+                    <div class="three fifths right-one padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h5>Slider</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="two small-tablet thirds"></div>
+                        <div class="one small-tablet third"></div>
+                      </div>
+                    </div>
+                    <div class="one fifth left-three padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h6>1</h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                    <div class="one fifth padded">
+                      <div class="row">
+                        <div class="one whole">
+                          <h6>2</h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="one mobile half"></div>
+                        <div class="one mobile half"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="one whole padded">
+                      <div class="row">
+                        <div class="one third">A</div>
+                        <div class="one third">B</div>
+                        <div class="one third">C</div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+              <p class="align-center"><a href="./layout-5.html.zip"><i class="icon-download-alt"> </i> Download ZIP</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="one whole padded">
-        <ul class="breadcrumbs">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./templates.html">Templates</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one third padded">
-        <h2>Templates</h2>
-        <div class="row">
-          <div class="one mobile sixth">
-            <div class="demo legend">
-              <div class="row">
-                <div class="one whole">&nbsp;</div>
-              </div>
-            </div>
-          </div>
-          <div class="five mobile sixths padded">
-            <h4><i class="icon-laptop"></i> Desktop</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one mobile sixth">
-            <div class="demo legend">
-              <div class="row">
-                <div class="one small-tablet whole">&nbsp;</div>
-              </div>
-            </div>
-          </div>
-          <div class="five mobile sixths padded">
-            <h4><i class="icon-tablet"></i> Small Tablet</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one mobile sixth">
-            <div class="demo legend">
-              <div class="row">
-                <div class="one mobile whole">&nbsp;</div>
-              </div>
-            </div>
-          </div>
-          <div class="five mobile sixths padded">
-            <h4><i class="icon-mobile-phone"></i> Mobile</h4>
-          </div>
-        </div>
-      </div>
-      <div class="two thirds padded">
-        <h2>We've Taken Care of the GroundworkCSS</h2>
-        <h4>Responsive Templates To Get You Going</h4>
-        <div class="row">
-
-          <!-- Layout 1 -->
-          <div class="one third padded">
-            <a href="./groundwork/templates/layout-1.html">
-              <h6>Layout 1</h6>
-              <div class="layout">
-                <div class="row">
-                  <div class="one whole"><h5>Slider</h5></div>
-                </div>
-                <div class="row">
-                  <div class="three fourths padded">
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one small-tablet third"></div>
-                      <div class="two small-tablet thirds"></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                  </div>
-                  <div class="one fourth padded">
-                    <div class="row">
-                      <div class="one whole"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- <p class="align-center"><a href="./layout-1.html.zip"><i class="icon-download-alt"></i> Download ZIP</a></p> -->
-          </div>
-
-          <!-- Layout 2 -->
-          <div class="one third padded">
-            <a href="./groundwork/templates/layout-2.html">
-              <h6>Layout 2</h6>
-              <div class="layout">
-                <div class="row">
-                  <div class="one whole"><h5>Slider</h5></div>
-                </div>
-                <div class="row">
-                  <div class="one fourth padded">
-                    <div class="row">
-                      <div class="one whole"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                  <div class="three fourths padded">
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one small-tablet third"></div>
-                      <div class="two small-tablet thirds"></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- <p class="align-center"><a href="./layout-2.html.zip"><i class="icon-download-alt"></i> Download ZIP</a></p> -->
-          </div>
-
-          <!-- Layout 3 -->
-          <div class="one third padded">
-            <a href="./groundwork/templates/layout-3.html">
-              <h6>Layout 3</h6>
-              <div class="layout">
-                <div class="row">
-                  <div class="three fourths right-one padded">
-                    <div class="row">
-                      <div class="one whole"><h5>Slider</h5></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one small-tablet third"></div>
-                      <div class="two small-tablet thirds"></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                  </div>
-                  <div class="one fourth left-three padded">
-                    <div class="row">
-                      <div class="one whole"><h6>1</h6></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- <p class="align-center"><a href="./layout-3.html.zip"><i class="icon-download-alt"></i> Download ZIP</a></p> -->
-          </div>
-
-          <!-- Layout 4 -->
-          <div class="one third padded">
-            <a href="./groundwork/templates/layout-4.html">
-              <h6>Layout 4</h6>
-              <div class="layout">
-                <div class="row">
-                  <div class="three fourths padded">
-                    <div class="row">
-                      <div class="one whole"><h5>Slider</h5></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one small-tablet third"></div>
-                      <div class="two small-tablet thirds"></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                  </div>
-                  <div class="one fourth padded">
-                    <div class="row">
-                      <div class="one whole"><h6>1</h6></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- <p class="align-center"><a href="./layout-4.html.zip"><i class="icon-download-alt"></i> Download ZIP</a></p> -->
-          </div>
-
-          <!-- Layout 5 -->
-          <div class="one third padded">
-            <a href="./groundwork/templates/layout-5.html">
-              <h6>Layout 5</h6>
-              <div class="layout">
-                <div class="row">
-                  <div class="three fifths right-one padded">
-                    <div class="row">
-                      <div class="one whole"><h5>Slider</h5></div>
-                    </div>
-                    <div class="row">
-                      <div class="two small-tablet thirds"></div>
-                      <div class="one small-tablet third"></div>
-                    </div>
-                  </div>
-                  <div class="one fifth left-three padded">
-                    <div class="row">
-                      <div class="one whole"><h6>1</h6></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                  <div class="one fifth padded">
-                    <div class="row">
-                      <div class="one whole"><h6>2</h6></div>
-                    </div>
-                    <div class="row">
-                      <div class="one mobile half"></div>
-                      <div class="one mobile half"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="one whole padded">
-                    <div class="row">
-                      <div class="one third">A</div>
-                      <div class="one third">B</div>
-                      <div class="one third">C</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- <p class="align-center"><a href="./layout-5.html.zip"><i class="icon-download-alt"></i> Download ZIP</a></p> -->
-          </div>
-
-        </div>
-      </div>
-  </div>
-  <!-- scripts -->
-  <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
-  <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
-  <script type="text/javascript" src="./js/groundy.js"></script>
-
-  <!-- google analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17121602-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
+    <!-- scripts-->
+    <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="./js/groundy.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17121602-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-</body>
+      })();
+    </script>
+  </body>
 </html>

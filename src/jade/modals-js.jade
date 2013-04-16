@@ -1,0 +1,108 @@
+extends template
+  
+block head
+  title GroundworkCSS ♥ Responsive Modals
+  
+block content
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-list-alt
+          |  Modals
+        p Beautiful, fully responsive and easily customized modals.
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282883.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.modal.button(href='http://placekitten.com/')
+            | External Content
+            i.icon-external-link
+      .two.thirds.padded
+        h2 Modals
+        p
+          | GroundworkCSS comes packaged with a custom component for creating beautiful, fully responsive modals.
+        p
+          | NEW: Aria role support added for inline modal dialogs. Inline modals can now be specified by adding
+          code class="modal"
+          | or the more semantic option:
+          code role="dialog"
+          | to the modal content
+          code div
+          | element.
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282870.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.button(href='#example-modal') Inline Content
+        #example-modal(role='dialog')
+          img.pull-right.gap-left.gap-bottom(src='http://placekitten.com/g/200/300')
+          h1 HTML Ipsum Presents
+          p
+            strong Pellentesque habitant morbi tristique
+            | senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+            em Aenean ultricies mi vitae est.
+            | Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+            a(href='#') Donec non enim
+            | in turpis pulvinar facilisis. Ut felis.
+          ol
+            li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            li Aliquam tincidunt mauris eu risus.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282876.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.fullscreen.button(href='#example-modal')
+            i.icon-fullscreen
+            |  Fullscreen
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282883.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.modal.button(href='http://placekitten.com/')
+            | External Content 
+            i.icon-external-link
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282885.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.fullscreen.modal.button(href='http://placekitten.com/')
+            i.icon-fullscreen
+            |  Fullscreen External Content 
+            i.icon-external-link
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282888.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.modal.button(href='http://www.youtube.com/embed/eDO23-eLoGA?wmode=transparent')
+            | YouTube Video 
+            i.icon-play-circle
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282899.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        p
+          a.fullscreen.modal.button(href='http://www.youtube.com/embed/eDO23-eLoGA?wmode=transparent')
+            i.icon-fullscreen
+            |  Fullscreen YouTube Video 
+            i.icon-play-circle

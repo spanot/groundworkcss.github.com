@@ -1,424 +1,379 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>GroundworkCSS &hearts; Layout Helpers</title>
-  <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png" />
-  <!-- Modernizr -->
-  <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\/script>')</script>
-  <!-- framework css -->
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
-  <!-- Groundy theme files -->
-  <link type="text/css" rel="stylesheet" href="./css/groundy.css">
-  <!--[if IE]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
-  <script>
-    /* polyfill custom tags for code samples */
-    customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
-    for (var i = 0; i < customTags.length; i++) {
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>GroundworkCSS ♥ </title>
+    <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../groundwork/images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../groundwork/images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- Modernizr-->
+    <script src="./groundwork/js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="./groundwork/js/libs/jquery-1.8.2.min.js"><\\/script>')</script>
+    <!-- framework css-->
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork.css">
+    <!-- Groundy theme files-->
+    <link type="text/css" rel="stylesheet" href="./css/groundy.css"><!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/groundwork-ie.css"><![endif]--><!--[if lt IE 9]>
+    <script type="text/javascript" src="./groundwork/js/libs/html5shiv.min.js"></script>
+    <script>
+      /* polyfill custom tags for code samples */
+      customTags = ['tag','content','function','string','class','val','comment','arg','prop'];
+      for (var i = 0; i < customTags.length; i++) {
       document.createElement(customTags[i]);
-    }
-  </script>
-  <![endif]-->
-  <!--[if IE 7]>
-  <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css">
-  <![endif]-->
-  <script type="text/javascript">
-    // (function(){
-    //   var datauri = new Image();
-    //   datauri.onerror = function() {
-    //       Modernizr.addTest('datauri', function () { return false; });
-    //   };  
-    //   datauri.onload = function() {
-    //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-    //       Modernizr.load({
-    //         test: Modernizr.datauri,
-    //         nope: './groundwork/css/no-datauri.css'
-    //       });
-    //   };
-    //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-    // })();
-    // fallback if SVG unsupported
-    Modernizr.load({
+      }
+    </script><![endif]--><!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="./groundwork/css/font-awesome-ie7.min.css"><![endif]-->
+    <script type="text/javascript">
+      // (function(){
+      //   var datauri = new Image();
+      //   datauri.onerror = function() {
+      //       Modernizr.addTest('datauri', function () { return false; });
+      //   };
+      //   datauri.onload = function() {
+      //       Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+      //       Modernizr.load({
+      //         test: Modernizr.datauri,
+      //         nope: './groundwork/css/no-datauri.css'
+      //       });
+      //   };
+      //   datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+      // })();
+      // fallback if SVG unsupported
+      Modernizr.load({
       test: Modernizr.inlinesvg,
       nope: [
-        './groundwork/css/no-svg.css',
-        './css/no-svg.css'
+      './groundwork/css/no-svg.css',
+      './css/no-svg.css'
       ]
-    });
-    // polyfill for HTML5 placeholders
-    Modernizr.load({
+      });
+      // polyfill for HTML5 placeholders
+      Modernizr.load({
       test: Modernizr.input.placeholder,
       nope: [
-        './groundwork/css/placeholder_polyfill.css',
-        './groundwork/js/libs/placeholder_polyfill.jquery.js'
+      './groundwork/css/placeholder_polyfill.css',
+      './groundwork/js/libs/placeholder_polyfill.jquery.js'
       ]
-    });
-  </script>
-  <!-- pinterest verification -->
-  <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be"/>
-</head>
-<body>
-  <header class="white band padded">
+      });
+    </script>
+    <!-- pinterest verification-->
+    <meta name="p:domain_verify" content="47156eba6b92b7cf295b82e6621ab2be">
+  </head>
+  <body>
+    <!-- page header-->
+    <header class="white band padded">
+      <div class="container">
+        <div class="row">
+          <div class="one half">
+            <h1 data-compression="9" data-min="20" data-max="120" style="font-size: 66px;" class="big responsive heading"><a href="./home"><span class="logo"></span>GroundworkCSS<sup>Beta</sup></a></h1>
+          </div>
+          <div class="one half double pad-top">
+            <nav data-label="Menu" class="inline nav menu pull-right"><a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
+              <ul>
+                <li><a href="./home"><i class="icon-home"></i><span class="small-tablet-only mobile-only">Home</span></a></li>
+                <li class="menu"><a href="./components"><i class="icon-cogs"></i>Components</a>
+                  <ul>
+                    <li><a href="./grid"><i class="icon-th"></i>Grid System</a></li>
+                    <li><a href="./media-queries"><i class="icon-tablet"></i>Media Queries</a></li>
+                    <li><a href="./mixins"><i class="icon-tasks"></i>Sass Mixins</a></li>
+                    <li><a href="./helpers"><i class="icon-beaker"></i>Layout Helpers</a></li>
+                    <li><a href="./typography"><i class="icon-font"></i>Typography</a></li>
+                    <li><a href="./buttons"><i class="icon-sign-blank"></i>Buttons</a></li>
+                    <li><a href="./navigation"><i class="icon-reorder"></i>Navigation</a></li>
+                    <li><a href="./tabs"><i class="icon-folder-close"></i>Tabs</a></li>
+                    <li><a href="./forms"><i class="icon-edit"></i>Forms</a></li>
+                    <li><a href="./tiles"><i class="icon-check"></i>Tiles</a></li>
+                    <li><a href="./ui-elements"><i class="icon-comment"></i>UI Elements</a></li>
+                    <li><a href="./tables"><i class="icon-table"></i>Tables</a></li>
+                    <li><a href="./icons"><i class="icon-magic"></i>Icons</a></li>
+                    <li><a href="./social-icons"><i class="icon-twitter"></i>Social Icons</a></li>
+                    <li><a href="./responsiveText-js"><i class="icon-text-width"></i>ResponsiveText</a></li>
+                    <li><a href="./modals-js"><i class="icon-list-alt"></i>Modals</a></li>
+                    <li><a href="./tooltips-js"><i class="icon-info-sign"></i>Tooltips</a></li>
+                    <li><a href="./cycle2-js"><i class="icon-picture"></i>Cycle2</a></li>
+                  </ul>
+                </li>
+                <li><a href="./templates"><i class="icon-file-alt"></i>Templates</a></li>
+                <li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i><span class="small-tablet-only mobile-only">Download</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- page content-->
     <div class="container">
       <div class="row">
-        <div class="one half">
-          <h1 class="big responsive heading" data-compression="9" data-min="20" data-max="120" style="font-size:66px;"><a href="./home"><span class="logo"></span> GroundworkCSS<sup>Beta</sup></a></h1>
-        </div>
-        <div class="one half double pad-top">
-          <nav class="inline nav menu pull-right" data-label="Menu">
-            <a href="#" class="menu-toggle"><i class="icon-reorder"></i></a>
-            <ul>
-              <li><a href="./home"><i class="icon-home"></i> <span class="small-tablet-only mobile-only">Home</span></a></li
-              ><li class="menu"><a href="./components"><i class="icon-cogs"></i> Components</a>
-                <ul>
-                  <li><a href="./grid"><i class="icon-th"></i> Grid System</a></li>
-                  <li><a href="./media-queries"><i class="icon-tablet"></i> Media Queries</a></li>
-                  <li><a href="./mixins"><i class="icon-tasks"></i> Sass Mixins</a></li>
-                  <li><a href="./helpers"><i class="icon-beaker"></i> Layout Helpers</a></li>
-                  <li><a href="./typography"><i class="icon-font"></i> Typography</a></li>
-                  <li><a href="./buttons"><i class="icon-sign-blank"></i> Buttons</a></li>
-                  <li><a href="./navigation"><i class="icon-reorder"></i> Navigation</a></li>
-                  <li><a href="./tabs"><i class="icon-folder-close"></i> Tabs</a></li>
-                  <li><a href="./forms"><i class="icon-edit"></i> Forms</a></li>
-                  <li><a href="./tiles"><i class="icon-check"></i> Tiles</a></li>
-                  <li><a href="./ui-elements"><i class="icon-comment"></i> UI Elements</a></li>
-                  <li><a href="./tables"><i class="icon-table"></i> Tables</a></li>
-                  <li><a href="./icons"><i class="icon-magic"></i> Icons</a></li>
-                  <li><a href="./social-icons"><i class="icon-twitter"></i> Social Icons</a></li>
-                  <li><a href="./responsiveText-js"><i class="icon-text-width"></i> ResponsiveText</a></li>
-                  <li><a href="./modals-js"><i class="icon-list-alt"></i> Modals</a></li>
-                  <li><a href="./tooltips-js"><i class="icon-info-sign"></i> Tooltips</a></li>
-                  <li><a href="./cycle2-js"><i class="icon-picture"></i> Cycle2</a></li>
-                </ul>
-              </li
-              ><li><a href="./templates"><i class="icon-file-alt"></i> Templates</a></li
-              ><li><a href="https://github.com/groundworkcss/groundwork/archive/master.zip"><i class="icon-download-alt"></i> <span class="small-tablet-only mobile-only">Download</span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="one whole padded">
-        <ul class="breadcrumbs">
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./components.html">Components</a></li>
-          <li><a href="./grid.html">Grid System</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one third padded">
-        <h1><i class="icon-tasks"></i> Layout Helpers</h1>
-        <p>Layout helpers work with the grid system and other elements allowing you to have a standized method for padding, positioning, aligning elements and more.</p>
-        <br/>
-        <h6>Example usage:</h6>
-        <script src="https://gist.github.com/ghepting/5282674.js"></script>
-        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <h6>Result:</h6>
-        <div class="helpers">
-          <div class="row">
-            <div class="one half padded align-right">this column is padded and aligned right</div>
-            <div class="one half double padded">
-              <span class="round callout pull-right gap-left rotate-90-ctr">2nd</span>
-              This column is double padded and has a round, rotated callout element pulling right with a gap on the left
+        <div class="one third padded">
+          <h1><i class="icon-tasks"></i> Layout Helpers</h1>
+          <p>Layout helpers work with the grid system and other elements allowing you to have a standized method for padding, positioning, aligning elements and more.</p><br>
+          <h6>Example usage:</h6>
+          <script src="https://gist.github.com/ghepting/5282674.js"></script>
+          <noscript>
+            <p class="error callout">Javascript is required to display Gist from Github</p>
+          </noscript>
+          <h6>Result:</h6>
+          <div class="helpers">
+            <div class="row">
+              <div class="one half padded align-right">this column is padded and aligned right</div>
+              <div class="one half double padded"><span class="round callout pull-right gap-left rotate-90-ctr">2nd</span> This column is double padded and has a round, rotated callout element pulling right with a gap on the left</div>
             </div>
           </div>
+          <hr>
+          <h6>Example usage:</h6>
+          <script src="https://gist.github.com/ghepting/5282677.js"></script>
+          <noscript>
+            <p class="error callout">Javascript is required to display Gist from Github</p>
+          </noscript>
+          <h6>Result:</h6>
+          <div class="callout">
+            <p>This is a normal callout</p>
+          </div>
+          <div class="callout zero align-center">
+            <p>This is a callout with zero and align-center</p>
+          </div>
+          <hr>
+          <h6>Example usage:</h6>
+          <script src="https://gist.github.com/ghepting/5286072.js"></script>
+          <noscript>
+            <p class="error callout">Javascript is required to display Gist from Github</p>
+          </noscript>
+          <h6>Result:</h6>
+          <button class="spin large round">Spin</button>
+          <button class="spin-slow large round">Slow</button>
+          <button class="spin-fast large round">Fast</button>
         </div>
-        <hr/>
-        
-        <h6>Example usage:</h6>
-        <script src="https://gist.github.com/ghepting/5282677.js"></script>
-        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <h6>Result:</h6>
-        <div class="callout">
-          <p>This is a normal callout</p>
+        <div class="two thirds padded">
+          <h2>Layout Helpers</h2>
+          <h6>Conditional Content</h6>
+          <hr>
+          <div class="row">
+            <div class="one half padded">
+              <dl>
+                <dt>.desktop-only</dt>
+                <dd>hides elements on ipad, small-tablet and mobile devices</dd>
+                <dt>.hide-on-desktop</dt>
+                <dd>hides elements on devices with viewport widths larger than 1024 pixels</dd>
+                <dt>.ipad-only</dt>
+                <dd>only shows elements on devices with viewport widths between 768 and 1024 pixels</dd>
+                <dt>.hide-on-ipad</dt>
+                <dd>hides elements on devices with viewport widths between 768 and 1024 pixels</dd>
+              </dl>
+            </div>
+            <div class="one half padded">
+              <dl>
+                <dt>.small-tablet-only</dt>
+                <dd>only shows elements on devices with viewport widths smaller than 768 pixels</dd>
+                <dt>.hide-on-small-tablet</dt>
+                <dd>hides elements on devices with viewport widths smaller than 768 pixels</dd>
+                <dt>.mobile-only</dt>
+                <dd>only shows elements on devices with viewport widths of 480 pixels and below</dd>
+                <dt>.hide-on-mobile</dt>
+                <dd>hides elements on devices with viewport widths of 480 pixels and below</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one half padded">
+              <h6>Display/Reset</h6>
+              <hr>
+              <dl>
+                <dt>.inline</dt>
+                <dd><code>display: inline-block; width: auto;</code></dd>
+                <dt>.block</dt>
+                <dd><code>display:block;</code></dd>
+                <dt>.zero</dt>
+                <dd><code>margin: 0; padding: 0;</code></dd>
+              </dl><br><br>
+              <h6>Positioning</h6>
+              <hr>
+              <dl>
+                <dt>.pull-right</dt>
+                <dd><code>float: right;</code></dd>
+                <dt>.pull-left</dt>
+                <dd><code>float: left;</code></dd>
+              </dl><br><br>
+              <h6>Layout/Spacing</h6>
+              <hr>
+              <dl>
+                <dt>.clear, .clearfix</dt>
+                <dd><code>clear: both; &:after { content: ''; display: block; clear: both; }</code></dd>
+                <dt>.padded</dt>
+                <dd><code>padding: $gutter;</code></dd>
+                <dt>.padded.double</dt>
+                <dd><code>padding: $gutter * 2;</code></dd>
+                <dt>.padded.triple</dt>
+                <dd><code>padding: $gutter * 3;</code></dd>
+                <dt>.pad-top</dt>
+                <dd><code>padding-top: $gutter;</code></dd>
+                <dt>.pad-right</dt>
+                <dd><code>padding-right: $gutter;</code></dd>
+                <dt>.pad-bottom</dt>
+                <dd><code>padding-bottom: $gutter;</code></dd>
+                <dt>.pad-left</dt>
+                <dd><code>padding-left: $gutter;</code></dd>
+                <dt>.gapped</dt>
+                <dd><code>margin: $gutter;</code></dd>
+                <dt>.gapped.double</dt>
+                <dd><code>margin: $gutter * 2;</code></dd>
+                <dt>.gapped.triple</dt>
+                <dd><code>margin: $gutter * 3;</code></dd>
+                <dt>.gap-top</dt>
+                <dd><code>margin-top: $gutter;</code></dd>
+                <dt>.gap-right</dt>
+                <dd><code>margin-right: $gutter;</code></dd>
+                <dt>.gap-bottom</dt>
+                <dd><code>margin-bottom: $gutter;</code></dd>
+                <dt>.gap-left</dt>
+                <dd><code>margin-left: $gutter;</code></dd>
+                <dt>.space</dt>
+                <dd><code>height: $gutter;</code></dd>
+              </dl><br><br>
+              <h6>UI Element States</h6>
+              <hr>
+              <dl>
+                <dt>.disabled</dt>
+                <dd><code>@include state(disabled);</code></dd>
+              </dl>
+              <dl>
+                <dt>.success</dt>
+                <dd><code>@include state(success);</code></dd>
+              </dl>
+              <dl>
+                <dt>.warning</dt>
+                <dd><code>@include state(warning);</code></dd>
+              </dl>
+              <dl>
+                <dt>.error</dt>
+                <dd><code>@include state(error);</code></dd>
+              </dl><br><br>
+              <h6>Appearance</h6>
+              <hr>
+              <dl>
+                <dt>.round</dt>
+                <dd><code>@include rounded(9999px);</code></dd>
+                <dt>.bordered</dt>
+                <dd><code>border: 1px solid $border-color;</code></dd>
+                <dt>.border-top</dt>
+                <dd><code>border-top: 1px solid $border-color;</code></dd>
+                <dt>.border-right</dt>
+                <dd><code>border-right: 1px solid $border-color;</code></dd>
+                <dt>.border-bottom</dt>
+                <dd><code>border-bottom: 1px solid $border-color;</code></dd>
+                <dt>.border-left</dt>
+                <dd><code>border-left: 1px solid $border-color;</code></dd>
+              </dl><br><br>
+            </div>
+            <div class="one half padded">
+              <h6>Alignment</h6>
+              <hr>
+              <dl>
+                <dt>.align-right</dt>
+                <dd><code>text-align: right;</code></dd>
+                <dt>.align-left</dt>
+                <dd><code>text-align: left;</code></dd>
+                <dt>.align-center</dt>
+                <dd><code>text-align: center;</code></dd>
+                <dt>.justify</dt>
+                <dd><code>text-align: justify;</code></dd>
+                <dt>.center</dt>
+                <dd><code>display: block; margin: 0 auto;</code></dd>
+              </dl><br><br>
+              <h6>Fixed Positioning</h6>
+              <hr>
+              <dl>
+                <dt>.stick</dt>
+                <dd><code>position: fixed; z-index: 1;</code></dd>
+                <dt>.stick.middle</dt>
+                <dd><code>top: 50%;</code></dd>
+                <dt>.stick.center</dt>
+                <dd><code>left: 50%;</code></dd>
+                <dt>.stick.top</dt>
+                <dd><code>top: 0;</code></dd>
+                <dt>.stick.right</dt>
+                <dd><code>right: 0;</code></dd>
+                <dt>.stick.bottom</dt>
+                <dd><code>bottom:0;</code></dd>
+                <dt>.stick.left</dt>
+                <dd><code>left: 0;</code></dd>
+              </dl><br><br>
+              <h6>Morphing</h6>
+              <hr>
+              <dl>
+                <dt>.rotate-90</dt>
+                <dd><code>@include rotate(90deg);</code></dd>
+                <dt>.rotate-180</dt>
+                <dd><code>@include rotate(180deg);</code></dd>
+                <dt>.rotate-270</dt>
+                <dd><code>@include rotate(270deg);</code></dd>
+                <dt>.rotate-90-ctr</dt>
+                <dd><code>@include rotate(-90deg);</code></dd>
+                <dt>.rotate-180-ctr</dt>
+                <dd><code>@include rotate(-180deg);</code></dd>
+                <dt>.rotate-270-ctr</dt>
+                <dd><code>@include rotate(-270deg);</code></dd>
+              </dl><br><br>
+              <h6>Animating</h6>
+              <hr>
+              <dl>
+                <dt>.spin</dt>
+                <dd><code>@extend %inline; @include spin;</code></dd>
+                <dt>.spin-once</dt>
+                <dd><code>@extend %inline; @include spin(1);</code></dd>
+                <dt>.spin-twice</dt>
+                <dd><code>@extend %inline; @include spin(2);</code></dd>
+                <dt>.spin-thrice</dt>
+                <dd><code>@extend %inline; @include spin(3);</code></dd><br>
+                <dt>.spin-fast</dt>
+                <dd><code>@extend %inline; @include spin(infinite,1s); }</code></dd>
+                <dt>.spin-fast-once</dt>
+                <dd><code>@extend %inline; @include spin(1,1s); }</code></dd>
+                <dt>.spin-fast-twice</dt>
+                <dd><code>@extend %inline; @include spin(2,1s); }</code></dd>
+                <dt>.spin-fast-thrice</dt>
+                <dd><code>@extend %inline; @include spin(3,1s); }</code></dd><br>
+                <dt>.spin-slow</dt>
+                <dd><code>@extend %inline; @include spin(infinite,5s); }</code></dd>
+                <dt>.spin-slow-once</dt>
+                <dd><code>@extend %inline; @include spin(1,5s); }</code></dd>
+                <dt>.spin-slow-twice</dt>
+                <dd><code>@extend %inline; @include spin(2,5s); }</code></dd>
+                <dt>.spin-slow-thrice</dt>
+                <dd><code>@extend %inline; @include spin(3,5s); }</code></dd>
+              </dl><br><br>
+            </div>
+          </div>
+          <hr>
+          <h2>Next Up: Typography</h2>
+          <p>Keeping the <a href="./typography">typography</a> consistent throughout a website is important. GroundworkCSS helps with that.</p>
+          <p><a href="./typography" class="button">Read More <i class="icon-chevron-right"></i></a></p>
         </div>
-        <div class="callout zero align-center">
-          <p>This is a callout with zero and align-center</p>
-        </div>
-        <hr/>
-        
-        <h6>Example usage:</h6>
-        <script src="https://gist.github.com/ghepting/5286072.js"></script>
-        <noscript><p class="error callout">Javascript is required to display Gist from Github</p></noscript>
-        <h6>Result:</h6>
-        <button class="spin large round">Spin</button>
-        <button class="spin-slow large round">Slow</button>
-        <button class="spin-fast large round">Fast</button>
       </div>
-      <div class="two thirds">
-        <h6>Conditional Content</h6>
-        <hr/>
-        <div class="row">
-          <div class="one half padded">
-            <dl>
-              <dt>.desktop-only</dt>
-              <dd>hides elements on ipad, small-tablet and mobile devices</dd>
-              <dt>.hide-on-desktop</dt>
-              <dd>hides elements on devices with viewport widths larger than 1024 pixels</dd>
-              <dt>.ipad-only</dt>
-              <dd>only shows elements on devices with viewport widths between 768 and 1024 pixels</dd>
-              <dt>.hide-on-ipad</dt>
-              <dd>hides elements on devices with viewport widths between 768 and 1024 pixels</dd>
-            </dl>
-          </div>
-          <div class="one half padded">
-            <dl>
-              <dt>.small-tablet-only</dt>
-              <dd>only shows elements on devices with viewport widths smaller than 768 pixels</dd>
-              <dt>.hide-on-small-tablet</dt>
-              <dd>hides elements on devices with viewport widths smaller than 768 pixels</dd>
-              <dt>.mobile-only</dt>
-              <dd>only shows elements on devices with viewport widths of 480 pixels and below</dd>
-              <dt>.hide-on-mobile</dt>
-              <dd>hides elements on devices with viewport widths of 480 pixels and below</dd>
-            </dl>
-          </div>
-        </div>
-        <div class="row">
-          <div class="one half padded">
-            <h6>Display/Reset</h6>
-            <hr/>
-            <dl>
-              <dt>.inline</dt>
-              <dd><code>display: inline-block; width: auto;</code></dd>
-              <dt>.block</dt>
-              <dd><code>display:block;</code></dd>
-              <dt>.zero</dt>
-              <dd><code>margin: 0; padding: 0;</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Positioning</h6>
-            <hr/>
-            <dl>
-              <dt>.pull-right</dt>
-              <dd><code>float: right;</code></dd>
-              <dt>.pull-left</dt>
-              <dd><code>float: left;</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Layout/Spacing</h6>
-            <hr/>
-            <dl>
-              <dt>.clear, .clearfix</dt>
-              <dd><code>clear: both;
-  &:after { content: ''; display: block; clear: both; }</code></dd>
-              <dt>.padded</dt>
-              <dd><code>padding: $gutter;</code></dd>
-              <dt>.padded.double</dt>
-              <dd><code>padding: $gutter * 2;</code></dd>
-              <dt>.padded.triple</dt>
-              <dd><code>padding: $gutter * 3;</code></dd>
-              <dt>.pad-top</dt>
-              <dd><code>padding-top: $gutter;</code></dd>
-              <dt>.pad-right</dt>
-              <dd><code>padding-right: $gutter;</code></dd>
-              <dt>.pad-bottom</dt>
-              <dd><code>padding-bottom: $gutter;</code></dd>
-              <dt>.pad-left</dt>
-              <dd><code>padding-left: $gutter;</code></dd>
-              <dt>.gapped</dt>
-              <dd><code>margin: $gutter;</code></dd>
-              <dt>.gapped.double</dt>
-              <dd><code>margin: $gutter * 2;</code></dd>
-              <dt>.gapped.triple</dt>
-              <dd><code>margin: $gutter * 3;</code></dd>
-              <dt>.gap-top</dt>
-              <dd><code>margin-top: $gutter;</code></dd>
-              <dt>.gap-right</dt>
-              <dd><code>margin-right: $gutter;</code></dd>
-              <dt>.gap-bottom</dt>
-              <dd><code>margin-bottom: $gutter;</code></dd>
-              <dt>.gap-left</dt>
-              <dd><code>margin-left: $gutter;</code></dd>
-              <dt>.space</dt>
-              <dd><code>height: $gutter;</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>UI Element States</h6>
-            <hr/>
-            <dl>
-              <dt>.disabled</dt>
-              <dd><code>@include state(disabled);</code></dd>
-            </dl>
-            <dl>
-              <dt>.success</dt>
-              <dd><code>@include state(success);</code></dd>
-            </dl>
-            <dl>
-              <dt>.warning</dt>
-              <dd><code>@include state(warning);</code></dd>
-            </dl>
-            <dl>
-              <dt>.error</dt>
-              <dd><code>@include state(error);</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Appearance</h6>
-            <hr/>
-            <dl>
-              <dt>.round</dt>
-              <dd><code>@include rounded(9999px);</code></dd>
-              <dt>.bordered</dt>
-              <dd><code>border: 1px solid $border-color;</code></dd>
-              <dt>.border-top</dt>
-              <dd><code>border-top: 1px solid $border-color;</code></dd>
-              <dt>.border-right</dt>
-              <dd><code>border-right: 1px solid $border-color;</code></dd>
-              <dt>.border-bottom</dt>
-              <dd><code>border-bottom: 1px solid $border-color;</code></dd>
-              <dt>.border-left</dt>
-              <dd><code>border-left: 1px solid $border-color;</code></dd>
-            </dl>
-            <br/>
-            <br/>
-            
-          </div>
-          <div class="one half padded">
-            <h6>Alignment</h6>
-            <hr/>
-            <dl>
-              <dt>.align-right</dt>
-              <dd><code>text-align: right;</code></dd>
-              <dt>.align-left</dt>
-              <dd><code>text-align: left;</code></dd>
-              <dt>.align-center</dt>
-              <dd><code>text-align: center;</code></dd>
-              <dt>.justify</dt>
-              <dd><code>text-align: justify;</code></dd>
-              <dt>.center</dt>
-              <dd><code>display: block; margin: 0 auto;</code></dd>
-              
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Fixed Positioning</h6>
-            <hr/>
-            <dl>
-              <dt>.stick</dt>
-              <dd><code>position: fixed; z-index: 1;</code></dd>
-              <dt>.stick.middle</dt>
-              <dd><code>top: 50%;</code></dd>
-              <dt>.stick.center</dt>
-              <dd><code>left: 50%;</code></dd>
-              <dt>.stick.top</dt>
-              <dd><code>top: 0;</code></dd>
-              <dt>.stick.right</dt>
-              <dd><code>right: 0;</code></dd>
-              <dt>.stick.bottom</dt>
-              <dd><code>bottom:0;</code></dd>
-              <dt>.stick.left</dt>
-              <dd><code>left: 0;</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Morphing</h6>
-            <hr/>
-            <dl>
-              <dt>.rotate-90</dt>
-              <dd><code>@include rotate(90deg);</code></dd>
-              <dt>.rotate-180</dt>
-              <dd><code>@include rotate(180deg);</code></dd>
-              <dt>.rotate-270</dt>
-              <dd><code>@include rotate(270deg);</code></dd>
-              <dt>.rotate-90-ctr</dt>
-              <dd><code>@include rotate(-90deg);</code></dd>
-              <dt>.rotate-180-ctr</dt>
-              <dd><code>@include rotate(-180deg);</code></dd>
-              <dt>.rotate-270-ctr</dt>
-              <dd><code>@include rotate(-270deg);</code></dd>
-            </dl>
-            <br/>
-            <br/>
-
-            <h6>Animating</h6>
-            <hr/>
-            <dl>
-              <dt>.spin</dt>
-              <dd><code>@extend %inline; @include spin;</code></dd>
-              <dt>.spin-once</dt>
-              <dd><code>@extend %inline; @include spin(1);</code></dd>
-              <dt>.spin-twice</dt>
-              <dd><code>@extend %inline; @include spin(2);</code></dd>
-              <dt>.spin-thrice</dt>
-              <dd><code>@extend %inline; @include spin(3);</code></dd>
-              <br/>
-              <dt>.spin-fast</dt>
-              <dd><code>@extend %inline; @include spin(infinite,1s); }</code></dd>
-              <dt>.spin-fast-once</dt>
-              <dd><code>@extend %inline; @include spin(1,1s); }</code></dd>
-              <dt>.spin-fast-twice</dt>
-              <dd><code>@extend %inline; @include spin(2,1s); }</code></dd>
-              <dt>.spin-fast-thrice</dt>
-              <dd><code>@extend %inline; @include spin(3,1s); }</code></dd>
-              <br/>
-              <dt>.spin-slow</dt>
-              <dd><code>@extend %inline; @include spin(infinite,5s); }</code></dd>
-              <dt>.spin-slow-once</dt>
-              <dd><code>@extend %inline; @include spin(1,5s); }</code></dd>
-              <dt>.spin-slow-twice</dt>
-              <dd><code>@extend %inline; @include spin(2,5s); }</code></dd>
-              <dt>.spin-slow-thrice</dt>
-              <dd><code>@extend %inline; @include spin(3,5s); }</code></dd>
-            </dl>
-            <br/>
-            <br/>
-          </div>
-      </div>
-      <!-- end demo grid -->
     </div>
-  </div>
-  <!-- scripts -->
-  <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
-  <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
-  <script type="text/javascript" src="./js/groundy.js"></script>
-
-  <!-- google analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-17121602-5']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
+    <!-- scripts-->
+    <script type="text/javascript" src="./groundwork/js/plugins/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="./groundwork/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="./js/groundy.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17121602-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-</body>
+      })();
+    </script>
+  </body>
 </html>

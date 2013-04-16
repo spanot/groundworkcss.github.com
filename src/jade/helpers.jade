@@ -1,0 +1,317 @@
+extends template
+  
+block head
+  title GroundworkCSS ♥ 
+  
+block content
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-tasks
+          |  Layout Helpers
+        p
+          | Layout helpers work with the grid system and other elements allowing you to have a standized method for padding, positioning, aligning elements and more.
+        br
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5282674.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        .helpers
+          .row
+            .one.half.padded.align-right this column is padded and aligned right
+            .one.half.double.padded
+              span.round.callout.pull-right.gap-left.rotate-90-ctr 2nd
+              |  This column is double padded and has a round, rotated callout element pulling right with a gap on the left
+        hr
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5282677.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        .callout
+          p This is a normal callout
+        .callout.zero.align-center
+          p This is a callout with zero and align-center
+        hr
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5286072.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        button.spin.large.round Spin
+        button.spin-slow.large.round Slow
+        button.spin-fast.large.round Fast
+      .two.thirds.padded
+        h2 Layout Helpers
+        h6 Conditional Content
+        hr
+        .row
+          .one.half.padded
+            dl
+              dt .desktop-only
+              dd hides elements on ipad, small-tablet and mobile devices
+              dt .hide-on-desktop
+              dd hides elements on devices with viewport widths larger than 1024 pixels
+              dt .ipad-only
+              dd only shows elements on devices with viewport widths between 768 and 1024 pixels
+              dt .hide-on-ipad
+              dd hides elements on devices with viewport widths between 768 and 1024 pixels
+          .one.half.padded
+            dl
+              dt .small-tablet-only
+              dd only shows elements on devices with viewport widths smaller than 768 pixels
+              dt .hide-on-small-tablet
+              dd hides elements on devices with viewport widths smaller than 768 pixels
+              dt .mobile-only
+              dd only shows elements on devices with viewport widths of 480 pixels and below
+              dt .hide-on-mobile
+              dd hides elements on devices with viewport widths of 480 pixels and below
+        .row
+          .one.half.padded
+            h6 Display/Reset
+            hr
+            dl
+              dt .inline
+              dd
+                code display: inline-block; width: auto;
+              dt .block
+              dd
+                code display:block;
+              dt .zero
+              dd
+                code margin: 0; padding: 0;
+            br
+            br
+            h6 Positioning
+            hr
+            dl
+              dt .pull-right
+              dd
+                code float: right;
+              dt .pull-left
+              dd
+                code float: left;
+            br
+            br
+            h6 Layout/Spacing
+            hr
+            dl
+              dt .clear, .clearfix
+              dd
+                code clear: both; &:after { content: ''; display: block; clear: both; }
+              dt .padded
+              dd
+                code padding: $gutter;
+              dt .padded.double
+              dd
+                code padding: $gutter * 2;
+              dt .padded.triple
+              dd
+                code padding: $gutter * 3;
+              dt .pad-top
+              dd
+                code padding-top: $gutter;
+              dt .pad-right
+              dd
+                code padding-right: $gutter;
+              dt .pad-bottom
+              dd
+                code padding-bottom: $gutter;
+              dt .pad-left
+              dd
+                code padding-left: $gutter;
+              dt .gapped
+              dd
+                code margin: $gutter;
+              dt .gapped.double
+              dd
+                code margin: $gutter * 2;
+              dt .gapped.triple
+              dd
+                code margin: $gutter * 3;
+              dt .gap-top
+              dd
+                code margin-top: $gutter;
+              dt .gap-right
+              dd
+                code margin-right: $gutter;
+              dt .gap-bottom
+              dd
+                code margin-bottom: $gutter;
+              dt .gap-left
+              dd
+                code margin-left: $gutter;
+              dt .space
+              dd
+                code height: $gutter;
+            br
+            br
+            h6 UI Element States
+            hr
+            dl
+              dt .disabled
+              dd
+                code @include state(disabled);
+            dl
+              dt .success
+              dd
+                code @include state(success);
+            dl
+              dt .warning
+              dd
+                code @include state(warning);
+            dl
+              dt .error
+              dd
+                code @include state(error);
+            br
+            br
+            h6 Appearance
+            hr
+            dl
+              dt .round
+              dd
+                code @include rounded(9999px);
+              dt .bordered
+              dd
+                code border: 1px solid $border-color;
+              dt .border-top
+              dd
+                code border-top: 1px solid $border-color;
+              dt .border-right
+              dd
+                code border-right: 1px solid $border-color;
+              dt .border-bottom
+              dd
+                code border-bottom: 1px solid $border-color;
+              dt .border-left
+              dd
+                code border-left: 1px solid $border-color;
+            br
+            br
+          .one.half.padded
+            h6 Alignment
+            hr
+            dl
+              dt .align-right
+              dd
+                code text-align: right;
+              dt .align-left
+              dd
+                code text-align: left;
+              dt .align-center
+              dd
+                code text-align: center;
+              dt .justify
+              dd
+                code text-align: justify;
+              dt .center
+              dd
+                code display: block; margin: 0 auto;
+            br
+            br
+            h6 Fixed Positioning
+            hr
+            dl
+              dt .stick
+              dd
+                code position: fixed; z-index: 1;
+              dt .stick.middle
+              dd
+                code top: 50%;
+              dt .stick.center
+              dd
+                code left: 50%;
+              dt .stick.top
+              dd
+                code top: 0;
+              dt .stick.right
+              dd
+                code right: 0;
+              dt .stick.bottom
+              dd
+                code bottom:0;
+              dt .stick.left
+              dd
+                code left: 0;
+            br
+            br
+            h6 Morphing
+            hr
+            dl
+              dt .rotate-90
+              dd
+                code @include rotate(90deg);
+              dt .rotate-180
+              dd
+                code @include rotate(180deg);
+              dt .rotate-270
+              dd
+                code @include rotate(270deg);
+              dt .rotate-90-ctr
+              dd
+                code @include rotate(-90deg);
+              dt .rotate-180-ctr
+              dd
+                code @include rotate(-180deg);
+              dt .rotate-270-ctr
+              dd
+                code @include rotate(-270deg);
+            br
+            br
+            h6 Animating
+            hr
+            dl
+              dt .spin
+              dd
+                code @extend %inline; @include spin;
+              dt .spin-once
+              dd
+                code @extend %inline; @include spin(1);
+              dt .spin-twice
+              dd
+                code @extend %inline; @include spin(2);
+              dt .spin-thrice
+              dd
+                code @extend %inline; @include spin(3);
+              br
+              dt .spin-fast
+              dd
+                code @extend %inline; @include spin(infinite,1s); }
+              dt .spin-fast-once
+              dd
+                code @extend %inline; @include spin(1,1s); }
+              dt .spin-fast-twice
+              dd
+                code @extend %inline; @include spin(2,1s); }
+              dt .spin-fast-thrice
+              dd
+                code @extend %inline; @include spin(3,1s); }
+              br
+              dt .spin-slow
+              dd
+                code @extend %inline; @include spin(infinite,5s); }
+              dt .spin-slow-once
+              dd
+                code @extend %inline; @include spin(1,5s); }
+              dt .spin-slow-twice
+              dd
+                code @extend %inline; @include spin(2,5s); }
+              dt .spin-slow-thrice
+              dd
+                code @extend %inline; @include spin(3,5s); }
+            br
+            br
+        hr
+        h2 Next Up: Typography
+        p
+          | Keeping the 
+          a(href='./typography') typography
+          |  consistent throughout a website is important. GroundworkCSS helps with that.
+        p
+          a.button(href='./typography')
+            | Read More 
+            i.icon-chevron-right
+

@@ -1,7 +1,118 @@
 extends template
   
 block head
-  title GroundworkCSS ♥ 
+  title GroundworkCSS ♥ Tables
   
 block content
-  
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-table
+          |  Tables
+        p
+          | GroundworkCSS offers clean and easy-to-customize styling for tabular data.
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5282711.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        table
+          thead
+            tr
+              th table heading th cell
+              td table heading td cell
+          tbody
+            tr
+              th th cell
+              td td cell
+      .two.thirds.padded
+        h2 Responsive Data Tables
+        p
+          | People love to bash on tables almost as much as they love to hate old versions of IE, but there are times when you actually should use a 
+          code &lt;table&gt;
+          |  to display data. GroundworkCSS includes easily customizable table styling to help you make your otherwise-boring tabluar data look great and stay clean.
+        table.responsive
+          thead
+            tr
+              th Table Heading
+              th Table Heading
+              th Table Heading
+              th Table Heading
+          tbody
+            tr
+              td Table cell
+              td Table cell
+              td Table cell
+              td Table cell
+            tr
+              td Table cell
+              td Table cell
+              td Table cell
+              td Table cell
+            tr
+              td Table cell
+              td Table cell
+              td Table cell
+              td Table cell
+            tr
+              td Table cell
+              td Table cell
+              td Table cell
+              td Table cell
+          tfoot
+            tr
+              td Footer cell
+              td Footer cell
+              td Footer cell
+              td Footer cell
+        hr
+        table.responsive(data-compression='50', data-min='7', data-max='13')
+          thead
+            tr
+              th Table Heading
+              th Table Heading
+              th Table Heading
+              th Table Heading
+              th Table Heading
+          tbody
+            tr
+              td
+                | Veggies sunt bona vobis, proinde vos postulo esse magis swiss chard parsley eggplant wattle seed bok choy lotus root rock melon.
+              td
+                | Silver beet silver beet cabbage broccoli rabe kale prairie turnip gumbo courgette salad yarrow garlic cauliflower radicchio squash komatsuna grape.
+              td
+                | Cabbage rock melon dandelion peanut zucchini chickpea parsnip prairie turnip parsley welsh onion onion broccoli rabe quandong.
+              td
+                | Rock melon water spinach earthnut pea lentil celtuce beet greens leek caulie yarrow groundnut grape cress.
+              td
+                | Bush tomato yarrow avocado tigernut kakadu plum celery eggplant cress bell pepper sweet pepper parsnip dandelion coriander soko.
+            tr
+              td
+                | Veggies sunt bona vobis, proinde vos postulo esse magis swiss chard parsley eggplant wattle seed bok choy lotus root rock melon.
+              td
+                | Silver beet silver beet cabbage broccoli rabe kale prairie turnip gumbo courgette salad yarrow garlic cauliflower radicchio squash komatsuna grape.
+              td
+                | Cabbage rock melon dandelion peanut zucchini chickpea parsnip prairie turnip parsley welsh onion onion broccoli rabe quandong.
+              td
+                | Rock melon water spinach earthnut pea lentil celtuce beet greens leek caulie yarrow groundnut grape cress.
+              td
+                | Bush tomato yarrow avocado tigernut kakadu plum celery eggplant cress bell pepper sweet pepper parsnip dandelion coriander soko.
+            tr
+              td
+                | Veggies sunt bona vobis, proinde vos postulo esse magis swiss chard parsley eggplant wattle seed bok choy lotus root rock melon.
+              td
+                | Silver beet silver beet cabbage broccoli rabe kale prairie turnip gumbo courgette salad yarrow garlic cauliflower radicchio squash komatsuna grape.
+              td
+                | Cabbage rock melon dandelion peanut zucchini chickpea parsnip prairie turnip parsley welsh onion onion broccoli rabe quandong.
+              td
+                | Rock melon water spinach earthnut pea lentil celtuce beet greens leek caulie yarrow groundnut grape cress.
+              td
+                | Bush tomato yarrow avocado tigernut kakadu plum celery eggplant cress bell pepper sweet pepper parsnip dandelion coriander soko.
+          tfoot
+            tr
+              td Footer Cell
+              td Footer cell
+              td Footer cell
+              td Footer cell
+              td Footer cell

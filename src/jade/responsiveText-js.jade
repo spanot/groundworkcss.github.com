@@ -1,7 +1,75 @@
 extends template
   
 block head
-  title GroundworkCSS ♥ 
+  title GroundworkCSS ♥ Responsive Text
   
 block content
-  
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-text-width
+          |  ResponsiveText
+        p
+          | ResponsiveText allows you to have dynamically sized text that adapts to the width of the viewport. It's incredibly useful for headings or SVG graphics that you want to scale to fit their container on any device.
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5286511.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h3.responsive(data-compression='7.375')
+          i.icon-text-width
+          |  ResponsiveText
+      .two.thirds.padded
+        h2 ResponsiveText
+        p
+          | ResponsiveText is a jQuery plugin that let's you set font sizes responsively based on an element's container width. Use responsiveText.js to have scalable headlines, build responsive tables and more!
+        h4
+          | There are three attributes you can add to the markup to fine-tune sizing for each heading:
+        hr
+        .callout.row
+          .three.sevenths
+            dl
+              dt
+                | data-compression
+                em.small (default: 10)
+              dd The multiplier used to determine the font-size
+          .two.sevenths
+            dl
+              dt data-min
+              dd The minimum font-size
+          .two.sevenths
+            dl
+              dt data-max
+              dd The maximum font-size
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282849.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h1.responsive Default Options
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5286644.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h1.responsive(data-compression='9.1', data-min='20', data-max='170') A Responsive Heading
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282851.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h1.responsive(data-compression='12.1', data-min='20', data-max='170') A Longer Responsive Heading
+        hr
+        h6 Example Usage:
+        script(src='https://gist.github.com/ghepting/5282855.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        h3.responsive(data-compression='9.1', data-min='20', data-max='170')
+          | A Responsive Heading
+          br
+          | With Multiple Lines

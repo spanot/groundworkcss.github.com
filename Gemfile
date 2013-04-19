@@ -4,6 +4,7 @@ gem 'guard'
 gem 'guard-shell'
 gem 'guard-coffeescript'
 gem 'sass'
+gem 'jade'
 
 # gem 'guard-compass'
 # gem 'haml'

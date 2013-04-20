@@ -10,7 +10,7 @@ group :development do
   gem 'guard-shell'
   gem 'guard-coffeescript'
   gem 'sass'
-  gem 'jade'
+  gem 'slim'
 
   # gem 'guard-compass'
   # gem 'haml'

@@ -5,8 +5,8 @@
 
 
 
-@import "../variables";  // include Groundwork variables
-@import "../mixins";     // include Groundwork mixins
+@import "../../groundwork/src/scss/variables";  // include Groundwork variables
+@import "../../groundwork/src/scss/mixins";     // include Groundwork mixins
 
 h1.heading {
   .logo {

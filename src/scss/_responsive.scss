@@ -5,7 +5,7 @@
 
 
 
-@include small-tablet {
+@media only screen and (max-width:767px) {
   nav:not(.pagination), nav.inline {
     ul, ul.row {
       li {

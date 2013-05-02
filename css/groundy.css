@@ -1198,31 +1198,6 @@ a.invert-color:hover, a.invert-color:focus, a.invert-color:visited:hover, a.inve
 }
 
 @media only screen and (max-width: 767px) {
-  .small-tablet-only {
-    display: inline-block;
-  }
-
-  .hide-on-small-tablet {
-    display: none;
-  }
-
-  .desktop-only {
-    display: none;
-  }
-
-  .no-padding-small-tablet {
-    padding: 0;
-  }
-
-  .no-margin-small-tablet {
-    margin: 0;
-  }
-
-  .zero-small-tablet {
-    margin: 0;
-    padding: 0;
-  }
-
   nav:not(.pagination) ul li ul li a, nav:not(.pagination) ul li ul li a:visited, nav:not(.pagination) ul.row li ul li a, nav:not(.pagination) ul.row li ul li a:visited, nav.inline ul li ul li a, nav.inline ul li ul li a:visited, nav.inline ul.row li ul li a, nav.inline ul.row li ul li a:visited {
     border-color: #881a30;
   }

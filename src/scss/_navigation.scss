@@ -10,12 +10,12 @@ nav.nav {
     li {
       a, a:visited {
         background:$blue-2;
-        border-color:$blue;
+        border-color:$blue-3;
         color:$white;
         text-shadow:0 0 5px rgba(0,0,0,0.25);
         &:hover, &:focus {
-          background:$blue;
-          border-color:$blue;
+          background:$blue-3;
+          border-color:$blue-3;
           color:$white;
         }
         &.active, &.active:hover, &.active:focus {
@@ -104,14 +104,14 @@ nav.nav {
         }
         &.blue-2 {
           background:$blue-2;
-          border-color:$blue;
+          border-color:$blue-3;
           &:hover, &:focus  {
-            background:$blue;
-            border-color:$blue;
+            background:$blue-3;
+            border-color:$blue-3;
           }
         }
         &.blue-3, &.blue {
-          background:$blue;
+          background:$blue-3;
           border-color:$dk-blue;
           &:hover, &:focus  {
             background:$dk-blue;
@@ -120,18 +120,18 @@ nav.nav {
         }
         &.lt-blue {
           background:$lt-blue;
-          border-color:$blue;
+          border-color:$blue-3;
           &:hover, &:focus  {
-            background:$blue;
-            border-color:$blue;
+            background:$blue-3;
+            border-color:$blue-3;
           }
         }
         &.dk-blue {
           background:$dk-blue;
-          border-color:$blue;
+          border-color:$blue-3;
           &:hover, &:focus  {
-            background:$blue;
-            border-color:$blue;
+            background:$blue-3;
+            border-color:$blue-3;
           }
         }
         &.navy {

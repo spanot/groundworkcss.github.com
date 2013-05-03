@@ -9,8 +9,9 @@
 //     variables     //
 ///////////////////////
 
-@import "../../groundwork/src/scss/defaults";
-@import "../../groundwork/src/scss/mixins";
+@import "../../groundwork/src/scss/core/constants";
+@import "../../groundwork/src/scss/core/defaults";
+@import "../../groundwork/src/scss/core/mixins";
 
 // color palette
 $white:         #ffffff;
@@ -28,9 +29,8 @@ $dk-green:      darken($green, 15%);
 $blue-1:        #55ADAB;
 $blue-2:        #1DABB8;
 $blue-3:        #198D98;
-$blue:          $blue-3;
-$lt-blue:       lighten($blue, 15%);  // #24cada
-$dk-blue:       darken($blue, 15%); 
+$lt-blue:       lighten($blue-3, 15%);  // #24cada
+$dk-blue:       darken($blue-3, 15%); 
 $navy:          #282830;
 
 $red:           #c82647;

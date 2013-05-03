@@ -962,11 +962,11 @@ button.blue-2, .button.blue-2, a.button.blue-2, a.button:visited.blue-2, input[t
 button.blue-2:hover, button.blue-2:focus, .button.blue-2:hover, .button.blue-2:focus, a.button.blue-2:hover, a.button.blue-2:focus, a.button:visited.blue-2:hover, a.button:visited.blue-2:focus, input[type=submit].blue-2:hover, input[type=submit].blue-2:focus, input[type=button].blue-2:hover, input[type=button].blue-2:focus, input[type=reset].blue-2:hover, input[type=reset].blue-2:focus {
   background: #198d98;
 }
-button.blue-3, button.blue, .button.blue-3, .button.blue, a.button.blue-3, a.button.blue, a.button:visited.blue-3, a.button:visited.blue, input[type=submit].blue-3, input[type=submit].blue, input[type=button].blue-3, input[type=button].blue, input[type=reset].blue-3, input[type=reset].blue {
+button.blue-3, .button.blue-3, a.button.blue-3, a.button:visited.blue-3, input[type=submit].blue-3, input[type=button].blue-3, input[type=reset].blue-3 {
   background: #198d98;
   border: 1px solid #0e5056;
 }
-button.blue-3:hover, button.blue-3:focus, button.blue:hover, button.blue:focus, .button.blue-3:hover, .button.blue-3:focus, .button.blue:hover, .button.blue:focus, a.button.blue-3:hover, a.button.blue-3:focus, a.button.blue:hover, a.button.blue:focus, a.button:visited.blue-3:hover, a.button:visited.blue-3:focus, a.button:visited.blue:hover, a.button:visited.blue:focus, input[type=submit].blue-3:hover, input[type=submit].blue-3:focus, input[type=submit].blue:hover, input[type=submit].blue:focus, input[type=button].blue-3:hover, input[type=button].blue-3:focus, input[type=button].blue:hover, input[type=button].blue:focus, input[type=reset].blue-3:hover, input[type=reset].blue-3:focus, input[type=reset].blue:hover, input[type=reset].blue:focus {
+button.blue-3:hover, button.blue-3:focus, .button.blue-3:hover, .button.blue-3:focus, a.button.blue-3:hover, a.button.blue-3:focus, a.button:visited.blue-3:hover, a.button:visited.blue-3:focus, input[type=submit].blue-3:hover, input[type=submit].blue-3:focus, input[type=button].blue-3:hover, input[type=button].blue-3:focus, input[type=reset].blue-3:hover, input[type=reset].blue-3:focus {
   background: #0e5056;
 }
 button.lt-blue, .button.lt-blue, a.button.lt-blue, a.button:visited.lt-blue, input[type=submit].lt-blue, input[type=button].lt-blue, input[type=reset].lt-blue {

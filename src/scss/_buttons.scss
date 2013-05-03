@@ -7,11 +7,11 @@
 
 button, .button, a.button, a.button:visited, input[type=submit],  input[type=button], input[type=reset] {
   background:$blue-2;
-  border:1px solid $blue;
+  border:1px solid $blue-3;
   color:$white;
   text-shadow:0 0 5px rgba(0,0,0,0.25);
   &:hover, &:focus {
-    background:$blue;
+    background:$blue-3;
     color:$white;
   }
   &.white {
@@ -66,23 +66,23 @@ button, .button, a.button, a.button:visited, input[type=submit],  input[type=but
   }
   &.blue-2 {
     background:$blue-2;
-    border:1px solid $blue;
-    &:hover, &:focus  { background:$blue; }
+    border:1px solid $blue-3;
+    &:hover, &:focus  { background:$blue-3; }
   }
-  &.blue-3, &.blue {
-    background:$blue;
+  &.blue-3 {
+    background:$blue-3;
     border:1px solid $dk-blue;
     &:hover, &:focus  { background:$dk-blue; }
   }
   &.lt-blue {
     background:$lt-blue;
-    border:1px solid $blue;
-    &:hover, &:focus  { background:$blue; }
+    border:1px solid $blue-3;
+    &:hover, &:focus  { background:$blue-3; }
   }
   &.dk-blue {
     background:$dk-blue;
-    border:1px solid $blue;
-    &:hover, &:focus  { background:$blue; }
+    border:1px solid $blue-3;
+    &:hover, &:focus  { background:$blue-3; }
   }
   &.navy {
     background:$navy;

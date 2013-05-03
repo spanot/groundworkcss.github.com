@@ -606,7 +606,7 @@ h1.heading .logo {
 
 h1, h2, h3, h4, h5, h6 {
   /* might add inline-font-files() at some point */
-  font-family: Average Sans, Arial, Helvetica, Geneva, sans-serif;
+  font-family: AverageSans, Arial, Helvetica, Geneva, sans-serif;
   color: #282830;
 }
 h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
@@ -1198,31 +1198,6 @@ a.invert-color:hover, a.invert-color:focus, a.invert-color:visited:hover, a.inve
 }
 
 @media only screen and (max-width: 767px) {
-  .small-tablet-only {
-    display: inline-block;
-  }
-
-  .hide-on-small-tablet {
-    display: none;
-  }
-
-  .desktop-only {
-    display: none;
-  }
-
-  .no-padding-small-tablet {
-    padding: 0;
-  }
-
-  .no-margin-small-tablet {
-    margin: 0;
-  }
-
-  .zero-small-tablet {
-    margin: 0;
-    padding: 0;
-  }
-
   nav:not(.pagination) ul li ul li a, nav:not(.pagination) ul li ul li a:visited, nav:not(.pagination) ul.row li ul li a, nav:not(.pagination) ul.row li ul li a:visited, nav.inline ul li ul li a, nav.inline ul li ul li a:visited, nav.inline ul.row li ul li a, nav.inline ul.row li ul li a:visited {
     border-color: #881a30;
   }

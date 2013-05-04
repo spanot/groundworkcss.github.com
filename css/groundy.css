@@ -838,7 +838,7 @@ nav.nav ul li a.dk-red:hover, nav.nav ul li a.dk-red:focus, nav.nav ul li a:visi
   border-color: #c82647;
 }
 nav.nav ul ul li a:first-child, nav.nav ul ul li a:last-child, nav.nav ul ul li a:visited:first-child, nav.nav ul ul li a:visited:last-child {
-  border-color: #881a30;
+  border-color: #881a30 !important;
 }
 nav.nav ul ul li a.disabled, nav.nav ul ul li a:visited.disabled {
   color: #f0b0bd;

@@ -104,9 +104,4 @@ button, .button, a.button, a.button:visited, input[type=submit],  input[type=but
     border:1px solid $red;
     &:hover, &:focus  { background:$red; }
   }
-  &.dropdown {
-    ul {
-      @include drop-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
-    }
-  }
 }

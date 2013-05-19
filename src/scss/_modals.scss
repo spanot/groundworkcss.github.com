@@ -1,3 +1,7 @@
 .mfp-content {
   @include rounded($radius);
 }
+button.mfp-close {
+  background:none;
+  text-shadow:none;
+}

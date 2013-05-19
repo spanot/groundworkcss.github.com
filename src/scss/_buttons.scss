@@ -5,7 +5,7 @@
 
 
 
-button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit],  input[type=button], input[type=reset] {
+button, .button, a.button, a.button:visited, input[type=submit],  input[type=button], input[type=reset] {
   background:$blue-2;
   border:1px solid $blue-3;
   color:$white;
@@ -44,11 +44,11 @@ button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit],
     border:1px solid $black;
     &:hover, &:focus  { background:$black; }
   }
-  &.green {
-    background:$green;
-    border:1px solid $dk-green;
-    &:hover, &:focus  { background:$dk-green; }
-  }
+  // &.green {
+  //   background:$green;
+  //   border:1px solid $dk-green;
+  //   &:hover, &:focus  { background:$dk-green; }
+  // }
   &.lt-green {
     background:$lt-green;
     border:1px solid $green;
@@ -89,11 +89,11 @@ button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit],
     border:1px solid $dk-blue;
     &:hover, &:focus  { background:$dk-blue; }
   }
-  &.red {
-    background:$red;
-    border:1px solid $dk-red;
-    &:hover, &:focus  { background:$dk-red; }
-  }
+  // &.red {
+  //   background:$red;
+  //   border:1px solid $dk-red;
+  //   &:hover, &:focus  { background:$dk-red; }
+  // }
   &.lt-red {
     background:$lt-red;
     border:1px solid $red;
@@ -106,7 +106,7 @@ button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit],
   }
   &.dropdown {
     ul {
-      @include filter-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
+      @include drop-shadow(rgba(0,0,0,0.25), 5px, 0, 0);
     }
   }
 }

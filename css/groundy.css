@@ -1027,6 +1027,11 @@ button:not(.mfp-close).dropdown ul, .button.dropdown ul, a.button.dropdown ul, a
   border-radius: 4px;
 }
 
+button.mfp-close {
+  background: none;
+  text-shadow: none;
+}
+
 .invert-color, a.invert-color, a.invert-color:visited {
   color: white;
 }

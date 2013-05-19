@@ -2,15 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/modals-js.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/modals-js.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
-    },
     "\/groundwork\/templates\/layout-3.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -18,6 +9,15 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/groundwork\/templates\/layout-3.html",
       "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/modals-js.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/modals-js.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/groundwork\/images\/social-icons\/googleplay-s.png" : {
@@ -165,17 +165,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/src\/jade\/cycle2-js.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/jade\/cycle2-js.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 0,
-      "outputAbbreviatedPath" : "\/cycle2-js.html",
-      "fileType" : 512
-    },
     "\/groundwork\/images\/social-icons\/weibo-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -186,6 +175,17 @@
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/weibo-s.png",
       "initialSize" : 706,
       "fileType" : 8192
+    },
+    "\/src\/jade\/cycle2-js.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/jade\/cycle2-js.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 0,
+      "outputAbbreviatedPath" : "\/cycle2-js.html",
+      "fileType" : 512
     },
     "\/groundwork\/images\/social-icons\/mixi-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -263,17 +263,6 @@
       "initialSize" : 1725,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/renren-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/renren-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/renren-s.png",
-      "initialSize" : 672,
-      "fileType" : 8192
-    },
     "\/groundwork\/images\/social-icons\/stackoverflow-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -283,6 +272,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/stackoverflow-s.png",
       "initialSize" : 595,
+      "fileType" : 8192
+    },
+    "\/groundwork\/images\/social-icons\/renren-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/renren-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/renren-s.png",
+      "initialSize" : 672,
       "fileType" : 8192
     },
     "\/groundwork\/src\/scss\/type\/_font-awesome.scss" : {
@@ -370,17 +370,6 @@
       "initialSize" : 668,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/skype-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/skype-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/skype-s.png",
-      "initialSize" : 1859,
-      "fileType" : 8192
-    },
     "\/groundwork\/images\/social-icons\/vimeo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -390,6 +379,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/vimeo.png",
       "initialSize" : 1075,
+      "fileType" : 8192
+    },
+    "\/groundwork\/images\/social-icons\/skype-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/skype-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/skype-s.png",
+      "initialSize" : 1859,
       "fileType" : 8192
     },
     "\/groundwork\/images\/social-icons\/spotify.png" : {
@@ -534,24 +534,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/src\/kit\/sass-compass.kit" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/sass-compass.kit",
-      "outputAbbreviatedPath" : "\/src\/sass-compass.html",
-      "fileType" : 65536
-    },
-    "\/groundwork\/css\/placeholder_polyfill.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/css\/placeholder_polyfill.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/groundwork\/images\/social-icons\/skitch-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -562,6 +544,24 @@
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/skitch-s.png",
       "initialSize" : 1750,
       "fileType" : 8192
+    },
+    "\/groundwork\/css\/placeholder_polyfill.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/css\/placeholder_polyfill.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/src\/kit\/sass-compass.kit" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/sass-compass.kit",
+      "outputAbbreviatedPath" : "\/src\/sass-compass.html",
+      "fileType" : 65536
     },
     "\/groundwork\/tests\/src\/jade\/test-ui-elements.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -586,6 +586,17 @@
       "outputStyle" : 1,
       "fileType" : 32
     },
+    "\/groundwork\/images\/social-icons\/zerply.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/zerply.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/zerply.png",
+      "initialSize" : 1083,
+      "fileType" : 8192
+    },
     "\/groundwork\/src\/scss\/form\/_forms.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -597,17 +608,6 @@
       "outputAbbreviatedPath" : "\/groundwork\/src\/scss\/css\/_forms.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/groundwork\/images\/social-icons\/zerply.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/zerply.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/zerply.png",
-      "initialSize" : 1083,
-      "fileType" : 8192
     },
     "\/src\/kit\/_header.kit" : {
       "ignoreWasSetByUser" : 1,
@@ -692,15 +692,6 @@
       "outputAbbreviatedPath" : "\/typography.html",
       "fileType" : 512
     },
-    "\/groundwork\/templates\/layout-2.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/templates\/layout-2.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/src\/jade\/tabs.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -712,6 +703,15 @@
       "outputAbbreviatedPath" : "\/tabs.html",
       "fileType" : 512
     },
+    "\/groundwork\/templates\/layout-2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/templates\/layout-2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/ui-elements.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -720,17 +720,6 @@
       "inputAbbreviatedPath" : "\/ui-elements.html",
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
-    },
-    "\/groundwork\/images\/social-icons\/facebook.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/facebook.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/facebook.png",
-      "initialSize" : 712,
-      "fileType" : 8192
     },
     "\/groundwork\/images\/apple-icons\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
@@ -741,6 +730,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/images\/apple-icons\/apple-touch-icon.png",
       "initialSize" : 667,
+      "fileType" : 8192
+    },
+    "\/groundwork\/images\/social-icons\/facebook.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/facebook.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/facebook.png",
+      "initialSize" : 712,
       "fileType" : 8192
     },
     "\/groundwork\/tests\/src\/jade\/test-typography.jade" : {
@@ -841,6 +841,17 @@
       "initialSize" : 897,
       "fileType" : 8192
     },
+    "\/images\/browsers\/chrome.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/browsers\/chrome.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/browsers\/chrome.png",
+      "initialSize" : 17809,
+      "fileType" : 8192
+    },
     "\/src\/kit\/_scripts.kit" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -858,17 +869,6 @@
       "inputAbbreviatedPath" : "\/src\/kit\/cycle2-js.kit",
       "outputAbbreviatedPath" : "\/src\/cycle2-js.html",
       "fileType" : 65536
-    },
-    "\/images\/browsers\/chrome.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/browsers\/chrome.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/browsers\/chrome.png",
-      "initialSize" : 17809,
-      "fileType" : 8192
     },
     "\/src\/jade\/responsiveText-js.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -1218,17 +1218,6 @@
       "initialSize" : 4687,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/svn-m.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/svn-m.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/svn-m.png",
-      "initialSize" : 967,
-      "fileType" : 8192
-    },
     "\/groundwork\/js\/plugins\/jquery-responsiveText.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1239,6 +1228,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/js\/plugins\/jquery-responsiveText.min.js",
       "fileType" : 64
+    },
+    "\/groundwork\/images\/social-icons\/svn-m.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/svn-m.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/svn-m.png",
+      "initialSize" : 967,
+      "fileType" : 8192
     },
     "\/images\/groundwork-logo_128x128.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1296,18 +1296,6 @@
       "outputAbbreviatedPath" : "\/grid.html",
       "fileType" : 512
     },
-    "\/groundwork\/src\/scss\/responsive\/_mobile.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/src\/scss\/responsive\/_mobile.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/src\/scss\/css\/_mobile.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/groundwork\/css\/groundwork.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1325,6 +1313,18 @@
       "inputAbbreviatedPath" : "\/src\/kit\/_breadcrumbs.kit",
       "outputAbbreviatedPath" : "\/src\/_breadcrumbs.html",
       "fileType" : 65536
+    },
+    "\/groundwork\/src\/scss\/responsive\/_mobile.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/src\/scss\/responsive\/_mobile.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/src\/scss\/css\/_mobile.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/template.html" : {
       "ignoreWasSetByUser" : 0,
@@ -1410,17 +1410,6 @@
       "outputAbbreviatedPath" : "\/groundwork\/js\/libs\/modernizr-2.6.2.min.min.js",
       "fileType" : 64
     },
-    "\/groundwork\/images\/social-icons\/foursquare-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/foursquare-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/foursquare-s.png",
-      "initialSize" : 2139,
-      "fileType" : 8192
-    },
     "\/groundwork\/src\/scss\/nav\/_tabs.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1433,6 +1422,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/groundwork\/images\/social-icons\/foursquare-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/foursquare-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/foursquare-s.png",
+      "initialSize" : 2139,
+      "fileType" : 8192
+    },
     "\/src\/kit\/navigation.kit" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -1440,15 +1440,6 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/src\/kit\/navigation.kit",
       "outputAbbreviatedPath" : "\/src\/navigation.html",
-      "fileType" : 65536
-    },
-    "\/src\/kit\/_footer.kit" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/_footer.kit",
-      "outputAbbreviatedPath" : "\/src\/_footer.html",
       "fileType" : 65536
     },
     "\/groundwork\/images\/social-icons\/mercurial-s.png" : {
@@ -1461,6 +1452,15 @@
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/mercurial-s.png",
       "initialSize" : 471,
       "fileType" : 8192
+    },
+    "\/src\/kit\/_footer.kit" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/_footer.kit",
+      "outputAbbreviatedPath" : "\/src\/_footer.html",
+      "fileType" : 65536
     },
     "\/groundwork\/images\/social-icons\/pocketapp-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1940,6 +1940,15 @@
       "initialSize" : 2279,
       "fileType" : 8192
     },
+    "\/groundwork\/tests\/test-helpers.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/tests\/test-helpers.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
+    },
     "\/groundwork\/images\/social-icons\/facebook-s.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1958,15 +1967,6 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/src\/kit\/popovers-js.kit",
       "outputAbbreviatedPath" : "\/src\/popovers-js.html",
-      "fileType" : 65536
-    },
-    "\/src\/kit\/home.kit" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/home.kit",
-      "outputAbbreviatedPath" : "\/src\/home.html",
       "fileType" : 65536
     },
     "\/images\/browsers\/safari.png" : {
@@ -1992,14 +1992,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/groundwork\/tests\/test-helpers.html" : {
-      "ignoreWasSetByUser" : 0,
+    "\/src\/kit\/home.kit" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/tests\/test-helpers.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/home.kit",
+      "outputAbbreviatedPath" : "\/src\/home.html",
+      "fileType" : 65536
     },
     "\/src\/kit\/tabs.kit" : {
       "ignoreWasSetByUser" : 1,
@@ -2107,17 +2107,6 @@
       "initialSize" : 1768,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/instagram-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/instagram-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/instagram-s.png",
-      "initialSize" : 926,
-      "fileType" : 8192
-    },
     "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.shuffle.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2128,6 +2117,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.shuffle.min.js",
       "fileType" : 64
+    },
+    "\/groundwork\/images\/social-icons\/instagram-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/instagram-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/instagram-s.png",
+      "initialSize" : 926,
+      "fileType" : 8192
     },
     "\/groundwork\/js\/groundwork.all.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2183,6 +2183,17 @@
       "outputAbbreviatedPath" : "\/groundwork\/tests\/test-helpers.html",
       "fileType" : 512
     },
+    "\/src\/jade\/template.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/jade\/template.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 0,
+      "outputAbbreviatedPath" : "\/template.html",
+      "fileType" : 512
+    },
     "\/groundwork\/images\/social-icons\/creativecloud.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2205,17 +2216,6 @@
       "outputAbbreviatedPath" : "\/groundwork\/src\/scss\/css\/_all.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/src\/jade\/template.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/jade\/template.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 0,
-      "outputAbbreviatedPath" : "\/template.html",
-      "fileType" : 512
     },
     "\/groundwork\/images\/social-icons\/mail.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2282,15 +2282,6 @@
       "outputStyle" : 1,
       "fileType" : 32
     },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
-    },
     "\/src\/kit\/social-icons.kit" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -2299,6 +2290,15 @@
       "inputAbbreviatedPath" : "\/src\/kit\/social-icons.kit",
       "outputAbbreviatedPath" : "\/src\/social-icons.html",
       "fileType" : 65536
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
     },
     "\/groundwork\/images\/social-icons\/git-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2440,26 +2440,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.min.js",
-      "fileType" : 64
-    },
-    "\/src\/kit\/media-queries.kit" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/media-queries.kit",
-      "outputAbbreviatedPath" : "\/src\/media-queries.html",
-      "fileType" : 65536
-    },
     "\/groundwork\/images\/social-icons\/tripadvisor-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2470,6 +2450,26 @@
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/tripadvisor-m.png",
       "initialSize" : 872,
       "fileType" : 8192
+    },
+    "\/src\/kit\/media-queries.kit" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/media-queries.kit",
+      "outputAbbreviatedPath" : "\/src\/media-queries.html",
+      "fileType" : 65536
+    },
+    "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/js\/plugins\/cycle\/jquery.cycle2.ie-fade.min.js",
+      "fileType" : 64
     },
     "\/groundwork\/images\/social-icons\/dribbble.png" : {
       "ignoreWasSetByUser" : 0,
@@ -3097,6 +3097,17 @@
       "initialSize" : 1366,
       "fileType" : 8192
     },
+    "\/groundwork\/images\/social-icons\/html5-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/html5-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/html5-s.png",
+      "initialSize" : 577,
+      "fileType" : 8192
+    },
     "\/groundwork\/js\/libs\/jquery-1.8.2.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3108,15 +3119,6 @@
       "outputAbbreviatedPath" : "\/groundwork\/js\/libs\/jquery-1.8.2.min.min.js",
       "fileType" : 64
     },
-    "\/src\/kit\/tooltips-js.kit" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/tooltips-js.kit",
-      "outputAbbreviatedPath" : "\/src\/tooltips-js.html",
-      "fileType" : 65536
-    },
     "\/src\/kit\/404.kit" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -3126,16 +3128,14 @@
       "outputAbbreviatedPath" : "\/src\/404.html",
       "fileType" : 65536
     },
-    "\/groundwork\/images\/social-icons\/html5-s.png" : {
-      "ignoreWasSetByUser" : 0,
+    "\/src\/kit\/tooltips-js.kit" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/html5-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/html5-s.png",
-      "initialSize" : 577,
-      "fileType" : 8192
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/tooltips-js.kit",
+      "outputAbbreviatedPath" : "\/src\/tooltips-js.html",
+      "fileType" : 65536
     },
     "\/groundwork\/images\/social-icons\/fairheadcreative-s.png" : {
       "ignoreWasSetByUser" : 0,
@@ -3357,15 +3357,15 @@
       "initialSize" : 2999,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/quora-m.png" : {
+    "\/work files\/chrome_firefox_opera_safari_ie-512.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/quora-m.png",
+      "inputAbbreviatedPath" : "\/work files\/chrome_firefox_opera_safari_ie-512.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/quora-m.png",
-      "initialSize" : 809,
+      "outputAbbreviatedPath" : "\/work files\/chrome_firefox_opera_safari_ie-512.png",
+      "initialSize" : 716122,
       "fileType" : 8192
     },
     "\/groundwork\/Gruntfile.coffee" : {
@@ -3391,15 +3391,15 @@
       "outputAbbreviatedPath" : "\/forms.html",
       "fileType" : 512
     },
-    "\/work files\/chrome_firefox_opera_safari_ie-512.png" : {
+    "\/groundwork\/images\/social-icons\/quora-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/work files\/chrome_firefox_opera_safari_ie-512.png",
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/quora-m.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/work files\/chrome_firefox_opera_safari_ie-512.png",
-      "initialSize" : 716122,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/quora-m.png",
+      "initialSize" : 809,
       "fileType" : 8192
     },
     "\/groundwork\/images\/social-icons\/xing-m.png" : {
@@ -3668,16 +3668,16 @@
       "initialSize" : 586,
       "fileType" : 8192
     },
-    "\/src\/jade\/templates.jade" : {
+    "\/groundwork\/images\/social-icons\/github-s.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/jade\/templates.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 0,
-      "outputAbbreviatedPath" : "\/templates.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/github-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/github-s.png",
+      "initialSize" : 1673,
+      "fileType" : 8192
     },
     "\/groundwork\/src\/scss\/misc\/_magnific-popup.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -3722,16 +3722,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/groundwork\/images\/social-icons\/github-s.png" : {
+    "\/src\/jade\/templates.jade" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
+      "ignore" : 0,
+      "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/github-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/github-s.png",
-      "initialSize" : 1673,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/src\/jade\/templates.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 0,
+      "outputAbbreviatedPath" : "\/templates.html",
+      "fileType" : 512
     },
     "\/groundwork\/src\/scss\/core\/_constants.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -3756,17 +3756,6 @@
       "initialSize" : 784,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/bitbucket-s.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/bitbucket-s.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/bitbucket-s.png",
-      "initialSize" : 1868,
-      "fileType" : 8192
-    },
     "\/groundwork\/images\/social-icons\/goodreads-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3776,6 +3765,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/goodreads-m.png",
       "initialSize" : 842,
+      "fileType" : 8192
+    },
+    "\/groundwork\/images\/social-icons\/bitbucket-s.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/bitbucket-s.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/bitbucket-s.png",
+      "initialSize" : 1868,
       "fileType" : 8192
     },
     "\/src\/kit\/layout-5.kit" : {
@@ -3974,6 +3974,17 @@
       "initialSize" : 691,
       "fileType" : 8192
     },
+    "\/groundwork\/images\/social-icons\/icloud.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/icloud.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/icloud.png",
+      "initialSize" : 1099,
+      "fileType" : 8192
+    },
     "\/groundwork\/src\/coffee\/plugins\/jquery-tooltip.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -3985,17 +3996,6 @@
       "outputAbbreviatedPath" : "\/groundwork\/src\/js\/jquery-tooltip.js",
       "outputStyle" : 1,
       "fileType" : 32
-    },
-    "\/groundwork\/images\/social-icons\/icloud.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/icloud.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/icloud.png",
-      "initialSize" : 1099,
-      "fileType" : 8192
     },
     "\/groundwork\/images\/social-icons\/fairheadcreative-m.png" : {
       "ignoreWasSetByUser" : 0,
@@ -4019,16 +4019,14 @@
       "outputAbbreviatedPath" : "\/popovers-js.html",
       "fileType" : 512
     },
-    "\/groundwork\/images\/social-icons\/flickr.png" : {
-      "ignoreWasSetByUser" : 0,
+    "\/src\/kit\/_doctype.kit" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/flickr.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/flickr.png",
-      "initialSize" : 797,
-      "fileType" : 8192
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/kit\/_doctype.kit",
+      "outputAbbreviatedPath" : "\/src\/_doctype.html",
+      "fileType" : 65536
     },
     "\/sass-compass.html" : {
       "ignoreWasSetByUser" : 0,
@@ -4050,14 +4048,16 @@
       "initialSize" : 819,
       "fileType" : 8192
     },
-    "\/src\/kit\/_doctype.kit" : {
-      "ignoreWasSetByUser" : 1,
+    "\/groundwork\/images\/social-icons\/flickr.png" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/kit\/_doctype.kit",
-      "outputAbbreviatedPath" : "\/src\/_doctype.html",
-      "fileType" : 65536
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/flickr.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/flickr.png",
+      "initialSize" : 797,
+      "fileType" : 8192
     },
     "\/groundwork\/src\/scss\/responsive\/_ipad.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -4083,6 +4083,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/groundwork\/tests\/css\/test-typography.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/tests\/css\/test-typography.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/groundwork\/js\/components\/menus.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -4093,15 +4102,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/groundwork\/js\/components\/menus.min.js",
       "fileType" : 64
-    },
-    "\/groundwork\/tests\/css\/test-typography.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/tests\/css\/test-typography.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/src\/scss\/_helpers.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -4466,16 +4466,17 @@
       "initialSize" : 1021,
       "fileType" : 8192
     },
-    "\/groundwork\/js\/components\/pagination.js" : {
+    "\/src\/scss\/groundy.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/js\/components\/pagination.js",
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/src\/scss\/groundy.scss",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/js\/components\/pagination.min.js",
-      "fileType" : 64
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/groundy.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/work files\/responsive-design-sample.fw.png" : {
       "ignoreWasSetByUser" : 0,
@@ -4488,17 +4489,16 @@
       "initialSize" : 1426881,
       "fileType" : 8192
     },
-    "\/src\/scss\/groundy.scss" : {
+    "\/groundwork\/js\/components\/pagination.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/src\/scss\/groundy.scss",
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/js\/components\/pagination.js",
       "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/groundy.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/js\/components\/pagination.min.js",
+      "fileType" : 64
     },
     "\/work files\/all-devices.fw.png" : {
       "ignoreWasSetByUser" : 0,
@@ -4703,15 +4703,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/groundwork\/tests\/css\/test-buttons.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 1,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/tests\/css\/test-buttons.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/groundwork\/images\/apple-icons\/apple-touch-icon-57x57-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -4723,16 +4714,26 @@
       "initialSize" : 535,
       "fileType" : 8192
     },
-    "\/groundwork\/images\/social-icons\/mixi-m.png" : {
+    "\/groundwork\/src\/scss\/groundwork.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/mixi-m.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/mixi-m.png",
-      "initialSize" : 969,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/groundwork\/src\/scss\/groundwork.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/src\/css\/groundwork.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/groundwork\/tests\/css\/test-buttons.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 1,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/groundwork\/tests\/css\/test-buttons.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/work files\/all-devices_v2.fw.png" : {
       "ignoreWasSetByUser" : 0,
@@ -4754,17 +4755,16 @@
       "outputAbbreviatedPath" : "\/index.html",
       "fileType" : 65536
     },
-    "\/groundwork\/src\/scss\/groundwork.scss" : {
+    "\/groundwork\/images\/social-icons\/mixi-m.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 1,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/groundwork\/src\/scss\/groundwork.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/groundwork\/src\/css\/groundwork.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/mixi-m.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/groundwork\/images\/social-icons\/mixi-m.png",
+      "initialSize" : 969,
+      "fileType" : 8192
     },
     "\/groundwork\/images\/social-icons\/git.png" : {
       "ignoreWasSetByUser" : 0,

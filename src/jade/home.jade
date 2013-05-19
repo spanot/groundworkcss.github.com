@@ -26,10 +26,10 @@ block content
                 i.icon-twitter
           .row
             .one.whole.gap-top
-              a.block.button(href='#subscribe')
+              a.block.button.modal(href='#subscribe')
                 | Receive email updates 
                 i.icon-envelope-alt
-              #subscribe.modal
+              #subscribe.mfp-hide
                 form#subForm(action='http://groundworkcss.createsend.com/t/t/s/niuuy/', method='post')
                   .row
                     .one.whole.padded
@@ -591,9 +591,9 @@ block content
           |  any time. We'd love to hear from you and want your feedback!
         p
           a.dk-blue.button(href='mailto:groundwork@sidereel.com')
-            | Contact Us 
+            | Contact 
             i.icon-envelope-alt
           | 
-          a.dk-blue.button(href='https://github.com/groundworkcss/groundwork/issues')
+          a.dk-blue.button(href='https://github.com/groundworkcss/groundwork/issues', target='_blank')
             | Report a Bug 
             i.icon-pencil

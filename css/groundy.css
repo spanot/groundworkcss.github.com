@@ -875,148 +875,156 @@ nav.nav.menu > ul li.menu.on > a, nav.nav.menu > ul li.menu.on > a.visited {
   border-color: #198d98;
 }
 
-button, .button, a.button, a.button:visited, input[type=submit], input[type=button], input[type=reset] {
+button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit], input[type=button], input[type=reset] {
   background: #1dabb8;
   border: 1px solid #198d98;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
-button:hover, button:focus, .button:hover, .button:focus, a.button:hover, a.button:focus, a.button:visited:hover, a.button:visited:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus, input[type=reset]:hover, input[type=reset]:focus {
+button:not(.mfp-close):hover, button:not(.mfp-close):focus, .button:hover, .button:focus, a.button:hover, a.button:focus, a.button:visited:hover, a.button:visited:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=button]:hover, input[type=button]:focus, input[type=reset]:hover, input[type=reset]:focus {
   background: #198d98;
   color: white;
 }
-button.white, .button.white, a.button.white, a.button:visited.white, input[type=submit].white, input[type=button].white, input[type=reset].white {
+button:not(.mfp-close).white, .button.white, a.button.white, a.button:visited.white, input[type=submit].white, input[type=button].white, input[type=reset].white {
   background: white;
   border: 1px solid #e7e7e7;
 }
-button.white:hover, button.white:focus, .button.white:hover, .button.white:focus, a.button.white:hover, a.button.white:focus, a.button:visited.white:hover, a.button:visited.white:focus, input[type=submit].white:hover, input[type=submit].white:focus, input[type=button].white:hover, input[type=button].white:focus, input[type=reset].white:hover, input[type=reset].white:focus {
+button:not(.mfp-close).white:hover, button:not(.mfp-close).white:focus, .button.white:hover, .button.white:focus, a.button.white:hover, a.button.white:focus, a.button:visited.white:hover, a.button:visited.white:focus, input[type=submit].white:hover, input[type=submit].white:focus, input[type=button].white:hover, input[type=button].white:focus, input[type=reset].white:hover, input[type=reset].white:focus {
   background: #e7e7e7;
 }
-button.black, .button.black, a.button.black, a.button:visited.black, input[type=submit].black, input[type=button].black, input[type=reset].black {
+button:not(.mfp-close).black, .button.black, a.button.black, a.button:visited.black, input[type=submit].black, input[type=button].black, input[type=reset].black {
   background: black;
   border: 1px solid #2c2c2f;
 }
-button.black:hover, button.black:focus, .button.black:hover, .button.black:focus, a.button.black:hover, a.button.black:focus, a.button:visited.black:hover, a.button:visited.black:focus, input[type=submit].black:hover, input[type=submit].black:focus, input[type=button].black:hover, input[type=button].black:focus, input[type=reset].black:hover, input[type=reset].black:focus {
+button:not(.mfp-close).black:hover, button:not(.mfp-close).black:focus, .button.black:hover, .button.black:focus, a.button.black:hover, a.button.black:focus, a.button:visited.black:hover, a.button:visited.black:focus, input[type=submit].black:hover, input[type=submit].black:focus, input[type=button].black:hover, input[type=button].black:focus, input[type=reset].black:hover, input[type=reset].black:focus {
   background: #2c2c2f;
 }
-button.gray, .button.gray, a.button.gray, a.button:visited.gray, input[type=submit].gray, input[type=button].gray, input[type=reset].gray {
+button:not(.mfp-close).gray, .button.gray, a.button.gray, a.button:visited.gray, input[type=submit].gray, input[type=button].gray, input[type=reset].gray {
   background: #505050;
   border: 1px solid #2c2c2f;
 }
-button.gray:hover, button.gray:focus, .button.gray:hover, .button.gray:focus, a.button.gray:hover, a.button.gray:focus, a.button:visited.gray:hover, a.button:visited.gray:focus, input[type=submit].gray:hover, input[type=submit].gray:focus, input[type=button].gray:hover, input[type=button].gray:focus, input[type=reset].gray:hover, input[type=reset].gray:focus {
+button:not(.mfp-close).gray:hover, button:not(.mfp-close).gray:focus, .button.gray:hover, .button.gray:focus, a.button.gray:hover, a.button.gray:focus, a.button:visited.gray:hover, a.button:visited.gray:focus, input[type=submit].gray:hover, input[type=submit].gray:focus, input[type=button].gray:hover, input[type=button].gray:focus, input[type=reset].gray:hover, input[type=reset].gray:focus {
   background: #2c2c2f;
 }
-button.lt-gray, .button.lt-gray, a.button.lt-gray, a.button:visited.lt-gray, input[type=submit].lt-gray, input[type=button].lt-gray, input[type=reset].lt-gray {
+button:not(.mfp-close).lt-gray, .button.lt-gray, a.button.lt-gray, a.button:visited.lt-gray, input[type=submit].lt-gray, input[type=button].lt-gray, input[type=reset].lt-gray {
   background: #e7e7e7;
   border: 1px solid #c7c7c7;
 }
-button.lt-gray:hover, button.lt-gray:focus, .button.lt-gray:hover, .button.lt-gray:focus, a.button.lt-gray:hover, a.button.lt-gray:focus, a.button:visited.lt-gray:hover, a.button:visited.lt-gray:focus, input[type=submit].lt-gray:hover, input[type=submit].lt-gray:focus, input[type=button].lt-gray:hover, input[type=button].lt-gray:focus, input[type=reset].lt-gray:hover, input[type=reset].lt-gray:focus {
+button:not(.mfp-close).lt-gray:hover, button:not(.mfp-close).lt-gray:focus, .button.lt-gray:hover, .button.lt-gray:focus, a.button.lt-gray:hover, a.button.lt-gray:focus, a.button:visited.lt-gray:hover, a.button:visited.lt-gray:focus, input[type=submit].lt-gray:hover, input[type=submit].lt-gray:focus, input[type=button].lt-gray:hover, input[type=button].lt-gray:focus, input[type=reset].lt-gray:hover, input[type=reset].lt-gray:focus {
   background: #c7c7c7;
 }
-button.md-gray, .button.md-gray, a.button.md-gray, a.button:visited.md-gray, input[type=submit].md-gray, input[type=button].md-gray, input[type=reset].md-gray {
+button:not(.mfp-close).md-gray, .button.md-gray, a.button.md-gray, a.button:visited.md-gray, input[type=submit].md-gray, input[type=button].md-gray, input[type=reset].md-gray {
   background: #c7c7c7;
   border: 1px solid #505050;
 }
-button.md-gray:hover, button.md-gray:focus, .button.md-gray:hover, .button.md-gray:focus, a.button.md-gray:hover, a.button.md-gray:focus, a.button:visited.md-gray:hover, a.button:visited.md-gray:focus, input[type=submit].md-gray:hover, input[type=submit].md-gray:focus, input[type=button].md-gray:hover, input[type=button].md-gray:focus, input[type=reset].md-gray:hover, input[type=reset].md-gray:focus {
+button:not(.mfp-close).md-gray:hover, button:not(.mfp-close).md-gray:focus, .button.md-gray:hover, .button.md-gray:focus, a.button.md-gray:hover, a.button.md-gray:focus, a.button:visited.md-gray:hover, a.button:visited.md-gray:focus, input[type=submit].md-gray:hover, input[type=submit].md-gray:focus, input[type=button].md-gray:hover, input[type=button].md-gray:focus, input[type=reset].md-gray:hover, input[type=reset].md-gray:focus {
   background: #505050;
 }
-button.dk-gray, .button.dk-gray, a.button.dk-gray, a.button:visited.dk-gray, input[type=submit].dk-gray, input[type=button].dk-gray, input[type=reset].dk-gray {
+button:not(.mfp-close).dk-gray, .button.dk-gray, a.button.dk-gray, a.button:visited.dk-gray, input[type=submit].dk-gray, input[type=button].dk-gray, input[type=reset].dk-gray {
   background: #2c2c2f;
   border: 1px solid black;
 }
-button.dk-gray:hover, button.dk-gray:focus, .button.dk-gray:hover, .button.dk-gray:focus, a.button.dk-gray:hover, a.button.dk-gray:focus, a.button:visited.dk-gray:hover, a.button:visited.dk-gray:focus, input[type=submit].dk-gray:hover, input[type=submit].dk-gray:focus, input[type=button].dk-gray:hover, input[type=button].dk-gray:focus, input[type=reset].dk-gray:hover, input[type=reset].dk-gray:focus {
+button:not(.mfp-close).dk-gray:hover, button:not(.mfp-close).dk-gray:focus, .button.dk-gray:hover, .button.dk-gray:focus, a.button.dk-gray:hover, a.button.dk-gray:focus, a.button:visited.dk-gray:hover, a.button:visited.dk-gray:focus, input[type=submit].dk-gray:hover, input[type=submit].dk-gray:focus, input[type=button].dk-gray:hover, input[type=button].dk-gray:focus, input[type=reset].dk-gray:hover, input[type=reset].dk-gray:focus {
   background: black;
 }
-button.green, .button.green, a.button.green, a.button:visited.green, input[type=submit].green, input[type=button].green, input[type=reset].green {
+button:not(.mfp-close).green, .button.green, a.button.green, a.button:visited.green, input[type=submit].green, input[type=button].green, input[type=reset].green {
   background: #bada55;
   border: 1px solid #97ba28;
 }
-button.green:hover, button.green:focus, .button.green:hover, .button.green:focus, a.button.green:hover, a.button.green:focus, a.button:visited.green:hover, a.button:visited.green:focus, input[type=submit].green:hover, input[type=submit].green:focus, input[type=button].green:hover, input[type=button].green:focus, input[type=reset].green:hover, input[type=reset].green:focus {
+button:not(.mfp-close).green:hover, button:not(.mfp-close).green:focus, .button.green:hover, .button.green:focus, a.button.green:hover, a.button.green:focus, a.button:visited.green:hover, a.button:visited.green:focus, input[type=submit].green:hover, input[type=submit].green:focus, input[type=button].green:hover, input[type=button].green:focus, input[type=reset].green:hover, input[type=reset].green:focus {
   background: #97ba28;
 }
-button.lt-green, .button.lt-green, a.button.lt-green, a.button:visited.lt-green, input[type=submit].lt-green, input[type=button].lt-green, input[type=reset].lt-green {
+button:not(.mfp-close).lt-green, .button.lt-green, a.button.lt-green, a.button:visited.lt-green, input[type=submit].lt-green, input[type=button].lt-green, input[type=reset].lt-green {
   background: #d3e894;
   border: 1px solid #bada55;
 }
-button.lt-green:hover, button.lt-green:focus, .button.lt-green:hover, .button.lt-green:focus, a.button.lt-green:hover, a.button.lt-green:focus, a.button:visited.lt-green:hover, a.button:visited.lt-green:focus, input[type=submit].lt-green:hover, input[type=submit].lt-green:focus, input[type=button].lt-green:hover, input[type=button].lt-green:focus, input[type=reset].lt-green:hover, input[type=reset].lt-green:focus {
+button:not(.mfp-close).lt-green:hover, button:not(.mfp-close).lt-green:focus, .button.lt-green:hover, .button.lt-green:focus, a.button.lt-green:hover, a.button.lt-green:focus, a.button:visited.lt-green:hover, a.button:visited.lt-green:focus, input[type=submit].lt-green:hover, input[type=submit].lt-green:focus, input[type=button].lt-green:hover, input[type=button].lt-green:focus, input[type=reset].lt-green:hover, input[type=reset].lt-green:focus {
   background: #bada55;
 }
-button.dk-green, .button.dk-green, a.button.dk-green, a.button:visited.dk-green, input[type=submit].dk-green, input[type=button].dk-green, input[type=reset].dk-green {
+button:not(.mfp-close).dk-green, .button.dk-green, a.button.dk-green, a.button:visited.dk-green, input[type=submit].dk-green, input[type=button].dk-green, input[type=reset].dk-green {
   background: #97ba28;
   border: 1px solid #bada55;
 }
-button.dk-green:hover, button.dk-green:focus, .button.dk-green:hover, .button.dk-green:focus, a.button.dk-green:hover, a.button.dk-green:focus, a.button:visited.dk-green:hover, a.button:visited.dk-green:focus, input[type=submit].dk-green:hover, input[type=submit].dk-green:focus, input[type=button].dk-green:hover, input[type=button].dk-green:focus, input[type=reset].dk-green:hover, input[type=reset].dk-green:focus {
+button:not(.mfp-close).dk-green:hover, button:not(.mfp-close).dk-green:focus, .button.dk-green:hover, .button.dk-green:focus, a.button.dk-green:hover, a.button.dk-green:focus, a.button:visited.dk-green:hover, a.button:visited.dk-green:focus, input[type=submit].dk-green:hover, input[type=submit].dk-green:focus, input[type=button].dk-green:hover, input[type=button].dk-green:focus, input[type=reset].dk-green:hover, input[type=reset].dk-green:focus {
   background: #bada55;
 }
-button.blue-1, .button.blue-1, a.button.blue-1, a.button:visited.blue-1, input[type=submit].blue-1, input[type=button].blue-1, input[type=reset].blue-1 {
+button:not(.mfp-close).blue-1, .button.blue-1, a.button.blue-1, a.button:visited.blue-1, input[type=submit].blue-1, input[type=button].blue-1, input[type=reset].blue-1 {
   background: #55adab;
   border: 1px solid #1dabb8;
 }
-button.blue-1:hover, button.blue-1:focus, .button.blue-1:hover, .button.blue-1:focus, a.button.blue-1:hover, a.button.blue-1:focus, a.button:visited.blue-1:hover, a.button:visited.blue-1:focus, input[type=submit].blue-1:hover, input[type=submit].blue-1:focus, input[type=button].blue-1:hover, input[type=button].blue-1:focus, input[type=reset].blue-1:hover, input[type=reset].blue-1:focus {
+button:not(.mfp-close).blue-1:hover, button:not(.mfp-close).blue-1:focus, .button.blue-1:hover, .button.blue-1:focus, a.button.blue-1:hover, a.button.blue-1:focus, a.button:visited.blue-1:hover, a.button:visited.blue-1:focus, input[type=submit].blue-1:hover, input[type=submit].blue-1:focus, input[type=button].blue-1:hover, input[type=button].blue-1:focus, input[type=reset].blue-1:hover, input[type=reset].blue-1:focus {
   background: #1dabb8;
 }
-button.blue-2, .button.blue-2, a.button.blue-2, a.button:visited.blue-2, input[type=submit].blue-2, input[type=button].blue-2, input[type=reset].blue-2 {
+button:not(.mfp-close).blue-2, .button.blue-2, a.button.blue-2, a.button:visited.blue-2, input[type=submit].blue-2, input[type=button].blue-2, input[type=reset].blue-2 {
   background: #1dabb8;
   border: 1px solid #198d98;
 }
-button.blue-2:hover, button.blue-2:focus, .button.blue-2:hover, .button.blue-2:focus, a.button.blue-2:hover, a.button.blue-2:focus, a.button:visited.blue-2:hover, a.button:visited.blue-2:focus, input[type=submit].blue-2:hover, input[type=submit].blue-2:focus, input[type=button].blue-2:hover, input[type=button].blue-2:focus, input[type=reset].blue-2:hover, input[type=reset].blue-2:focus {
+button:not(.mfp-close).blue-2:hover, button:not(.mfp-close).blue-2:focus, .button.blue-2:hover, .button.blue-2:focus, a.button.blue-2:hover, a.button.blue-2:focus, a.button:visited.blue-2:hover, a.button:visited.blue-2:focus, input[type=submit].blue-2:hover, input[type=submit].blue-2:focus, input[type=button].blue-2:hover, input[type=button].blue-2:focus, input[type=reset].blue-2:hover, input[type=reset].blue-2:focus {
   background: #198d98;
 }
-button.blue-3, .button.blue-3, a.button.blue-3, a.button:visited.blue-3, input[type=submit].blue-3, input[type=button].blue-3, input[type=reset].blue-3 {
+button:not(.mfp-close).blue-3, .button.blue-3, a.button.blue-3, a.button:visited.blue-3, input[type=submit].blue-3, input[type=button].blue-3, input[type=reset].blue-3 {
   background: #198d98;
   border: 1px solid #0e5056;
 }
-button.blue-3:hover, button.blue-3:focus, .button.blue-3:hover, .button.blue-3:focus, a.button.blue-3:hover, a.button.blue-3:focus, a.button:visited.blue-3:hover, a.button:visited.blue-3:focus, input[type=submit].blue-3:hover, input[type=submit].blue-3:focus, input[type=button].blue-3:hover, input[type=button].blue-3:focus, input[type=reset].blue-3:hover, input[type=reset].blue-3:focus {
+button:not(.mfp-close).blue-3:hover, button:not(.mfp-close).blue-3:focus, .button.blue-3:hover, .button.blue-3:focus, a.button.blue-3:hover, a.button.blue-3:focus, a.button:visited.blue-3:hover, a.button:visited.blue-3:focus, input[type=submit].blue-3:hover, input[type=submit].blue-3:focus, input[type=button].blue-3:hover, input[type=button].blue-3:focus, input[type=reset].blue-3:hover, input[type=reset].blue-3:focus {
   background: #0e5056;
 }
-button.lt-blue, .button.lt-blue, a.button.lt-blue, a.button:visited.lt-blue, input[type=submit].lt-blue, input[type=button].lt-blue, input[type=reset].lt-blue {
+button:not(.mfp-close).lt-blue, .button.lt-blue, a.button.lt-blue, a.button:visited.lt-blue, input[type=submit].lt-blue, input[type=button].lt-blue, input[type=reset].lt-blue {
   background: #24cada;
   border: 1px solid #198d98;
 }
-button.lt-blue:hover, button.lt-blue:focus, .button.lt-blue:hover, .button.lt-blue:focus, a.button.lt-blue:hover, a.button.lt-blue:focus, a.button:visited.lt-blue:hover, a.button:visited.lt-blue:focus, input[type=submit].lt-blue:hover, input[type=submit].lt-blue:focus, input[type=button].lt-blue:hover, input[type=button].lt-blue:focus, input[type=reset].lt-blue:hover, input[type=reset].lt-blue:focus {
+button:not(.mfp-close).lt-blue:hover, button:not(.mfp-close).lt-blue:focus, .button.lt-blue:hover, .button.lt-blue:focus, a.button.lt-blue:hover, a.button.lt-blue:focus, a.button:visited.lt-blue:hover, a.button:visited.lt-blue:focus, input[type=submit].lt-blue:hover, input[type=submit].lt-blue:focus, input[type=button].lt-blue:hover, input[type=button].lt-blue:focus, input[type=reset].lt-blue:hover, input[type=reset].lt-blue:focus {
   background: #198d98;
 }
-button.dk-blue, .button.dk-blue, a.button.dk-blue, a.button:visited.dk-blue, input[type=submit].dk-blue, input[type=button].dk-blue, input[type=reset].dk-blue {
+button:not(.mfp-close).dk-blue, .button.dk-blue, a.button.dk-blue, a.button:visited.dk-blue, input[type=submit].dk-blue, input[type=button].dk-blue, input[type=reset].dk-blue {
   background: #0e5056;
   border: 1px solid #198d98;
 }
-button.dk-blue:hover, button.dk-blue:focus, .button.dk-blue:hover, .button.dk-blue:focus, a.button.dk-blue:hover, a.button.dk-blue:focus, a.button:visited.dk-blue:hover, a.button:visited.dk-blue:focus, input[type=submit].dk-blue:hover, input[type=submit].dk-blue:focus, input[type=button].dk-blue:hover, input[type=button].dk-blue:focus, input[type=reset].dk-blue:hover, input[type=reset].dk-blue:focus {
+button:not(.mfp-close).dk-blue:hover, button:not(.mfp-close).dk-blue:focus, .button.dk-blue:hover, .button.dk-blue:focus, a.button.dk-blue:hover, a.button.dk-blue:focus, a.button:visited.dk-blue:hover, a.button:visited.dk-blue:focus, input[type=submit].dk-blue:hover, input[type=submit].dk-blue:focus, input[type=button].dk-blue:hover, input[type=button].dk-blue:focus, input[type=reset].dk-blue:hover, input[type=reset].dk-blue:focus {
   background: #198d98;
 }
-button.navy, .button.navy, a.button.navy, a.button:visited.navy, input[type=submit].navy, input[type=button].navy, input[type=reset].navy {
+button:not(.mfp-close).navy, .button.navy, a.button.navy, a.button:visited.navy, input[type=submit].navy, input[type=button].navy, input[type=reset].navy {
   background: #282830;
   border: 1px solid #0e5056;
 }
-button.navy:hover, button.navy:focus, .button.navy:hover, .button.navy:focus, a.button.navy:hover, a.button.navy:focus, a.button:visited.navy:hover, a.button:visited.navy:focus, input[type=submit].navy:hover, input[type=submit].navy:focus, input[type=button].navy:hover, input[type=button].navy:focus, input[type=reset].navy:hover, input[type=reset].navy:focus {
+button:not(.mfp-close).navy:hover, button:not(.mfp-close).navy:focus, .button.navy:hover, .button.navy:focus, a.button.navy:hover, a.button.navy:focus, a.button:visited.navy:hover, a.button:visited.navy:focus, input[type=submit].navy:hover, input[type=submit].navy:focus, input[type=button].navy:hover, input[type=button].navy:focus, input[type=reset].navy:hover, input[type=reset].navy:focus {
   background: #0e5056;
 }
-button.red, .button.red, nav.nav ul ul li a.button, nav.nav ul ul li a.button:visited, a.button.red, nav.nav ul ul li a.button, nav.nav ul ul li a.button:visited, a.button:visited.red, nav.nav ul ul li a.button:visited, input[type=submit].red, input[type=button].red, input[type=reset].red {
+button:not(.mfp-close).red, .button.red, nav.nav ul ul li a.button, nav.nav ul ul li a.button:visited, a.button.red, nav.nav ul ul li a.button, nav.nav ul ul li a.button:visited, a.button:visited.red, nav.nav ul ul li a.button:visited, input[type=submit].red, input[type=button].red, input[type=reset].red {
   background: #c82647;
   border: 1px solid #881a30;
 }
-button.red:hover, button.red:focus, .button.red:hover, nav.nav ul ul li a.button:hover, nav.nav ul ul li a.button:hover:visited, .button.red:focus, nav.nav ul ul li a.button:focus, nav.nav ul ul li a.button:focus:visited, a.button.red:hover, nav.nav ul ul li a.button:hover, nav.nav ul ul li a.button:hover:visited, a.button.red:focus, nav.nav ul ul li a.button:focus, nav.nav ul ul li a.button:focus:visited, a.button:visited.red:hover, nav.nav ul ul li a.button:visited:hover, a.button:visited.red:focus, nav.nav ul ul li a.button:visited:focus, input[type=submit].red:hover, input[type=submit].red:focus, input[type=button].red:hover, input[type=button].red:focus, input[type=reset].red:hover, input[type=reset].red:focus {
+button:not(.mfp-close).red:hover, button:not(.mfp-close).red:focus, .button.red:hover, nav.nav ul ul li a.button:hover, nav.nav ul ul li a.button:hover:visited, .button.red:focus, nav.nav ul ul li a.button:focus, nav.nav ul ul li a.button:focus:visited, a.button.red:hover, nav.nav ul ul li a.button:hover, nav.nav ul ul li a.button:hover:visited, a.button.red:focus, nav.nav ul ul li a.button:focus, nav.nav ul ul li a.button:focus:visited, a.button:visited.red:hover, nav.nav ul ul li a.button:visited:hover, a.button:visited.red:focus, nav.nav ul ul li a.button:visited:focus, input[type=submit].red:hover, input[type=submit].red:focus, input[type=button].red:hover, input[type=button].red:focus, input[type=reset].red:hover, input[type=reset].red:focus {
   background: #881a30;
 }
-button.lt-red, .button.lt-red, a.button.lt-red, a.button:visited.lt-red, input[type=submit].lt-red, input[type=button].lt-red, input[type=reset].lt-red {
+button:not(.mfp-close).lt-red, .button.lt-red, a.button.lt-red, a.button:visited.lt-red, input[type=submit].lt-red, input[type=button].lt-red, input[type=reset].lt-red {
   background: #e05b76;
   border: 1px solid #c82647;
 }
-button.lt-red:hover, button.lt-red:focus, .button.lt-red:hover, .button.lt-red:focus, a.button.lt-red:hover, a.button.lt-red:focus, a.button:visited.lt-red:hover, a.button:visited.lt-red:focus, input[type=submit].lt-red:hover, input[type=submit].lt-red:focus, input[type=button].lt-red:hover, input[type=button].lt-red:focus, input[type=reset].lt-red:hover, input[type=reset].lt-red:focus {
+button:not(.mfp-close).lt-red:hover, button:not(.mfp-close).lt-red:focus, .button.lt-red:hover, .button.lt-red:focus, a.button.lt-red:hover, a.button.lt-red:focus, a.button:visited.lt-red:hover, a.button:visited.lt-red:focus, input[type=submit].lt-red:hover, input[type=submit].lt-red:focus, input[type=button].lt-red:hover, input[type=button].lt-red:focus, input[type=reset].lt-red:hover, input[type=reset].lt-red:focus {
   background: #c82647;
 }
-button.dk-red, .button.dk-red, a.button.dk-red, a.button:visited.dk-red, input[type=submit].dk-red, input[type=button].dk-red, input[type=reset].dk-red {
+button:not(.mfp-close).dk-red, .button.dk-red, a.button.dk-red, a.button:visited.dk-red, input[type=submit].dk-red, input[type=button].dk-red, input[type=reset].dk-red {
   background: #881a30;
   border: 1px solid #c82647;
 }
-button.dk-red:hover, button.dk-red:focus, .button.dk-red:hover, .button.dk-red:focus, a.button.dk-red:hover, a.button.dk-red:focus, a.button:visited.dk-red:hover, a.button:visited.dk-red:focus, input[type=submit].dk-red:hover, input[type=submit].dk-red:focus, input[type=button].dk-red:hover, input[type=button].dk-red:focus, input[type=reset].dk-red:hover, input[type=reset].dk-red:focus {
+button:not(.mfp-close).dk-red:hover, button:not(.mfp-close).dk-red:focus, .button.dk-red:hover, .button.dk-red:focus, a.button.dk-red:hover, a.button.dk-red:focus, a.button:visited.dk-red:hover, a.button:visited.dk-red:focus, input[type=submit].dk-red:hover, input[type=submit].dk-red:focus, input[type=button].dk-red:hover, input[type=button].dk-red:focus, input[type=reset].dk-red:hover, input[type=reset].dk-red:focus {
   background: #c82647;
 }
-button.dropdown ul, .button.dropdown ul, a.button.dropdown ul, a.button:visited.dropdown ul, input[type=submit].dropdown ul, input[type=button].dropdown ul, input[type=reset].dropdown ul {
+button:not(.mfp-close).dropdown ul, .button.dropdown ul, a.button.dropdown ul, a.button:visited.dropdown ul, input[type=submit].dropdown ul, input[type=button].dropdown ul, input[type=reset].dropdown ul {
   -ms-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   -o-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   -moz-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+.mfp-content {
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .invert-color, a.invert-color, a.invert-color:visited {

@@ -5,7 +5,7 @@
 
 
 
-button, .button, a.button, a.button:visited, input[type=submit],  input[type=button], input[type=reset] {
+button:not(.mfp-close), .button, a.button, a.button:visited, input[type=submit],  input[type=button], input[type=reset] {
   background:$blue-2;
   border:1px solid $blue-3;
   color:$white;

@@ -1008,14 +1008,6 @@ button.dk-red:hover, button.dk-red:focus, .button.dk-red:hover, .button.dk-red:f
   background: #c82647;
 }
 
-.mfp-content {
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-
 button.mfp-close {
   background: none;
   text-shadow: none;

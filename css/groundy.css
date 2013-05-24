@@ -619,9 +619,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: AverageSans, Arial, Helvetica, Geneva, sans-serif;
   color: #282830;
 }
-h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
-  border-bottom: 1px dotted #198d98;
-}
 
 p a, p a:visited, ul a, ul a:visited, ol a, ol a:visited, dl a, dl a:visited {
   color: #282830;

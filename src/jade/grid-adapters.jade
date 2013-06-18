@@ -1,0 +1,65 @@
+extends template
+  
+block head
+  title GroundworkCSS ♥ Responsive Grid Adapters
+  
+block content
+  .container
+    .row
+      .one.third.padded
+        h1
+          i.icon-th-large
+          |  Grid Adapters
+        p
+          | Although the GroundworkCSS grid system is quite powerful, there are times when you need a little more control and flexibility of how your layouts adapt.
+        h6 Example usage:
+        script(src='https://gist.github.com/ghepting/5802523.js')
+        noscript
+          p.error.callout Javascript is required to display Gist from Github
+        h6 Result:
+        .demo
+          .row
+            .one.fourth.two-up-small-tablet.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-small-tablet.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-small-tablet.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-small-tablet.two-up-mobile 1/4 to 1/2
+      .two.thirds.padded
+        // start demo grid adapters
+        h2 Adaptive Grid Helpers
+        p
+          | The GroundworkCSS grid system features the most powerful responsive and adaptive layout techniques in the world.
+        hr
+        .demo
+          h4 Fourths to Halves on Small Tablets
+          .row
+            .one.fourth.two-up-small-tablet 1/4 to 1/2
+            .one.fourth.two-up-small-tablet 1/4 to 1/2
+            .one.fourth.two-up-small-tablet 1/4 to 1/2
+            .one.fourth.two-up-small-tablet 1/4 to 1/2
+          hr
+        .centering.demo
+          h4 Fourths to Halves on Mobile
+          .row
+            .one.fourth.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-mobile 1/4 to 1/2
+            .one.fourth.two-up-mobile 1/4 to 1/2
+          hr
+        .reordering.demo
+          h4 Sixths to Thirds on Small Tablets to Halves on Mobile
+          .row
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+            .one.sixth.three-up-small-tablet.two-up-mobile 1/6 to 1/3 to 1/2
+        hr
+        h2 Next Up: Media Queries
+        p
+          a(href='./media-queries') Media Queries
+          | contain CSS code that is conditionally applied based on viewport dimensions and other qualifying conditions and are what make the GroundworkCSS grid system responsive.
+        p
+          a.button(href='./media-queries')
+            | Read More 
+            i.icon-chevron-right

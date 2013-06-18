@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>GroundworkCSS ♥ Sass &amp; Compass</title>
+    <title>GroundworkCSS ♥ Responsive Grid Adapters</title>
     <link rel="apple-touch-icon" href="../groundwork/images/apple-icons/apple-touch-icon-precomposed.png">
     <link rel="apple-touch-icon" sizes="57x57" href="../groundwork/images/apple-icons/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../groundwork/images/apple-icons/apple-touch-icon-72x72-precomposed.png">
@@ -115,22 +115,63 @@
     <div class="container">
       <div class="row">
         <div class="one third padded">
-          <h1><i class="icon-plus-sign-alt"> </i>Sass + Compass</h1>
-          <p>Sass is a powerful extension to CSS and provides variables, functions, the use of mixins and extends which speeds up development and makes code cleaner and much more organized.</p>
-          <p><i class="icon-warning-sign"> </i>NOTE: For those that aren't using a CSS preprocessor yet, have no fear! We've packaged all of the normal CSS with GroundworkCSS as well. However, we strongly encourage you to<a href="http://sass-lang.com/" target="_blank">learn and use Sass</a>. The SCSS syntax is very familiar, is easy to learn and can drastically increase your efficiency.</p>
-          <p class="small">P.S. — If you're not a fan of the terminal, <a href="http://incident57.com/codekit/" target="_blank">give CodeKit a try</a>.</p>
-        </div>
-        <div class="two thirds padded">
-          <h2>Sass + Compass</h2>
-          <blockquote><strong>Sass makes CSS fun again</strong>. Sass is an extension of CSS3, adding<a href="#nesting">nested rules</a>,<a href="#variables">variables</a>,<a href="#mixins">mixins</a>,<a href="#extend">selector inheritance</a>, and<a href="/docs/yardoc/file.SASS_REFERENCE.html">more</a>. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
-            <cite><a href="http://sass-lang.com/" target="_blank">http://sass-lang.com/</a></cite>
-          </blockquote>
-          <h6>Example Sass Code:</h6>
-          <script src="https://gist.github.com/ghepting/5282927.js"></script>
+          <h1><i class="icon-th-large"></i> Grid Adapters</h1>
+          <p>Although the GroundworkCSS grid system is quite powerful, there are times when you need a little more control and flexibility of how your layouts adapt.</p>
+          <h6>Example usage:</h6>
+          <script src="https://gist.github.com/ghepting/5802523.js"></script>
           <noscript>
             <p class="error callout">Javascript is required to display Gist from Github</p>
           </noscript>
-          <p class="small">NOTE: This example is demonstrating the use of<a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_" target="_blank">variables</a>as well as<a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules" target="_blank">nested rules</a>using the<a href="#" target="_blank">SCSS</a>syntax.</p>
+          <h6>Result:</h6>
+          <div class="demo">
+            <div class="row">
+              <div class="one fourth two-up-small-tablet two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet two-up-mobile">1/4 to 1/2</div>
+            </div>
+          </div>
+        </div>
+        <div class="two thirds padded">
+          <!-- start demo grid adapters-->
+          <h2>Adaptive Grid Helpers</h2>
+          <p>The GroundworkCSS grid system features the most powerful responsive and adaptive layout techniques in the world.</p>
+          <hr>
+          <div class="demo">
+            <h4>Fourths to Halves on Small Tablets</h4>
+            <div class="row">
+              <div class="one fourth two-up-small-tablet">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet">1/4 to 1/2</div>
+              <div class="one fourth two-up-small-tablet">1/4 to 1/2</div>
+            </div>
+            <hr>
+          </div>
+          <div class="centering demo">
+            <h4>Fourths to Halves on Mobile</h4>
+            <div class="row">
+              <div class="one fourth two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-mobile">1/4 to 1/2</div>
+              <div class="one fourth two-up-mobile">1/4 to 1/2</div>
+            </div>
+            <hr>
+          </div>
+          <div class="reordering demo">
+            <h4>Sixths to Thirds on Small Tablets to Halves on Mobile</h4>
+            <div class="row">
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+              <div class="one sixth three-up-small-tablet two-up-mobile">1/6 to 1/3 to 1/2</div>
+            </div>
+          </div>
+          <hr>
+          <h2>Next Up: Media Queries</h2>
+          <p><a href="./media-queries">Media Queries</a>contain CSS code that is conditionally applied based on viewport dimensions and other qualifying conditions and are what make the GroundworkCSS grid system responsive.</p>
+          <p><a href="./media-queries" class="button">Read More <i class="icon-chevron-right"></i></a></p>
         </div>
       </div>
     </div>

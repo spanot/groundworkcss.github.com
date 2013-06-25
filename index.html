@@ -180,12 +180,12 @@
       });
       $('a[data-viewport-width]').on('click', function(e) {
         if($(this).attr('data-viewport-width') == '100%') {
-          newWidth = $(window).width();
+          newWidth = '100%';
         }else{
           newWidth = $(this).attr('data-viewport-width');
         }
         if($(this).attr('data-viewport-height') == '100%') {
-          newHeight = $(window).height();
+          newHeight = '100%';
         }else{
           newHeight = $(this).attr('data-viewport-height');
         }
@@ -230,12 +230,6 @@
         var stateObj = { resizer: 'resizer' };
         history.pushState(stateObj, url, href);
       });
-    });
-    $(window).resize(function() {
-      if($('#resizer li:first-child a').hasClass('active')) {
-        $('#resizerFrame').css('max-width', $(window).width());
-        $('#resizerFrame').css('max-height', $(window).height());
-      }
     });
   </script>
   <div style="position:fixed;top:0;z-index:99;width:100%;">

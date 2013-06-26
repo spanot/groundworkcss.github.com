@@ -53,8 +53,11 @@
       // fallback if SVG unsupported
       Modernizr.load({
       test: Modernizr.inlinesvg,
+      yep: [
+      './groundwork/css/social-icons-svg.css'
+      ],
       nope: [
-      './groundwork/css/no-svg.css',
+      './groundwork/css/social-icons-png.css',
       './css/no-svg.css'
       ]
       });

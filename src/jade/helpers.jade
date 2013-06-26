@@ -94,7 +94,133 @@ block content
               dd
                 code float: left;
             br
+            dl
+              dt .static
+              dd
+                code position: static;
             br
+            dl
+              dt .stick
+              dd
+                code position: fixed;
+              dt .stick.middle
+              dd
+                code top: 50%;
+              dt .stick.center
+              dd
+                code left: 50%;
+              dt .stick.top
+              dd
+                code top: 0;
+              dt .stick.right
+              dd
+                code right: 0;
+              dt .stick.bottom
+              dd
+                code bottom:0;
+              dt .stick.left
+              dd
+                code left: 0;
+            br
+            dl
+              dt .absolute
+              dd
+                code position: absolute;
+              dt .absolute.middle
+              dd
+                code top: 50%;
+              dt .absolute.center
+              dd
+                code left: 50%;
+              dt .absolute.top
+              dd
+                code top: 0;
+              dt .absolute.right
+              dd
+                code right: 0;
+              dt .absolute.bottom
+              dd
+                code bottom:0;
+              dt .absolute.left
+              dd
+                code left: 0;
+            br
+            br
+            h6 Alignment
+            hr
+            dl
+              dt .align-right
+              dd
+                code text-align: right;
+              dt .align-left
+              dd
+                code text-align: left;
+              dt .align-center
+              dd
+                code text-align: center;
+              dt .justify
+              dd
+                code text-align: justify;
+              dt .center
+              dd
+                code display: block; margin: 0 auto;
+            br
+            br
+            h6 UI Element States
+            hr
+            dl
+              dt .disabled
+              dd
+                code @include state(disabled);
+            dl
+              dt .info
+              dd
+                code @include state(info);
+            dl
+              dt .success
+              dd
+                code @include state(success);
+            dl
+              dt .alert
+              dd
+                code @include state(alert);
+            dl
+              dt .warning
+              dd
+                code @include state(warning);
+            dl
+              dt .error
+              dd
+                code @include state(error);
+            br
+            br
+            h6 Appearance
+            hr
+            dl
+              dt .round
+              dd
+                code @include rounded(9999em);
+              dt .square
+              dd
+                code @include border-radius(0);
+              dt .bordered
+              dd
+                code border: 1px solid $border-color;
+              dt .border-top
+              dd
+                code border-top: 1px solid $border-color;
+              dt .border-right
+              dd
+                code border-right: 1px solid $border-color;
+              dt .border-bottom
+              dd
+                code border-bottom: 1px solid $border-color;
+              dt .border-left
+              dd
+                code border-left: 1px solid $border-color;
+            br
+            br
+          .one.half.padded
             h6 Layout/Spacing
             hr
             dl
@@ -148,70 +274,6 @@ block content
                 code height: $gutter;
             br
             br
-            h6 UI Element States
-            hr
-            dl
-              dt .disabled
-              dd
-                code @include state(disabled);
-            dl
-              dt .success
-              dd
-                code @include state(success);
-            dl
-              dt .warning
-              dd
-                code @include state(warning);
-            dl
-              dt .error
-              dd
-                code @include state(error);
-            br
-            br
-            h6 Appearance
-            hr
-            dl
-              dt .round
-              dd
-                code @include rounded(9999px);
-              dt .bordered
-              dd
-                code border: 1px solid $border-color;
-              dt .border-top
-              dd
-                code border-top: 1px solid $border-color;
-              dt .border-right
-              dd
-                code border-right: 1px solid $border-color;
-              dt .border-bottom
-              dd
-                code border-bottom: 1px solid $border-color;
-              dt .border-left
-              dd
-                code border-left: 1px solid $border-color;
-            br
-            br
-          .one.half.padded
-            h6 Alignment
-            hr
-            dl
-              dt .align-right
-              dd
-                code text-align: right;
-              dt .align-left
-              dd
-                code text-align: left;
-              dt .align-center
-              dd
-                code text-align: center;
-              dt .justify
-              dd
-                code text-align: justify;
-              dt .center
-              dd
-                code display: block; margin: 0 auto;
-            br
-            br
             h6 Text Sizing
             hr
             dl
@@ -221,32 +283,6 @@ block content
               dt .large
               dd
                 code font-size: 1.5em;
-            br
-            br
-            h6 Fixed Positioning
-            hr
-            dl
-              dt .stick
-              dd
-                code position: fixed; z-index: 1;
-              dt .stick.middle
-              dd
-                code top: 50%;
-              dt .stick.center
-              dd
-                code left: 50%;
-              dt .stick.top
-              dd
-                code top: 0;
-              dt .stick.right
-              dd
-                code right: 0;
-              dt .stick.bottom
-              dd
-                code bottom:0;
-              dt .stick.left
-              dd
-                code left: 0;
             br
             br
             h6 Morphing

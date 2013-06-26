@@ -202,7 +202,103 @@
                 <dd><code>float: right;</code></dd>
                 <dt>.pull-left</dt>
                 <dd><code>float: left;</code></dd>
+              </dl><br>
+              <dl>
+                <dt>.static</dt>
+                <dd><code>position: static;</code></dd>
+              </dl><br>
+              <dl>
+                <dt>.stick</dt>
+                <dd><code>position: fixed;</code></dd>
+                <dt>.stick.middle</dt>
+                <dd><code>top: 50%;</code></dd>
+                <dt>.stick.center</dt>
+                <dd><code>left: 50%;</code></dd>
+                <dt>.stick.top</dt>
+                <dd><code>top: 0;</code></dd>
+                <dt>.stick.right</dt>
+                <dd><code>right: 0;</code></dd>
+                <dt>.stick.bottom</dt>
+                <dd><code>bottom:0;</code></dd>
+                <dt>.stick.left</dt>
+                <dd><code>left: 0;</code></dd>
+              </dl><br>
+              <dl>
+                <dt>.absolute</dt>
+                <dd><code>position: absolute;</code></dd>
+                <dt>.absolute.middle</dt>
+                <dd><code>top: 50%;</code></dd>
+                <dt>.absolute.center</dt>
+                <dd><code>left: 50%;</code></dd>
+                <dt>.absolute.top</dt>
+                <dd><code>top: 0;</code></dd>
+                <dt>.absolute.right</dt>
+                <dd><code>right: 0;</code></dd>
+                <dt>.absolute.bottom</dt>
+                <dd><code>bottom:0;</code></dd>
+                <dt>.absolute.left</dt>
+                <dd><code>left: 0;</code></dd>
               </dl><br><br>
+              <h6>Alignment</h6>
+              <hr>
+              <dl>
+                <dt>.align-right</dt>
+                <dd><code>text-align: right;</code></dd>
+                <dt>.align-left</dt>
+                <dd><code>text-align: left;</code></dd>
+                <dt>.align-center</dt>
+                <dd><code>text-align: center;</code></dd>
+                <dt>.justify</dt>
+                <dd><code>text-align: justify;</code></dd>
+                <dt>.center</dt>
+                <dd><code>display: block; margin: 0 auto;</code></dd>
+              </dl><br><br>
+              <h6>UI Element States</h6>
+              <hr>
+              <dl>
+                <dt>.disabled</dt>
+                <dd><code>@include state(disabled);</code></dd>
+              </dl>
+              <dl>
+                <dt>.info</dt>
+                <dd><code>@include state(info);</code></dd>
+              </dl>
+              <dl>
+                <dt>.success</dt>
+                <dd><code>@include state(success);</code></dd>
+              </dl>
+              <dl>
+                <dt>.alert</dt>
+                <dd><code>@include state(alert);</code></dd>
+              </dl>
+              <dl>
+                <dt>.warning</dt>
+                <dd><code>@include state(warning);</code></dd>
+              </dl>
+              <dl>
+                <dt>.error</dt>
+                <dd><code>@include state(error);</code></dd>
+              </dl><br><br>
+              <h6>Appearance</h6>
+              <hr>
+              <dl>
+                <dt>.round</dt>
+                <dd><code>@include rounded(9999em);</code></dd>
+                <dt>.square</dt>
+                <dd><code>@include border-radius(0);</code></dd>
+                <dt>.bordered</dt>
+                <dd><code>border: 1px solid $border-color;</code></dd>
+                <dt>.border-top</dt>
+                <dd><code>border-top: 1px solid $border-color;</code></dd>
+                <dt>.border-right</dt>
+                <dd><code>border-right: 1px solid $border-color;</code></dd>
+                <dt>.border-bottom</dt>
+                <dd><code>border-bottom: 1px solid $border-color;</code></dd>
+                <dt>.border-left</dt>
+                <dd><code>border-left: 1px solid $border-color;</code></dd>
+              </dl><br><br>
+            </div>
+            <div class="one half padded">
               <h6>Layout/Spacing</h6>
               <hr>
               <dl>
@@ -239,56 +335,6 @@
                 <dt>.spacer</dt>
                 <dd><code>height: $gutter;</code></dd>
               </dl><br><br>
-              <h6>UI Element States</h6>
-              <hr>
-              <dl>
-                <dt>.disabled</dt>
-                <dd><code>@include state(disabled);</code></dd>
-              </dl>
-              <dl>
-                <dt>.success</dt>
-                <dd><code>@include state(success);</code></dd>
-              </dl>
-              <dl>
-                <dt>.warning</dt>
-                <dd><code>@include state(warning);</code></dd>
-              </dl>
-              <dl>
-                <dt>.error</dt>
-                <dd><code>@include state(error);</code></dd>
-              </dl><br><br>
-              <h6>Appearance</h6>
-              <hr>
-              <dl>
-                <dt>.round</dt>
-                <dd><code>@include rounded(9999px);</code></dd>
-                <dt>.bordered</dt>
-                <dd><code>border: 1px solid $border-color;</code></dd>
-                <dt>.border-top</dt>
-                <dd><code>border-top: 1px solid $border-color;</code></dd>
-                <dt>.border-right</dt>
-                <dd><code>border-right: 1px solid $border-color;</code></dd>
-                <dt>.border-bottom</dt>
-                <dd><code>border-bottom: 1px solid $border-color;</code></dd>
-                <dt>.border-left</dt>
-                <dd><code>border-left: 1px solid $border-color;</code></dd>
-              </dl><br><br>
-            </div>
-            <div class="one half padded">
-              <h6>Alignment</h6>
-              <hr>
-              <dl>
-                <dt>.align-right</dt>
-                <dd><code>text-align: right;</code></dd>
-                <dt>.align-left</dt>
-                <dd><code>text-align: left;</code></dd>
-                <dt>.align-center</dt>
-                <dd><code>text-align: center;</code></dd>
-                <dt>.justify</dt>
-                <dd><code>text-align: justify;</code></dd>
-                <dt>.center</dt>
-                <dd><code>display: block; margin: 0 auto;</code></dd>
-              </dl><br><br>
               <h6>Text Sizing</h6>
               <hr>
               <dl>
@@ -296,24 +342,6 @@
                 <dd><code>font-size: 0.8em;</code></dd>
                 <dt>.large</dt>
                 <dd><code>font-size: 1.5em;</code></dd>
-              </dl><br><br>
-              <h6>Fixed Positioning</h6>
-              <hr>
-              <dl>
-                <dt>.stick</dt>
-                <dd><code>position: fixed; z-index: 1;</code></dd>
-                <dt>.stick.middle</dt>
-                <dd><code>top: 50%;</code></dd>
-                <dt>.stick.center</dt>
-                <dd><code>left: 50%;</code></dd>
-                <dt>.stick.top</dt>
-                <dd><code>top: 0;</code></dd>
-                <dt>.stick.right</dt>
-                <dd><code>right: 0;</code></dd>
-                <dt>.stick.bottom</dt>
-                <dd><code>bottom:0;</code></dd>
-                <dt>.stick.left</dt>
-                <dd><code>left: 0;</code></dd>
               </dl><br><br>
               <h6>Morphing</h6>
               <hr>

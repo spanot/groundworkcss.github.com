@@ -160,12 +160,6 @@
       if(querystring('url').length > 0) {
         $('#resizerFrame').attr('src',querystring('url'));
       }
-      $('#resizerFrame').on('load', function() {
-        var url = basename(this.contentWindow.location.href);
-        var href = updateQueryStringParameter(document.location.href, 'url', 'docs/'+url);
-        var stateObj = { resizer: 'resizer' };
-        history.pushState(stateObj, url, href);
-      });
     });
   </script>
   <div style="position:fixed;top:0;z-index:99;width:100%;">
